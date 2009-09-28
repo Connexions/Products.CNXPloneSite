@@ -1,0 +1,83 @@
+<!-- i18nday:FIXME this entire template is horribly screwed up -->
+<div metal:define-macro="alluseremails">
+
+<!-- Database query: expects request/username. This macro can be used with any of the individual ones below. -->
+
+<!-- "approved": for notifying the new author upon approval. Uses only request/username. -->
+
+<span metal:define-macro="approved"
+tal:define="global approvedemailtext string:Your account on the Connexions system has been approved. Your username is %s, and your password is the one you chose upon requesting the account. To log in, go to ${request/SERVER_URL}/ and enter your name and password in the login box. There is a Quick Start guide available once you log in, or any time at ${request/SERVER_URL}/help/qstart
+
+Please let us know if you have any problems logging in or using the system, by emailing us at cnx@rice.edu or calling us at 713-348-3674. Thanks for joining the Connexions Project!" />
+
+<!-- "pending": for asking an applicant for more information. Uses only request/username. -->
+
+<span metal:define-macro="pending"
+tal:define="global pendingemailtext string:We have received a request from you for an account on the Connexions system (${request/SERVER_URL}), under the username %s. However, we need more information before we can create your account. Please contact us by emailing us at cnx@rice.edu or calling us at 713-348-3674. Thanks for your interest in the Connexions Project!" />
+
+<!-- "pwd": for sending password reminder info. Uses the locally-set variable 'password'. -->
+
+<span metal:define-macro="pwd"
+tal:define="global pwdemailtext string:The password for your Connexions account is
+
+                                    ${password}
+
+If you continue to have problems, please email us at cnx@rice.edu or call us at 713-348-3674.
+
+If you didn't request this password reminder, someone else requested it on your behalf. Additionally, there is a small chance that someone was attempting to gain unauthorized access to your account. If you are worried about that possibility, please contact us." />
+
+</div>
+
+<div metal:define-macro="alladminemails">
+
+<!-- "admin": for notifying the admin of a new request. Depends on full list of request variables. -->
+
+<span metal:define-macro="admin"
+      tal:define="fullname python:'%s %s %s %s %s' % (request.user_honorific, request.user_firstname, request.user_othername, request.user_surname, request.user_lineage);
+                  global adminemailtext string:The following request for a Connexions account was just received:
+                  
+Full name: ${fullname}
+Email:     ${request/user_email}
+Username:  ${request/username}
+URL:       ${request/user_homepage}
+Comment:   ${request/user_comment}
+
+Use this URL to go to the approval screen:
+${request/SERVER_URL}/management/approvals.html
+
+Shortcut to instant approval:
+${request/SERVER_URL}/management/approveAccount.html?username=${request/username}
+
+" />
+
+</div>
+
+<div metal:define-macro="allbccemails"><!-- Both depend on full list of global or local variables. -->
+
+<!-- "bcc": for notifying interested parties of approval. -->
+
+<span metal:define-macro="bcc"
+tal:define="global bccemailtext string:The following Connexions account was just approved:
+
+Full name: ${fullname}
+Email:     ${email}
+Username:  ${username}
+URL:       ${homepage}
+Comment:   ${comment}
+
+The applicant has been notified in a separate email." />
+
+<!-- "bccrej": for notifying interested parties when an account is denied -->
+
+<span metal:define-macro="pendingbcc"
+tal:define="global pendingbccemailtext string:The following Connexions account application was just returned with a request for more information:
+
+Full name: ${fullname}
+Email:     ${email}
+Username:  ${username}
+URL:       ${homepage}
+Comment:   ${comment}
+
+The applicant has been notified in a separate email." />
+
+</div><!-- "defineall" macro definition -->

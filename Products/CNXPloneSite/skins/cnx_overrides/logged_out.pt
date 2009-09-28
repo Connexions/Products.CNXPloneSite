@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      xmlns:tal="http://xml.zope.org/namespaces/tal" 
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<tal:comment tal:replace="nothing">
+This template based on version from Plone 2.5.2-1
+
+CNX note: different message, spacing changes
+          i18n left mostly as plone domain, with only our changes in rhaptos domain
+          added tal, metal, i18n namespaces for validation purposes
+
+i18nday: jccooper
+</tal:comment>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+<div metal:fill-slot="main">
+
+<tal:reallyloggedout condition="isAnon">
+  <h1 i18n:translate="heading_signed_out">You are now logged out</h1>
+
+    <p i18n:translate="text_logout_msg" i18n:domain="rhaptos">
+      Thank you for using Connexions. Please come again soon!  If you
+      have any comments on your experience, please <span i18n:name="email_us">
+      <a href="" tal:attributes="href string:mailto:${here/email_from_address}"
+         i18n:translate="link_logout_emailus">email us</a></span>.
+    </p>
+
+</tal:reallyloggedout>
+
+<tal:notloggedoutafterall tal:condition="not: isAnon">
+    <h1 i18n:translate="heading_quit_to_log_out">Quit your web browser to log out</h1>
+    
+    <p i18n:translate="description_quit_to_log_out">
+    Because you are logged in via HTTP authentication 
+    (i.e. the Zope Management Interface), the only
+    way to log out is to quit your web browser.
+    </p>
+</tal:notloggedoutafterall>
+
+</div>
+
+</html>

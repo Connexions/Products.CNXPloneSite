@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US"
+      lang="en-US"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      xmlns:tal="http://xml.zope.org/namespaces/tal" 
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="rhaptos"
+      metal:use-macro="here/main_template/macros/master">
+
+<tal:comment tal:replace="nothing">
+CNX note: no difference in conversion. no plone counterpart.
+
+Plone 2.5 notes:
+  toLocalizedTime now used
+</tal:comment>
+
+<body>
+
+    <div metal:fill-slot="main">
+
+      <h1 tal:content="here/title">[news]</h1>
+
+        <div id="description"
+             tal:content="structure here/Description"> description </div>
+      
+      <dl tal:define="results python:here.portal_catalog.searchResults(portal_type='Blog Item',
+                                                                       sort_on='Date',
+                                                                       sort_order='reverse',
+                                                                       review_state='published')">
+	<tal:block tal:repeat="obj results">
+	  <dt>
+	    <a href="" tal:attributes="href obj/getURL">
+	      <img tal:replace="structure here/newsitem_icon.gif" />
+	      <span tal:replace="python:test(obj.Title, obj.Title, obj.id)"> Extended Calendar Product </span></a> 	- <span tal:content="python:here.toLocalizedTime(obj.Date)">July 7, 08:11</span>
+	  </dt>
+	  <dd>
+	    <span tal:content="structure python:test(obj.Description, obj.Description, '&#160;')"> description </span>
+	  </dd>
+	</tal:block>
+      </dl>
+      
+      <p style="margin-top: 2em">
+	<a href="RSS"><img tal:replace="structure here/rss.png" /></a>
+	<a href="RSS" i18n:translate="label_blog_syndicate">Syndicate this page</a> 
+	(<a href="http://www.feedburner.com/fb/a/aboutrss" i18n:translate="label_blog_about_syndicate">About syndication and RSS</a>)
+      </p>
+    </div>
+  </body>
+</html>
+

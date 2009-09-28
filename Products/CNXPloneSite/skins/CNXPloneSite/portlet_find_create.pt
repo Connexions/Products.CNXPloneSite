@@ -1,0 +1,225 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+<body>
+
+<!-- Find Content / Create Content -->
+
+<div metal:define-macro="portlet">
+
+    <div id="cnx_find_create">
+
+	<div id="cnx_find">
+
+            <h2><a href="/content/" i18n:translate="box_find_content">Find Content</a></h2>
+
+	    <p id="cnx_find_stats"
+	       i18n:translate="text_modules_woven_into_courses">
+		<strong i18n:name="modulequantity" tal:content="python:here.content.countRhaptosObjects(['Module'])">[count]</strong>
+		reusable modules woven into 
+		<strong i18n:name="coursequantity" tal:content="python:here.content.countRhaptosObjects(['Collection'])">[count]</strong>
+		collections.
+	    </p>
+
+            <div id="cnx_find_search">
+		<form name="content_search" action="/content/search">
+                    <input name="target" type="hidden" />
+		    <label for="cnx_find_search_words" class="overlabel" 
+			   i18n:translate="value_search_desc">Search Content</label>
+		    <input name="words" type="text" size="20" accesskey="s" tabindex="3"
+                           id="cnx_find_search_words" />
+                    <input name="allterms" value="weakAND" type="hidden" />
+		    <input class="context searchButton" type="submit" accesskey="s" tabindex="4" value="Go" 
+			   i18n:attributes="value value_search" name="search" />
+	        </form>
+	    </div>
+
+	    <div id="cnx_find_browse">
+		<table>
+		    <tbody>
+			<tr>
+			    <td valign="top" id="cnx_find_browse_pane1">
+				<h3>or browse by ...</h3>
+				<ul>
+				    <li id="cnx_find_browse_subjectlink">
+					<a href="/content/browse_content/subject"
+					   onmouseover="openGroup('subject')">Subject</a>
+				    </li>
+				    <li id="cnx_find_browse_languagelink">
+					<a href="/content/browse_content/language"
+					   onmouseover="openGroup('language')">Language</a>
+				    </li>
+				    <li id="cnx_find_browse_popularitylink">
+					<a href="/content/browse_content/popularity"
+					   onmouseover="openGroup('popularity')">Popularity</a>
+				    </li>
+				    <li id="cnx_find_browse_othermetadatalink">
+					<a href="/content/"
+					   onmouseover="openGroup('othermetadata')">Title, author, etc.</a>
+				    </li>
+				</ul>
+			    </td>
+			    <td valign="top">
+			    <div id="cnx_find_browse_pane2">
+				<div id="cnx_find_browse_subject">
+                                    <ul tal:define="subjects python:context.portal_moduledb.sqlGetTags(scheme='ISKME subject')">
+                                        <li tal:repeat="result subjects">
+                                            <a href="/content/browse_subject/science" i18n:translate=""
+                                               tal:define="subject result/tag"
+                                               tal:attributes="href string:${context/portal_url}/content/browse_content/subject/$subject;"
+                                               tal:content="subject">
+                                                [Arts]
+                                            </a>
+                                        </li>
+                                    </ul>
+				</div>
+				<div id="cnx_find_browse_language">
+                                    <ul tal:define="langLookup python:here.content.langLookup();
+                                                    getLangAndLocalData python:here.getLanguageData();
+                                                    langData getLangAndLocalData/langData;
+                                                    topLanguages python:here.langCodesByContentCount(langData)[:5];">
+                                        <li tal:repeat="l topLanguages" tal:condition="topLanguages">
+                                        <tal:row tal:condition="l"> <tal:block tal:define="nativeName python:langLookup[l]['nativeName'];
+                                                                 engName python:langLookup[l]['englishName'];
+                                                                 subcodes python:langData[l]['variantCodes'];
+                                                                 qs python:'/'.join(subcodes);">
+                                                <a href="/content/browse_content/language/de"
+                                                   tal:attributes="href string:/content/browse_content/language/$qs;">
+                                                    <span tal:replace="nativeName">Deutsch</span>
+                                                    <span tal:condition="python:nativeName != engName">
+                                                        (<span tal:replace="engName">German</span>)
+                                                    </span>
+                                                    </a>
+                                                    </tal:block>
+                                            </tal:row>
+                                        </li>
+					<li><a href="/content/browse_content/language/">All ...</a></li>
+				    </ul>
+				</div>
+				<div id="cnx_find_browse_popularity">
+				    <ul>
+					<li><a href="/content/browse_content/popularity/weekly">Most popular last week</a></li>
+					<li><a href="/content/browse_content/popularity/alltime">Most popular of all time</a></li>
+					<li class="cnx_blank">&nbsp;</li>
+					<li class="cnx_blank">&nbsp;</li>
+					<li class="cnx_blank">&nbsp;</li>
+					<li class="cnx_blank">&nbsp;</li>
+				    </ul>
+				</div>
+				<div id="cnx_find_browse_othermetadata">
+				    <ul>
+					<li><a href="/content/browse_content/titles">Title</a></li>
+					<li><a href="/content/browse_content/author">Author</a></li>
+					<li><a href="/content/browse_content/keyword">Keyword</a></li>
+					<li><a href="/content/browse_content/date">Revision date</a></li>
+					<li class="cnx_blank">&nbsp;</li>
+					<li class="cnx_blank">&nbsp;</li>
+				    </ul>
+				</div>
+			    </div>
+			    </td>
+			</tr>
+		    </tbody>
+		</table>
+	    </div>
+
+	</div>
+
+	<div id="cnx_create">
+
+            <h2><a href="/help/ModuleInMinutes" i18n:translate="box_create_content">Create Content</a></h2>
+
+	    <p id="cnx_create_easy">
+                Creating content in Connexions is as easy as <b>1, 2, 3</b>:
+            </p>
+
+            <table id="cnx_create_123">
+                <tbody>
+                    <tr>
+                        <td class="cnx_create_image">
+                                <img src="authoring-step-1.gif" />
+                        </td>
+                        <td class="cnx_create_image">
+                                <img src="authoring-step-2.gif" />
+                        </td>
+                        <td class="cnx_create_image">
+                                <img src="authoring-step-3.gif" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cnx_create_step">
+                          <span class="cnx_create_number">1</span>
+                          Get an account and log in to your workspace.
+                        </td>
+                        <td class="cnx_create_step">
+                          <span class="cnx_create_number">2</span>
+                          Make a module from scratch or convert it from a Word doc.
+                        </td>
+                        <td class="cnx_create_step">
+                          <span class="cnx_create_number">3</span>
+                          Publish your works, sharing them with the world.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="cnx_create_links">
+                <tbody>
+                    <tr>
+                        <td class="cnx_create_link_list">
+                            <h4>Jump right in</h4>
+                            <ul>
+                                <li tal:condition="isAnon">
+                                    <a href="/join_form">Get an account</a>
+                                </li>
+                                <li>
+                                    <a href="/help/ModuleInMinutes">How to create a module in minutes</a>
+                                </li>
+                                <li>
+                                    <a href="/help/CreateCollection">How to create a collection with existing modules</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="cnx_create_link_list">
+                            <h4>Guides and tutorials</h4>
+                            <ul>
+                                <li>
+                                    <a href="/help/authorguide">New author guide</a>
+                                </li>
+                                <li>
+                                    <a href="/content/col10151/latest/">Connexions Tutorial and Reference</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <script language="JavaScript"><!--
+    // when we have JS available, rewrite links into 'browse_content' to use hash links instead
+    // or not, since it currently breaks the 'back' button on IE pretty seriously (reedstrm)
+    //var atags = document.getElementById('cnx_find_browse').getElementsByTagName('a');
+    //var alen = atags.length;
+
+    //var ahref;
+    //var idx;
+    //for (i = 0; i < alen; i++) {
+        //ahref = atags[i].href;
+        //idx = ahref.indexOf('browse_content/');
+        //if (idx != -1) {
+            //atags[i].href = ahref.substring(0,idx) + '#' + ahref.substring(idx+15);
+        //}
+    //}
+    //-->
+    </script>
+
+</div>
+
+</body>
+
+</html>

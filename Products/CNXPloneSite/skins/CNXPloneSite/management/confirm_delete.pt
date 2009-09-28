@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rhaptos">
+
+  <body>
+    <div metal:fill-slot="main">
+      <h1 tal:content="template/title">[title]</h1>
+
+      <form tal:condition="not:python:request.has_key('ids')" method="get" action="deleteAccount.html">
+	<b i18n:translate="text_confirmdelete_enterlogin">Enter a loginid to delete:</b> <input type="text" name="loginid" /><br />
+	<i i18n:translate="text_confirmdelete_noauthordel">You will not be allowed to delete an account that is already listed as an author or maintainer on a module.</i>
+	<input type="hidden" name="returnpage" tal:attributes="value request/returnpage | request/HTTP_REFERER" />
+	<input type="submit" />
+      </form>
+
+      <form tal:condition="exists:request/ids" method="post" action=".">
+	<table class="listing">
+	  <tr>
+	    <th i18n:translate="listingheader_confirmdelete_username">Username</th>
+	    <th i18n:translate="listingheader_confirmdelete_email">Email</th>
+	    <th i18n:translate="listingheader_confirmdelete_name">Name</th>
+	    <th i18n:translate="listingheader_confirmdelete_comment">Comment</th>
+	  </tr>
+	  <tal:block tal:repeat="id request/ids">
+	    <tr tal:define="u python:here.portal_membership.getMemberById(id)"
+                tal:attributes="class python:test(path('repeat/id/odd'),'odd','even')">
+	      <td>
+		<span tal:replace="u/getUserName">[name]</span>
+		<input type="hidden" name="ids:list" tal:attributes="value u/getUserName" />
+	      </td>
+	      <td tal:define="email python:u.getProperty('email')">
+		<a href="#" tal:attributes="href string:mailto:${email}">
+		  <img src="" tal:replace="structure portal/mail_icon.gif" />
+		  <span tal:replace="email" />
+		</a>
+	      </td>
+	      <td>
+		<span tal:replace="python:u.getProperty('fullname')">[name]</span>
+	      </td>
+	      <td><span tal:replace="python:u.getProperty('comment')">[comment]</span></td>
+	    </tr>
+	  </tal:block>
+	</table>
+	<p i18n:translate="text_confirmdelete_sure">
+	  Are you sure you want to delete these accounts? The entire person record will be deleted.
+	</p>
+	<input type="submit" class="destructive" name="account_delete:action" value="Yes, Delete."
+               i18n:attributes ="value value_confirmdelete_yes" />
+	<input type="submit" class="standalone" name="account_approvals:action" value="No, Cancel."
+               i18n:attributes ="value value_confirmdelete_no" />
+      </form>
+    </div>
+  </body>
+</html>

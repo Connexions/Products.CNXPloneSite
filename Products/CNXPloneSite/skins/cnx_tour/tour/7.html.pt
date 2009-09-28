@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>Connexions Web Tour: Software</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="6.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="8.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a href="2.html">2</a>
+<a href="3.html">3</a>
+<a href="4.html">4</a>
+<a href="5.html">5</a>
+<a href="6.html">6</a>
+<a class="current">7</a>
+<a href="8.html">8</a>
+<a href="9.html">9</a>
+<a href="10.html">10</a>
+<a href="11.html">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top" rowspan="2">
+<div style="width: 400px; height: 400px;">
+
+<div class="mini-navigator-div">
+<table id="mini-navigator" border="0" cellspacing="1" width="390px">
+<tr>
+<td><a href="6.html">Content Commons</a></td>
+<td class="current"><a href="7.html">Software</a></td>
+<td><a href="8.html">Vision</a></td>
+<td><a href="9.html">Intellectual Property</a></td>
+<td><a href="10.html">Quality</a></td>
+</tr>
+</table>
+</div>
+
+<div class="software" id="modules" style="visibility: visible;">
+<div class="description">
+<a class="previous" href="javascript:show('roadmap','software')">
+&#171;&#171; Roadmap
+</a>
+<a class="next" href="javascript:show('content_commons','software')">
+Content Commons &#187;&#187;
+</a>
+<div class="title">
+Modules
+</div>
+<div class="actual-description">
+Modules are encoded in an XML language called CNXML (<span
+class="cnx">Connexions</span> Mark-up Language) which can include other
+XML languages (such as MathML) and be output to various formats in an 
+array of styles.
+</div>
+</div>
+<img name="modules" src="7/modules.gif" width="400" height="300">
+</div>
+
+<div class="software" id="content_commons">
+<div class="description">
+<a class="previous" href="javascript:show('modules','software')">
+&#171;&#171; Modules
+</a>
+<a class="next" href="javascript:show('authoring_tools','software')">
+Authoring Tools &#187;&#187;
+</a>
+<div class="title">
+Content Commons
+</div>
+<div class="actual-description">
+The Content Commons stores Modules in a repository and manages their 
+access.  This centralized database uses version-control software (CVS) 
+to track changes to each Module.
+</div>
+</div>
+<img name="content_commons" src="7/content_commons.gif" width="400" height="290">
+</div>
+
+<div class="software" id="authoring_tools">
+<div class="description">
+<a class="previous" href="javascript:show('content_commons','software')"> 
+&#171;&#171; Content Commons
+</a>
+<a class="next" href="javascript:show('course_composer','software')">
+Course Composer &#187;&#187;
+</a>
+<div class="title">
+Authoring Tools
+</div>
+<div class="actual-description">
+New Modules are generated using XML editors, while authors use our 
+straightforward authoring suite to communicate with each other in 
+Workgroups, collaborate on shared work, add &#147;connexions&#148; to 
+other Modules, and sumbit work to the Content Commons.
+</div>
+</div>
+<img name="authoring_tools" src="7/authoring_tools.gif" width="400" height="290">
+</div>
+
+<div class="software" id="course_composer">
+<div class="description">
+<a class="previous" href="javascript:show('authoring_tools','software')">
+&#171;&#171; Authoring Tools
+</a>
+<a class="next" href="javascript:show('annotations','software')">
+Annotations &#187;&#187;
+</a>
+<div class="title">
+Course Composer
+</div>
+<div class="actual-description">
+The Course Composer provides instructors with an easy-to-use interface
+for searching for Modules, grouping them into &#147;chapters,&#148;
+sequencing them into a course, and adding customized segues and <a
+href="javascript:show('annotations','software')">Annotations</a>.
+</div>
+</div>
+<img name="course_composer" src="7/course_composer.gif" width="400" height="290">
+</div>
+
+<div class="software" id="annotations">
+<div class="description">
+<a class="previous" href="javascript:show('course_composer','software')">
+&#171;&#171; Course Composer
+</a>
+<a class="next" href="javascript:show('roadmap','software')">
+Roadmap &#187;&#187;
+</a>
+<div class="title">
+Annotations
+</div>
+<div class="actual-description">
+Annotations are like &#147;margin notes&#148; which individual
+instructors can add to Modules for class-specific information,
+instructor-specific notes, or other messages that do not necessarily
+pertain to the material <i>per se</i>.
+</div>
+</div>
+<img name="annotations" src="7/annotations.gif" width="400" height="300">
+</div>
+
+<div class="software" id="roadmap">
+<div class="description">
+<a class="previous" href="javascript:show('annotations','software')">
+&#171;&#171; Annotations
+</a>
+<a class="next" href="javascript:show('modules','software')">
+Modules &#187;&#187;
+</a>
+<div class="title">
+Roadmap
+</div>
+<div class="actual-description">
+The Roadmap (currently a client-side browser add-on, with plans to move
+server-side) navigates students through particular courses while also
+encouraging them to explore the &#147;connexions&#148; to related
+material.
+</div>
+</div>
+<img name="roadmap" src="7/roadmap.gif" width="400" height="300">
+</div>
+
+
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body">
+
+<div id="title">Software</div>
+
+<p>
+
+<span class="cnx">Connexions</span> utilizes a number of new
+technologies and tools, all of which are freely available under
+<em>open-source</em> and open-content licenses, and most of which were
+previewed in the <a href="4.html">factory metaphor</a>:
+
+</p>
+
+<ul>
+<li>Content <a href="javascript:show('modules','software')">Modules</a>
+encoded in XML</li>
+<li>A <a href="javascript:show('content_commons','software')">Content 
+Commons</a> to organize the Modules</li>
+<li><a href="javascript:show('authoring_tools','software')">Authoring
+Tools</a> and workgroups to facilitate collaboration</li>
+<li><a href="javascript:show('course_composer','software')">Course
+Composer</a> to build courses</li>
+<li><a href="javascript:show('annotations','software')">Annotations</a>
+to personalize Modules</li>
+<li><a href="javascript:show('roadmap','software')">Roadmap</a> to
+navigate and explore</li>
+</ul>
+
+<p>
+Click on the above links or on the image to the left to see screen shots
+of these technologies and tools.
+</p>
+
+<div id="next-slide">
+<a href="8.html">Vision &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Connexions Web Tour: Current and future uses</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="10.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="12.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a href="2.html">2</a>
+<a href="3.html">3</a>
+<a href="4.html">4</a>
+<a href="5.html">5</a>
+<a href="6.html">6</a>
+<a href="7.html">7</a>
+<a href="8.html">8</a>
+<a href="9.html">9</a>
+<a href="10.html">10</a>
+<a class="current">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top" rowspan="2">
+<div style="width: 550px; height: 400px;">
+
+
+<table border="0" cellpadding="0" cellspacing="1" id="uses">
+<tr>
+<td class="prototype header" class="prototype" valign="top">
+Current Prototype Communities
+</td>
+<td class="collaborators header" class="collaborators" valign="top">
+Current Collaborators
+</td>
+<td class="potential header" class="potential" valign="top">
+Further Potential Applications
+</td>
+</tr>
+<tr>
+
+<td class="prototype" valign="top">
+<ul>
+<li>Cross-institutional program in Digital Signal Processing (DSP)</li>
+<li>Rice's core undergrad Electrical and Computer Engineering
+curriculum</li>
+<li>Bioinformatics (collaboration between Statistics, Computer
+Science, Bioengineering, and Medicine)</li>
+<li>Music Appreciation and Theory (K&ndash;12)</li>
+<li>Andes/Amazon Botanical Project</li>
+<li>Biodiversity and Conservation</li>
+<li>Computer Science, Mathematics, Nanotechnology, Mechanical
+Engineering, Physics, etc.</li>
+</ul>
+</td>
+
+<td class="collaborators" valign="top">
+<ul>
+<li>Rice, Illinois, Ohio State, Georgia Tech, Polytechnic,
+Michigan, Cambridge (UK), NTNU (Norway)</li>
+<li>National Instruments &amp; Texas Instruments</li>
+<li>Botanical Research Institute of Texas</li>
+<li>American Museum of Natural History</li>
+<li>Creative Commons</li>
+<li>UNESCO (with MIT OCW and CMU)</li>
+<li>American Society for Engineering Education</li>
+</ul>
+</td>
+
+<td class="potential" valign="top">
+<ul>
+<li>Inject real-world data and research into courses</li>
+<li>Publish scientific reports and findings</li>
+<li>Exchange information between different disciplines and programs</li>
+<li>Reach diverse populations worldwide</li>
+<li>Training programs and corporate training (proprietary
+repositories)</li>
+<li>Large-scale data management (metadata, XML)</li>
+</td>
+
+</tr>
+</table>
+
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body" style="/*/*//*/width: 200px;/* */">
+
+<div id="title">Current and future uses</div>
+
+<p>
+
+<span class="cnx">Connexions</span> has been very busy building 
+grassroots communities and generating content (as of January, 2004, we 
+have <em>over 1600 Modules and 35 courses in current use</em>, with more 
+in development), but we are always looking for <em>more and diverse 
+areas to expand</em>.
+
+</p>
+
+<p>
+
+Take a look at a few of the areas and groups with which we are currently
+involved or to which we could expand in the future, but don't let these
+limit what you imagine you can do with <span
+class="cnx">Connexions</span>!
+
+</p>
+
+<div id="next-slide">
+<a href="12.html">Contact and further information &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

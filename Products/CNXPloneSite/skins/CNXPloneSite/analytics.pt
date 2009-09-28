@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+<body>
+<tal:script metal:define-macro="snippet" i18n:domain="rhaptos">
+
+    <!-- Google Analytics tracking. -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var benchmarkTracker = _gat._getTracker("UA-7903479-1");
+        benchmarkTracker._setDomainName('cnx.org');
+        benchmarkTracker._trackPageview();                
+        var overallTracker = _gat._getTracker("UA-5033010-1");
+        overallTracker._setDomainName('cnx.org');
+        overallTracker._trackPageview();
+      } catch(err) {}
+    </script>
+
+</tal:script>
+</body>
+</html>

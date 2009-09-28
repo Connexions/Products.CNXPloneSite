@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC  "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      xmlns:tal="http://xml.zope.org/namespaces/tal" 
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rhaptos">
+
+<tal:comment tal:replace="nothing">
+Rhaptos Note:
+ New; replaces previous Document, since it needs script tags.
+</tal:comment>
+
+<body>
+  <div metal:fill-slot="main">
+    <h1 i18n:translate="">Take the Tour</h1>
+
+<script language="JavaScript"><!--
+function openTour() {
+window.open("1.html","cnxwebtour","width=800,height=500,menubar=no,status=no,toolbar=no,location=no,directories=no,toolbar=no,resizable=yes")
+}
+openTour()
+// -->
+</script>
+<p>
+If the Connexions Tour does not open automatically, click <a href="1.html">here</a>.
+</p>
+<p>
+<a href="javascript:openTour()">Reopen</a> the Connexions Tour in a pop-up window (JavaScript must be enabled on your browser).
+</p>
+
+  </div>
+</body>
+
+</html>

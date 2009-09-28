@@ -1,0 +1,29 @@
+<tal:root define="lt string:&lt;;gt string:&gt;;
+                  dummy python:request.RESPONSE.setHeader('Content-Type', 'text/plain;; charset=%s' % here.plone_utils.getSiteEncoding());
+                  member python:options['member'];
+                  reset python:options.get('reset', None) or here.portal_password_reset.requestReset(member.getId())"
+          i18n:domain="rhaptos"
+>From: "<span tal:replace="python:here.email_from_name" />" <span tal:replace="structure lt"/><span tal:replace="python:here.email_from_address" /><span tal:replace="structure gt"/>
+To: <span tal:replace="python:member.getProperty('email')" />
+Subject: <span i18n:translate="mailtemplate_registered_portal_membership_info_cnx" tal:omit-tag="">Connexions Account Approved</span>
+Content-Type: text/plain; charset=<span tal:replace="here/portal_properties/site_properties/default_charset" />
+
+<div i18n:translate="mailtemplate_registered_body" tal:omit-tag="">
+Your account on the Connexions system has been approved. Your username
+is <span i18n:name="username" tal:replace="member/getUserName"/>.  Please activate your account by visiting 
+
+<span tal:replace="python:here.pwreset_constructURL(reset['randomstring'])+'?userid='+member.getUserName()" i18n:name="pw_reset_url"/>
+
+You must activate your account before <span i18n:name="begin_time" tal:replace="reset/expires/aCommonZ" />.
+
+There is a Quick Start guide available once you log in, or any time at
+<span i18n:name="quickstart_link" tal:replace="string:${here/portal_url}/help/qstart"/>
+
+Please let us know if you have any problems logging in or using the
+system, by emailing us at cnx@cnx.org or calling us at
+713-348-3674. Thanks for joining Connexions!
+</div>
+
+--
+<span tal:replace="python:here.email_from_name" />
+</tal:root>

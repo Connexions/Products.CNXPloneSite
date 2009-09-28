@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rhaptos">
+
+  <body>
+    <div metal:fill-slot="main">
+      <h1 tal:content="template/title">[title]</h1>
+
+      <form tal:condition="exists:request/ids" method="post" action=".">
+	<table class="listing">
+	  <tr>
+	    <th i18n:translate="listingheader_approve_username">Username</th>
+	    <th i18n:translate="listingheader_approve_email">Email</th>
+	    <th i18n:translate="listingheader_approve_name">Name</th>
+	    <th i18n:translate="listingheader_approve_comment">Comment</th>
+	    <th i18n:translate="listingheader_approve_status">Status</th>
+	  </tr>
+	  <tal:block tal:repeat="id request/ids">
+	    <tr tal:define="u python:here.portal_membership.getMemberById(id)"
+                tal:attributes="class python:test(path('repeat/id/odd'),'odd','even')">
+	      <td>
+		<span tal:replace="u/getUserName">[name]</span>
+		<input type="hidden" name="ids:list" tal:attributes="value u/getUserName" />
+	      </td>
+	      <td tal:define="email python:u.getProperty('email')">
+		<a href="#" tal:attributes="href string:mailto:${email}">
+		  <img src="" tal:replace="structure portal/mail_icon.gif" />
+		  <span tal:replace="email" />
+		</a>
+	      </td>
+	      <td>
+		<span tal:replace="python:u.getProperty('fullname')">[name]</span>
+	      </td>
+	      <td><span tal:replace="python:u.getProperty('comment')">[comment]</span></td>
+	      <td><span tal:replace="python:u.getProperty('status')">[status]</span></td>
+	    </tr>
+	  </tal:block>
+	</table>
+
+	<strong i18n:translate="text_approve_account_new_author_email"
+	  >Enter/edit email to send to new author/user:</strong><br />
+
+	<span metal:use-macro="here/emailtexts/macros/approved" />
+	<!--<span metal:use-macro="here/emailtexts/macros/bcc" />-->
+	<textarea name="emailBody" 
+                  rows="12" 
+                  cols="60" 
+                  wrap="virtual"
+	          tal:attributes="tabindex tabindex/next;"><span tal:replace="approvedemailtext" /></textarea>
+
+	<br />
+	<b>Cc:</b>&nbsp; <input type="text" name="cc" size="30" tal:attributes="tabindex tabindex/next;" /><br />
+	<b>Bcc:</b> <input type="text" name="bcc" size="30" tal:attributes="tabindex tabindex/next;" /><br />
+
+	<div class="label">
+	  <p>
+	    <input type="checkbox" 
+                   name="email" 
+                   size="10"
+                   value="1" 
+                   tabindex=""
+	           checked="checked"
+                   class="noborder"
+                   tal:attributes="tabindex tabindex/next;" />
+
+	    <span i18n:translate="label_approve_email">Send email to new accounts</span>
+	  </p>
+	</div>
+
+	<input type="submit" class="standalone" name="approve:action" value="Approve accounts"
+               tal:attributes="tabindex tabindex/next;"
+               i18n:attributes="value text_approve_approve" />
+	<input type="submit" class="standalone" name="pending_accounts:action" value="Cancel without approving" 
+               i18n:attributes="value text_approve_cancel"
+               tal:attributes="tabindex tabindex/next;" />
+      </form>
+    </div>
+  </body>
+</html>

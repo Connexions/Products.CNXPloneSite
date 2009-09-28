@@ -1,0 +1,130 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<tal:comment tal:replace="nothing">
+This template based on version from Plone 2.5.2-1
+
+CNX notes:
+ add bug report link to non-404s
+ note that logout hasn't happened, even though it might look like that
+ not changing to HEAD i18n: Plone changes make it bad. We might need to change the translations.
+ i18nday: jccooper; only new content in rhaptos domain changed
+
+Plone 2.5 notes:
+ we were blanking right slots; plone seems to be doing both now; we
+ still want to only blank the right, though.
+</tal:comment>
+
+<head>
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+    <metal:block fill-slot="column_two_slot" />
+</head>
+
+<body>
+<div metal:fill-slot="main"
+     tal:define="err_type options/error_type|nothing;
+                 err_message options/error_message|nothing;
+                 err_tb options/error_tb|nothing;
+                 err_value options/error_value|nothing;
+                 err_traceback options/error_traceback|nothing;">
+
+        <div tal:condition="python:err_type=='NotFound'">
+
+            <h1 i18n:translate="heading_site_error_apologies">Our apologies...</h1>
+
+            <p i18n:translate="description_site_error_does_not_exist">
+            The item you requested does not exist on this server or cannot be served.
+            </p>
+
+            <p i18n:translate="description_site_error_continue" i18n:domain="rhaptos">
+            If you were logged in, don't worry; you have not been logged out.
+            Click the back button or one of the tabs to continue.
+            </p>
+
+            <p i18n:translate="description_site_error_mail_admin">
+            If you know you have the correct web address but are encountering an error, please
+            contact the <span i18n:name="site_admin">
+            <a href="#" 
+               i18n:translate="label_site_admin"
+               tal:attributes="href string:${portal_url}/contact-info">Site Administration</a></span>.
+            </p>
+
+            <p i18n:translate="description_site_error_thank_you">
+            Thank you.
+            </p>
+
+            <code i18n:translate="text_error_not_found">
+            404 Not Found
+            </code>
+
+        </div>
+
+        <div tal:condition="python: err_type!='NotFound'">
+
+            <h1 i18n:translate="heading_site_error">Site error</h1>
+    
+            <p i18n:translate="description_site_error_continue" i18n:domain="rhaptos">
+            If you were logged in, don't worry; you have not been logged out.
+            Click the back button or one of the tabs to continue.
+            </p>
+
+            <p i18n:translate="description_site_error">
+            This site encountered an error trying to fulfill your request.
+            The errors were:
+            </p>
+    
+            <dl>
+                <dt i18n:translate="label_error_type">
+                Error Type
+                </dt>
+        
+                <dd i18n:translate="" tal:content="err_type">
+                The rendered error type
+                </dd>
+    
+                <tal:error condition="err_message">
+                <dt i18n:translate="label_error_message">
+                Error Message
+                </dt>
+    
+                <dd i18n:translate="" tal:content="err_message | nothing">
+                The rendered error message
+                </dd>
+                </tal:error>
+    
+                <tal:value condition="python:test(err_value and (err_value != err_message), 1, 0)">
+                <dt i18n:translate="label_error_value">
+                Error Value
+                </dt>
+    
+                <dd i18n:translate="" tal:content="err_value">
+                The rendered error value
+                </dd>
+                </tal:value>
+    
+                <dt i18n:translate="label_error_time">
+                Request made at
+                </dt>
+    
+                <dd tal:content="here/ZopeTime">
+                The time the error was encountered
+                </dd>
+            </dl>
+
+            <p i18n:domain="rhaptos">
+               <a tal:attributes="href string:${portal_url}/bug_submit_form" href="/bug_submit_form" i18n:translate="text_defaulterror_report">
+                 <img tal:replace="structure here/linkOpaque.gif" i18n:name="img" /> Report this bug
+               </a>
+            </p>
+
+        </div>
+</div>
+
+</body>
+</html>

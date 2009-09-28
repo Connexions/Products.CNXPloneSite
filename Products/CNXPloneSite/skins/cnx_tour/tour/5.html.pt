@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>Connexions Web Tour: The five principal components of
+Connexions</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="4.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="6.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a href="2.html">2</a>
+<a href="3.html">3</a>
+<a href="4.html">4</a>
+<a class="current">5</a>
+<a href="6.html">6</a>
+<a href="7.html">7</a>
+<a href="8.html">8</a>
+<a href="9.html">9</a>
+<a href="10.html">10</a>
+<a href="11.html">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top" rowspan="2">
+<div style="width: 400px; height: 400px;">
+
+<map name="five-components">
+<area shape="poly" coords="196,88, 225,91, 252,100, 273,114, 280,132, 271,152, 250,166, 223,174, 197,177, 173,174, 
+146,167, 129,158, 116,142, 115,128, 124,111, 141,100, 164,92" href="#" onmouseover="show('connexions','components')" 
+onmouseout="hide('connexions','components')" />
+<area shape="poly" coords="255,20, 277,11, 303,13, 322,22, 331,38, 324,54, 303,66, 274,66, 251,57, 241,42, 245,28" 
+href="#" onmouseover="show('content','components')" onmouseout="hide('content','components')" />
+<area shape="poly" coords="72,22, 90,13, 109,11, 128,13, 144,20, 155,34, 151,51, 132,64, 109,68, 88,64, 70,53, 64,38" 
+href="#" onmouseover="show('software','components')" onmouseout="hide('software','components')" />
+<area shape="poly" coords="51,153, 76,156, 93,168, 98,183, 89,198, 68,208, 42,208, 19,199, 9,185, 12,169, 29,157" 
+href="#" onmouseover="show('vision','components')" onmouseout="hide('vision','components')" />
+<area shape="poly" coords="197,213, 224,217, 240,231, 242,246, 229,261, 204,268, 178,266, 159,256, 151,242, 157,225, 
+178,215" href="#" onmouseover="show('ip','components')" onmouseout="hide('ip','components')" />
+<area shape="poly" coords="339,153, 362,155, 380,167, 386,181, 379,196, 359,206, 341,209, 314,204, 298,191, 297,178, 
+305,164, 322,155" href="#" onmouseover="show('quality','components')" onmouseout="hide('quality','components')"/>
+</map>
+
+<div class="mini-navigator-div">
+<table id="mini-navigator" border="0" cellspacing="1" width="390px">
+<tr>
+<td id="mini_content">
+<a href="6.html" onmouseover="show('content','components')"
+onmouseout="hide('content','components')">Content Commons</a>
+</td>
+<td id="mini_software">
+<a href="7.html" onmouseover="show('software','components')"
+onmouseout="hide('software','components')">Software</a>
+</td>
+<td id="mini_vision">
+<a href="8.html" onmouseover="show('vision','components')"
+onmouseout="hide('vision','components')">Vision</a>
+</td>
+<td id="mini_ip">
+<a href="9.html" onmouseover="show('ip','components')"
+onmouseout="hide('ip','components')" >Intellectual Property</a>
+</td>
+<td id="mini_quality">
+<a href="10.html" onmouseover="show('quality','components')"
+onmouseout="hide('quality','components')">Quality</a>
+</td>
+</tr>
+</table>
+</div>
+
+<img src="5/five-components.jpg" width="400" height="280" 
+usemap="#five-components" border="0" id="components">
+
+<div id="components-instructions">
+<img class="mouse-arrow" src="mouse-arrow.gif" />
+Pass your mouse over the components for a brief description, or continue
+on the tour for more information about each component.
+</div>
+
+<div id="content" class="components">
+<div class="title">Content Commons</div>
+<p>
+Connexions provides the means for all kinds of authors both to 
+contribute to an open &#147;Commons&#148; of information and to 
+collaborate with each other.
+</p>
+</div>
+
+<div id="software" class="components">
+<div class="title">Software</div>
+<p>
+Connexions has developed an array of new and scalable software to 
+facilitate the ways content is encoded, stored, retrieved, viewed, 
+marked, taught, and edited.
+</p>
+</div>
+
+<div id="vision" class="components">
+<div class="title">Our Vision</div>
+<p>
+We intend to take Connexions to a critical mass on a global scale and
+have the means to make this possible.
+</p>
+</div>
+
+<div id="ip" class="components">
+<div class="title">Intellectual Property</div>
+<p>
+Both the content and software of Connexions are provided under open
+licenses that provide for free use, but are also fair, responsible, and
+legally sound.
+</p>
+</div>
+
+<div id="quality" class="components">
+<div class="title">Quality</div>
+<p>
+The fast-paced development of content in our Commons lends itself to 
+post-publication review, accomplished via Lenses through which the 
+Modules are viewed.
+</p>
+</div>
+
+<div id="connexions" class="components">
+<div class="title">Working Together</div>
+<p>
+Our free and open Content, array of open-source Software, Vision for
+growth, fair Intellectual Property practices, and Quality assurance are
+the intertwined aspects that drive all our work.
+</p>
+</div>
+
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body">
+
+<div id="title">The five principal components of <span
+class="cnx">Connexions</span></div>
+
+<p>
+The philosophy behind <span class="cnx"><a href="#" 
+onmouseover="show('connexions','components')" 
+onmouseout="hide('connexions','components')" >Connexions</a></span> 
+drives our five principal components:
+</p>
+
+<ul>
+<li><a href="6.html" onmouseover="show('content','components')"
+onmouseout="hide('content','components')">Content Commons</a>
+</li>
+<li><a href="7.html" onmouseover="show('software','components')"
+onmouseout="hide('software','components')">Software</a>
+</li>
+<li><a href="8.html" onmouseover="show('vision','components')"
+onmouseout="hide('vision','components')">Vision</a>
+</li>
+<li><a href="9.html" onmouseover="show('ip','components')"
+onmouseout="hide('ip','components')">Intellectual Property</a>
+</li>
+<li><a href="10.html" onmouseover="show('quality','components')"
+onmouseout="hide('quality','components')">Quality</a>
+</li>
+</ul>
+
+<p>
+The following pages describe each of these components in greater detail.
+</p>
+
+<div id="next-slide">
+<a href="6.html">Content Commons &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

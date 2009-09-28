@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+<tal:comment tal:replace="nothing">
+This template based on version from Plone 2.5.2-1
+
+CNX note: pretty much entirely replaced with CNX footer content
+          added tal, metal, i18n namespaces for validation purposes
+
+i18nday: jccooper; mostly entirely ours, so now in rhaptos domain
+</tal:comment>
+
+<body>
+<div id="portal-footer" metal:define-macro="portal_footer" i18n:domain="rhaptos">
+
+    <a id="riceLogo" href="http://www.rice.edu/"><img tal:replace="structure here/ricelogo.gif" /></a>
+    <a id="ccLogo" href="http://creativecommons.org">
+      <img title="Creative Commons" 
+	   alt="Creative Commons"
+	   width="80" 
+	   height="20" 
+	   border="0" 
+	   tal:replace="structure here/cc-logo.gif"
+           i18n:attributes="title text_creativecommons; alt text_creativecommons" />
+    </a>
+    <span id="ploneLogo" i18n:domain="plone">
+      <a href="http://plone.org">
+        <img src=""
+            height="15"
+            width="80"
+            border="0"
+            alt="Powered by Plone"
+            title="This site was built using the Plone Content Management System. Click for more information."
+            tal:attributes="src string:$portal_url/plone_powered.gif;
+                            height here/plone_powered.gif/height;
+                            width here/plone_powered.gif/width"
+            i18n:attributes="alt; title" />
+      </a>
+    </span>
+
+    <p id="sponsorBlurb" i18n:translate="text_footer_sponsorblurb">
+      Connexions<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is 
+      <span i18n:name="supportedlink">
+        <a href="/aboutus/people/sponsors" i18n:translate="link_footer_sponsors">supported</a>
+      </span>
+      by the <span i18n:name="hewlettfoundation">
+        <a href="http://www.hewlett.org/" i18n:translate="link_footer_hewlettfoundation">
+         William and Flora Hewlett Foundation</a>.
+      </span>
+    </p>
+    <p i18n:translate="text_footer_tmblurb">
+      Connexions<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is a registered 
+      trademark of Rice University.
+    </p>
+    <p>
+      <a href="sitelicense" i18n:translate="link_footer_sitelicense" tal:attributes="href string:$portal_url/sitelicense">Site User Agreement</a>
+      </p>
+</div>
+</body>
+</html>

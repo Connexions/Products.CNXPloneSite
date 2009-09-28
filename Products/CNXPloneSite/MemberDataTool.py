@@ -1,0 +1,2 @@
+from Products.CatalogMemberDataTool.MemberDataTool import MemberDataTool
+from Products.RhaptosSite.MemberDataTool import XUFMemberData
