@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<import-steps>
+ <import-step id="cnx_install" version="20090928-01"
+              handler="Products.CNXPloneSite.setup.runPolicy.runPolicy"
+              title="CNXPloneSite Customization Policy">
+  Run the old CNXPloneSite Customization Policy
+ </import-step>
+</import-steps>

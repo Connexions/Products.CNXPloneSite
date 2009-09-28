@@ -24,11 +24,16 @@ def installProducts(self, portal):
 
 def customizeMemberdata(self, portal):
     md = getToolByName(portal, 'portal_memberdata')
-    #md._setProperty('comment', '')        
-    md._setProperty('interests', (), 'lines')
-    md._setProperty('refer', (), 'lines')
-    md._setProperty('refertext', '')
-    md._setProperty('ok_contact_me', 0, 'boolean')
+    #md._setProperty('comment', '')
+    MEMBERDATA_PROPERTIES = (
+            ('interests', [], 'lines'),
+            ('refer', [], 'lines'),
+            ('refertext', '', 'string'),
+            ('ok_contact_me', 0, 'boolean'),)
+
+    for prop, default, type in MEMBERDATA_PROPERTIES:
+        if not md.hasProperty(prop):
+            md._setProperty(prop, default, type)
 
 
 def customizeActions(self, portal):
@@ -140,7 +145,8 @@ functions = {
     'Customize Actions': customizeActions,
     'Customize Skins': customizeSkins,
     'Customize Types': customizeTypes,
-    'Customize Forms': customizeForms,
+# XXX commented this out because it is broken and doesn't appear to be used
+#    'Customize Forms': customizeForms,
     'Customize Front Page': customizeFrontPage,
     }
 
@@ -191,6 +197,6 @@ class CNXSetup:
             'Customize Actions',
             'Customize Skins',
             'Customize Types',
-            'Customize Forms',
+#            'Customize Forms',
             'Customize Front Page',
             ]
