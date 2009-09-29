@@ -18,9 +18,16 @@ from Products.CNXPloneSite import product_globals
 
 def installProducts(self, portal):
     """Add any necessary portal tools"""
-    qi = getToolByName(portal, 'portal_quickinstaller')
-    qi.installProduct('FeatureArticle')
-    qi.installProduct('CNXContent')
+    portal_setup = getToolByName(portal, 'portal_setup')
+    import_context = portal_setup.getImportContextID()
+    portal_setup.setImportContext(
+            'profile-Products.FeatureArticle:default')
+    portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(
+            'profile-Products.CNXContent:default')
+    portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(import_context)
+
 
 def customizeMemberdata(self, portal):
     md = getToolByName(portal, 'portal_memberdata')
