@@ -18,9 +18,6 @@ from setup import CNXSitePolicy
 
 this_module = sys.modules[ __name__ ]
 
-# check syntax
-from Extensions import Install
-del Install
 
 #Monkeypatch Collection.py to include the URL for a CNX specific help files. 
 from Products.RhaptosCollection.types import Collection
