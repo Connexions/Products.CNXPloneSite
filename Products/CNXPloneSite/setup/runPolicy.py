@@ -10,12 +10,6 @@ def runPolicy(context):
     # XXX run the rhaptos profile from here. Should be a dependency in 
     # metadata.xml but the GenericSetup version that is used does not support
     # metadata.xml
-    portal_setup = getToolByName(portal, 'portal_setup')
-    import_context = portal_setup.getImportContextID()
-    portal_setup.setImportContext(
-            'profile-RhaptosSite:rhaptos-default')
-    portal_setup.runAllImportSteps()
-    portal_setup.setImportContext(import_context)
 
     portal_migration = getToolByName(portal, 'portal_migration')
     setup = portal_migration._getWidget('Connexions Setup')
