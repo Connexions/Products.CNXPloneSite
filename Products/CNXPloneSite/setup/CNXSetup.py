@@ -145,7 +145,13 @@ def customizeFrontPage(self, portal):
     frontpage.edit('html',
         """<a href="frontpage/document_edit_form">Edit the front page</a>""")
     portal.setDefaultPage('index_html')
-        
+
+def createAboutusFolder(self, portal):
+    if 'aboutus' not in portal.objectIds():
+        portal.invokeFactory('Folder', 'aboutus')
+        folder = portal.aboutus
+        folder.setTitle('About')
+
 functions = {
     'Install Products': installProducts,
     'Customize Member Data': customizeMemberdata,
@@ -154,6 +160,7 @@ functions = {
     'Customize Types': customizeTypes,
 # XXX commented this out because it is broken and doesn't appear to be used
 #    'Customize Forms': customizeForms,
+    'Create About Us folder': createAboutusFolder,
     'Customize Front Page': customizeFrontPage,
     }
 
@@ -205,5 +212,6 @@ class CNXSetup:
             'Customize Skins',
             'Customize Types',
 #            'Customize Forms',
+            'Create About Us folder',
             'Customize Front Page',
             ]
