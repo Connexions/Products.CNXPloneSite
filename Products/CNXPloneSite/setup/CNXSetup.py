@@ -143,8 +143,8 @@ def customizeFrontPage(self, portal):
     frontpage = portal.frontpage
     frontpage.title = 'Portal Front Page'
     frontpage.edit('html',
-                   """<a href="frontpage/document_edit_form">Edit the front page</a>"""
-                   )
+        """<a href="frontpage/document_edit_form">Edit the front page</a>""")
+    portal.setDefaultPage('index_html')
         
 functions = {
     'Install Products': installProducts,
