@@ -7,6 +7,7 @@ All Rights Reserved.
 
 """
 
+import os
 import zLOG
 from Acquisition import aq_base
 
@@ -143,7 +144,7 @@ def customizeFrontPage(self, portal):
     frontpage = portal.frontpage
     frontpage.title = 'Portal Front Page'
     frontpage.edit('html',
-        """<a href="frontpage/document_edit_form">Edit the front page</a>""")
+        """<a href="frontpage/edit">Edit the front page</a>""")
     portal.setDefaultPage('index_html')
 
 def createAboutusFolder(self, portal):
@@ -151,6 +152,33 @@ def createAboutusFolder(self, portal):
         portal.invokeFactory('Folder', 'aboutus')
         folder = portal.aboutus
         folder.setTitle('About')
+        folder.invokeFactory('Document', 'contact')
+        contact = folder.contact
+        contact.setTitle('Contact Us')
+        ifile = open(
+            os.path.join(os.path.dirname(__file__), 'data', 'contact.html'),
+            'rb')
+        text = ifile.read()
+        ifile.close()
+        contact.edit('html', text)
+        folder.invokeFactory('Document', 'index_html')
+        index = folder.index_html
+        index.setTitle('Philosophy')
+        index.setDescription('The Connexions approach')
+        ifile = open(
+            os.path.join(os.path.dirname(__file__), 'data', 'philosophy.html'),
+            'rb')
+        text = ifile.read()
+        ifile.close()
+        index.edit('text/structured', text)
+
+def createHelpSection(self, portal):
+    if 'help' in portal.objectIds():
+        portal._delObject('help')
+    portal._importObjectFromFile(
+        os.path.join(os.path.dirname(__file__), 'data', 'help.zexp'),
+        verify=False,
+        set_owner=True)
 
 functions = {
     'Install Products': installProducts,
@@ -162,6 +190,7 @@ functions = {
 #    'Customize Forms': customizeForms,
     'Create About Us folder': createAboutusFolder,
     'Customize Front Page': customizeFrontPage,
+    'Create Help Section': createHelpSection,
     }
 
 class CNXSetup:
@@ -214,4 +243,5 @@ class CNXSetup:
 #            'Customize Forms',
             'Create About Us folder',
             'Customize Front Page',
+            'Create Help Section',
             ]
