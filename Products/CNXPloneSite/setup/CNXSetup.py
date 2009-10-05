@@ -47,15 +47,28 @@ def customizeMemberdata(self, portal):
 def customizeActions(self, portal):
     pa_tool=getToolByName(portal,'portal_actions')
 
-    pa_tool.addAction('aboutus', 'About', 'string:$portal_url/aboutus/', '', 'View', 'portal_tabs')
+    pa_tool.addAction('aboutus', 'About Us', 'string:$portal_url/aboutus/', '', 'View', 'portal_tabs')
     pa_tool.addAction('help', 'Help', 'string:$portal_url/help/', '', 'View', 'portal_tabs')
     #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
     pa_tool.addAction('contact', 'Contact', 'string:$portal_url/aboutus/contact', '', 'View', 'site_actions')
-
+    import pdb;pdb.set_trace()
     actions = pa_tool._cloneActions()
+    order = ['Content', 'Lenses', 'About Us', 'Help', 'MyCNX']
+    toorder = list()
+    tmp_actions = list()
     for a in actions:
-        if a.id in ('Members', 'GroupWorkspaces',):
+        if a.title == 'Work Area':
             a.visible = 0
+        if a.title == 'Help':
+            import pdb;pdb.set_trace()
+        if a.title in order:
+            toorder.append((order.index(a.title), a))
+        else:
+            tmp_actions.append(a)
+    actions = tmp_actions
+    toorder.sort()
+    for i,a in toorder:
+        actions.append(a)
     pa_tool._actions = tuple(actions)
 
 def customizeSkins(self, portal):
