@@ -172,13 +172,6 @@ def createAboutusFolder(self, portal):
         ifile.close()
         index.edit('text/structured', text)
 
-def createHelpSection(self, portal):
-    if 'help' in portal.objectIds():
-        portal._delObject('help')
-    portal._importObjectFromFile(
-        os.path.join(os.path.dirname(__file__), 'data', 'help.zexp'),
-        verify=False,
-        set_owner=True)
 
 functions = {
     'Install Products': installProducts,
@@ -190,7 +183,6 @@ functions = {
 #    'Customize Forms': customizeForms,
     'Create About Us folder': createAboutusFolder,
     'Customize Front Page': customizeFrontPage,
-    'Create Help Section': createHelpSection,
     }
 
 class CNXSetup:
@@ -243,5 +235,4 @@ class CNXSetup:
 #            'Customize Forms',
             'Create About Us folder',
             'Customize Front Page',
-            'Create Help Section',
             ]
