@@ -52,6 +52,12 @@ def customizeActions(self, portal):
     #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
     pa_tool.addAction('contact', 'Contact', 'string:$portal_url/aboutus/contact', '', 'View', 'site_actions')
 
+    actions = pa_tool._cloneActions()
+    for a in actions:
+        if a.id in ('Members', 'GroupWorkspaces',):
+            a.visible = 0
+    pa_tool._actions = tuple(actions)
+
 def customizeSkins(self, portal):
     skinstool = getToolByName(portal, 'portal_skins')
 
