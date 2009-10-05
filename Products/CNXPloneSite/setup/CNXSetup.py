@@ -51,7 +51,6 @@ def customizeActions(self, portal):
     pa_tool.addAction('help', 'Help', 'string:$portal_url/help/', '', 'View', 'portal_tabs')
     #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
     pa_tool.addAction('contact', 'Contact', 'string:$portal_url/aboutus/contact', '', 'View', 'site_actions')
-    import pdb;pdb.set_trace()
     actions = pa_tool._cloneActions()
     order = ['Content', 'Lenses', 'About Us', 'Help', 'MyCNX']
     toorder = list()
@@ -59,8 +58,6 @@ def customizeActions(self, portal):
     for a in actions:
         if a.title == 'Work Area':
             a.visible = 0
-        if a.title == 'Help':
-            import pdb;pdb.set_trace()
         if a.title in order:
             toorder.append((order.index(a.title), a))
         else:
@@ -185,11 +182,23 @@ def createAboutusFolder(self, portal):
         index.setTitle('Philosophy')
         index.setDescription('The Connexions approach')
         ifile = open(
-            os.path.join(os.path.dirname(__file__), 'data', 'philosophy.html'),
+            os.path.join(os.path.dirname(__file__), 'data', 'philosophy.stx'),
             'rb')
         text = ifile.read()
         ifile.close()
         index.edit('text/structured', text)
+
+def createContent(self, portal):
+    if 'sitelicense' not in portal.objectIds():
+        portal.invokeFactory('Document', 'sitelicense')
+        license = portal.sitelicense
+        license.setTitle('Connexions Service and Repository User Agreement')
+        ifile = open(
+            os.path.join(os.path.dirname(__file__), 'data', 'sitelicense.stx'),
+            'rb')
+        text = ifile.read()
+        ifile.close()
+        license.edit('text/structured', text)
 
 
 functions = {
@@ -202,6 +211,7 @@ functions = {
 #    'Customize Forms': customizeForms,
     'Create About Us folder': createAboutusFolder,
     'Customize Front Page': customizeFrontPage,
+    'Create Content': createContent,
     }
 
 class CNXSetup:
@@ -254,4 +264,5 @@ class CNXSetup:
 #            'Customize Forms',
             'Create About Us folder',
             'Customize Front Page',
+            'Create Content',
             ]
