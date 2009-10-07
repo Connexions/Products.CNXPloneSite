@@ -47,8 +47,6 @@ def customizeMemberdata(self, portal):
 def customizeActions(self, portal):
     pa_tool=getToolByName(portal,'portal_actions')
 
-    pa_tool.addAction('aboutus', 'About Us', 'string:$portal_url/aboutus/', '', 'View', 'portal_tabs')
-    pa_tool.addAction('help', 'Help', 'string:$portal_url/help/', '', 'View', 'portal_tabs')
     #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
     pa_tool.addAction('contact', 'Contact', 'string:$portal_url/aboutus/contact', '', 'View', 'site_actions')
     actions = pa_tool._cloneActions()
@@ -164,6 +162,9 @@ def customizeFrontPage(self, portal):
     portal.setDefaultPage('index_html')
 
 def createAboutusFolder(self, portal):
+    if 'aboutus' in portal.objectIds() and 'placeholder' in portal.aboutus.objectIds():
+        portal.manage_delObjects('aboutus')
+
     if 'aboutus' not in portal.objectIds():
         portal.invokeFactory('Folder', 'aboutus')
         folder = portal.aboutus
