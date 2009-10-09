@@ -201,6 +201,12 @@ def createContent(self, portal):
         ifile.close()
         license.edit('text/structured', text)
 
+def customizePortlets(self, portal):
+    left_slots = [
+            'here/portlet_navigation/macros/portlet',
+            ]
+
+    portal.manage_changeProperties(left_slots=left_slots)
 
 functions = {
     'Install Products': installProducts,
@@ -213,6 +219,7 @@ functions = {
     'Create About Us folder': createAboutusFolder,
     'Customize Front Page': customizeFrontPage,
     'Create Content': createContent,
+    'Customize Portlets': customizePortlets,
     }
 
 class CNXSetup:
@@ -266,4 +273,5 @@ class CNXSetup:
             'Create About Us folder',
             'Customize Front Page',
             'Create Content',
+            'Customize Portlets',
             ]
