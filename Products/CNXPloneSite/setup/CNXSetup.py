@@ -152,14 +152,19 @@ def customizeForms(self, portal):
 
 
 def customizeFrontPage(self, portal):
-    # FIXME: currently disabled until we have better text to go here
-    portal.manage_delObjects('index_html')
-    portal.invokeFactory('Document', 'frontpage')
-    frontpage = portal.frontpage
-    frontpage.title = 'Portal Front Page'
-    frontpage.edit('html',
-        """<a href="frontpage/edit">Edit the front page</a>""")
-    portal.setDefaultPage('index_html')
+    if 'index_html' in portal.objectIds():
+        portal.manage_delObjects('index_html')
+    if 'frontpage' not in portal.objectIds():
+        portal.invokeFactory('Document', 'frontpage')
+        frontpage = portal.frontpage
+        frontpage.title = 'Connexions is:'
+        ifile = open(
+            os.path.join(os.path.dirname(__file__), 'data', 'frontpage.html'),
+            'rb')
+        text = ifile.read()
+        ifile.close()
+        frontpage.edit('html', text)
+        portal.setDefaultPage('index_html')
 
 def createAboutusFolder(self, portal):
     if 'aboutus' in portal.objectIds() and 'placeholder' in portal.aboutus.objectIds():
