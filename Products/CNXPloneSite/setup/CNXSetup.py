@@ -11,7 +11,6 @@ import os
 import zLOG
 from Acquisition import aq_base
 
-from Products.CMFCore.Expression import Expression
 
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.Expression import Expression
@@ -48,30 +47,13 @@ def customizeMemberdata(self, portal):
 
 def customizeActions(self, portal):
     pa_tool=getToolByName(portal,'portal_actions')
-    pa_tool.addAction('login', 'Log In', 'string:$portal_url/login_form',
-             'python:member is None', 'View', 'site_actions')
 
     #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
     actions = pa_tool._cloneActions()
-    order = ['Content', 'Lenses', 'About Us', 'Help', 'MyCNX']
-    toorder = list()
-    tmp_actions = list()
     for a in actions:
         if a.title == 'Contact Us':
             a.setActionExpression(
                     Expression('string:$portal_url/aboutus/contact'))
-        if a.title == 'Work Area':
-            a.visible = 0
-        if a.title in order:
-            toorder.append((order.index(a.title), a))
-        elif a.title in ('Log In',):
-            tmp_actions.insert(0, a)
-        else:
-            tmp_actions.append(a)
-    actions = tmp_actions
-    toorder.sort()
-    for i,a in toorder:
-        actions.append(a)
     pa_tool._actions = tuple(actions)
 
 def customizeSkins(self, portal):
