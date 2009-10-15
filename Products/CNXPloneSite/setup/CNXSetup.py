@@ -51,6 +51,8 @@ def customizeActions(self, portal):
     #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
     actions = pa_tool._cloneActions()
     for a in actions:
+        if a.title == 'MyRhaptos':
+            a.title = 'MyCNX'
         if a.title == 'Contact Us':
             a.setActionExpression(
                     Expression('string:$portal_url/aboutus/contact'))
