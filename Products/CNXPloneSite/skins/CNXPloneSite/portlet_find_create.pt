@@ -13,7 +13,7 @@
 
 	<div id="cnx_find">
 
-            <h2><a href="/content/" i18n:translate="box_find_content">Find Content</a></h2>
+            <h2><a href="/content/" tal:attributes="href string:$portal_url/content/;" i18n:translate="box_find_content">Find Content</a></h2>
 
 	    <p id="cnx_find_stats"
 	       i18n:translate="text_modules_woven_into_courses">
@@ -24,7 +24,7 @@
 	    </p>
 
             <div id="cnx_find_search">
-		<form name="content_search" action="/content/search">
+		<form name="content_search" action="/content/search" tal:attributes="action string:$portal_url/content/search;">
                     <input name="target" type="hidden" />
 		    <label for="cnx_find_search_words" class="overlabel" 
 			   i18n:translate="value_search_desc">Search Content</label>
@@ -44,19 +44,19 @@
 				<h3>or browse by ...</h3>
 				<ul>
 				    <li id="cnx_find_browse_subjectlink">
-					<a href="/content/browse_content/subject"
+					<a href="/content/browse_content/subject" tal:attributes="href string:$portal_url/content/browse_content/subject;"
 					   onmouseover="openGroup('subject')">Subject</a>
 				    </li>
 				    <li id="cnx_find_browse_languagelink">
-					<a href="/content/browse_content/language"
+					<a href="/content/browse_content/language" tal:attributes="href string:$portal_url/content/browse_content/language;"
 					   onmouseover="openGroup('language')">Language</a>
 				    </li>
 				    <li id="cnx_find_browse_popularitylink">
-					<a href="/content/browse_content/popularity"
+					<a href="/content/browse_content/popularity" tal:attributes="href string:$portal_url/content/browse_content/popularity;"
 					   onmouseover="openGroup('popularity')">Popularity</a>
 				    </li>
 				    <li id="cnx_find_browse_othermetadatalink">
-					<a href="/content/"
+					<a href="/content/" tal:attributes="href string:$portal_url/content/;"
 					   onmouseover="openGroup('othermetadata')">Title, author, etc.</a>
 				    </li>
 				</ul>
@@ -86,7 +86,7 @@
                                                                  subcodes python:langData[l]['variantCodes'];
                                                                  qs python:'/'.join(subcodes);">
                                                 <a href="/content/browse_content/language/de"
-                                                   tal:attributes="href string:/content/browse_content/language/$qs;">
+                                                   tal:attributes="href string:$portal_url/content/browse_content/language/$qs;">
                                                     <span tal:replace="nativeName">Deutsch</span>
                                                     <span tal:condition="python:nativeName != engName">
                                                         (<span tal:replace="engName">German</span>)
@@ -95,13 +95,13 @@
                                                     </tal:block>
                                             </tal:row>
                                         </li>
-					<li><a href="/content/browse_content/language/">All ...</a></li>
+					<li><a href="/content/browse_content/language/" tal:attributes="href string:$portal_url/content/browse_content/language/;">All ...</a></li>
 				    </ul>
 				</div>
 				<div id="cnx_find_browse_popularity">
 				    <ul>
-					<li><a href="/content/browse_content/popularity/weekly">Most popular last week</a></li>
-					<li><a href="/content/browse_content/popularity/alltime">Most popular of all time</a></li>
+					<li><a href="/content/browse_content/popularity/weekly" tal:attributes="href string:$portal_url/content/browse_content/popularity/weekly;">Most popular last week</a></li>
+					<li><a href="/content/browse_content/popularity/alltime" tal:attributes="href string:$portal_url/content/browse_content/popularity/alltime;">Most popular of all time</a></li>
 					<li class="cnx_blank">&nbsp;</li>
 					<li class="cnx_blank">&nbsp;</li>
 					<li class="cnx_blank">&nbsp;</li>
@@ -110,10 +110,10 @@
 				</div>
 				<div id="cnx_find_browse_othermetadata">
 				    <ul>
-					<li><a href="/content/browse_content/titles">Title</a></li>
-					<li><a href="/content/browse_content/author">Author</a></li>
-					<li><a href="/content/browse_content/keyword">Keyword</a></li>
-					<li><a href="/content/browse_content/date">Revision date</a></li>
+					<li><a href="/content/browse_content/titles" tal:attributes="href string:$portal_url/content/browse_content/titles;">Title</a></li>
+					<li><a href="/content/browse_content/author" tal:attributes="href string:$portal_url/content/browse_content/author;">Author</a></li>
+					<li><a href="/content/browse_content/keyword" tal:attributes="href string:$portal_url/content/browse_content/keyword;">Keyword</a></li>
+					<li><a href="/content/browse_content/date" tal:attributes="href string:$portal_url/content/browse_content/date;">Revision date</a></li>
 					<li class="cnx_blank">&nbsp;</li>
 					<li class="cnx_blank">&nbsp;</li>
 				    </ul>
@@ -129,7 +129,7 @@
 
 	<div id="cnx_create">
 
-            <h2><a href="/help/ModuleInMinutes" i18n:translate="box_create_content">Create Content</a></h2>
+            <h2><a href="/help/ModuleInMinutes" tal:attributes="href string:$portal_url/help/ModuleInMinutes;" i18n:translate="box_create_content">Create Content</a></h2>
 
 	    <p id="cnx_create_easy">
                 Creating content in Connexions is as easy as <b>1, 2, 3</b>:
@@ -139,13 +139,13 @@
                 <tbody>
                     <tr>
                         <td class="cnx_create_image">
-                                <img src="authoring-step-1.gif" />
+                                <img src="authoring-step-1.gif" tal:attributes="src string:$portal_url/authoring-step-1.gif;"/>
                         </td>
                         <td class="cnx_create_image">
-                                <img src="authoring-step-2.gif" />
+                                <img src="authoring-step-2.gif" tal:attributes="src string:$portal_url/authoring-step-2.gif;"/>
                         </td>
                         <td class="cnx_create_image">
-                                <img src="authoring-step-3.gif" />
+                                <img src="authoring-step-3.gif" tal:attributes="src string:$portal_url/authoring-step-3.gif;"/>
                         </td>
                     </tr>
                     <tr>
@@ -171,13 +171,13 @@
                             <h4>Jump right in</h4>
                             <ul>
                                 <li tal:condition="isAnon">
-                                    <a href="/join_form">Get an account</a>
+                                    <a href="/join_form" tal:attributes="href string:$portal_url/join_form;">Get an account</a>
                                 </li>
                                 <li>
-                                    <a href="/help/ModuleInMinutes">How to create a module in minutes</a>
+                                    <a href="/help/ModuleInMinutes" tal:attributes="href string:$portal_url/help/ModuleInMinutes;">How to create a module in minutes</a>
                                 </li>
                                 <li>
-                                    <a href="/help/CreateCollection">How to create a collection with existing modules</a>
+                                    <a href="/help/CreateCollection" tal:attributes="href string:$portal_url/help/CreateCollection;">How to create a collection with existing modules</a>
                                 </li>
                             </ul>
                         </td>
@@ -185,10 +185,12 @@
                             <h4>Guides and tutorials</h4>
                             <ul>
                                 <li>
-                                    <a href="/help/authorguide">New author guide</a>
+                                    <a href="/help/authorguide" tal:attributes="href string:$portal_url/help/authorguide;">New author guide</a>
                                 </li>
-                                <li>
-                                    <a href="/content/col10151/latest/">Connexions Tutorial and Reference</a>
+                                <li tal:define="tutorial nocall:portal/content/col10151/latest|nothing;">
+                                    <a tal:condition="not:tutorial" href="http://cnx.org/content/col10151/latest/" target="_blank">Connexions Tutorial and Reference</a>
+                                    <a tal:condition="tutorial" href="http://cnx.org/content/col10151/latest/"
+                                       tal:attributes="href string:$portal_url/content/col10151/latest/;">Connexions Tutorial and Reference</a>
                                 </li>
                             </ul>
                         </td>
