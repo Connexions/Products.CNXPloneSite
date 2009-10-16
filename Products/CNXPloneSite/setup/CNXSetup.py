@@ -8,15 +8,16 @@ All Rights Reserved.
 """
 
 import os
+import re
 import zLOG
 from Acquisition import aq_base
-
 
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.Expression import Expression
 from Products.CMFCore.DirectoryView import addDirectoryViews
 
 from Products.CNXPloneSite import product_globals
+from Products.RhaptosSite.setup.RhaptosSetup import _findObjects
 
 def installProducts(self, portal):
     """Add any necessary portal tools"""
@@ -205,6 +206,17 @@ def customizePortlets(self, portal):
 
     portal.manage_changeProperties(left_slots=left_slots)
 
+email_regx = re.compile(r'rhaptos@example.com')
+
+def customizeHelpSection(self, portal):
+    if help in portal.objectIds():
+        for doc in _findObjects(help, 'ATDocument'):
+            text = doc.getRawText()
+            email_match = email_regx.search(text)
+            if email_match:
+                text = email_regx.sub('cnx@example.com', text)
+                doc.setText(text, mimetype=doc.getContentType())
+
 functions = {
     'Install Products': installProducts,
     'Customize Member Data': customizeMemberdata,
@@ -217,6 +229,7 @@ functions = {
     'Customize Front Page': customizeFrontPage,
     'Create Content': createContent,
     'Customize Portlets': customizePortlets,
+    'Customize Help': customizeHelpSection,
     }
 
 class CNXSetup:
@@ -271,4 +284,5 @@ class CNXSetup:
             'Customize Front Page',
             'Create Content',
             'Customize Portlets',
+            'Customize Help',
             ]

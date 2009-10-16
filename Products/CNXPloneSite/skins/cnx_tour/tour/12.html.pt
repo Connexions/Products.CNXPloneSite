@@ -78,7 +78,10 @@ PO Box 1892<br />
 Houston, TX 77251-1892<br />
 </ul>
 <ul>
-e-mail: <a href="mailto:cnx@cnx.org">cnx@cnx.org</a><br />
+    e-mail: <a href="mailto:cnx@cnx.org" 
+        tal:define="email python:portal.getProperty();" 
+        tal:attributes="href string:mailto:$email;" 
+        tal:content="email">cnx@cnx.org</a><br />
 phone: 713.348.3674<br />
 fax: 713.348.3665
 </ul>

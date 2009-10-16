@@ -20,7 +20,7 @@ There is a Quick Start guide available once you log in, or any time at
 <span i18n:name="quickstart_link" tal:replace="string:${here/portal_url}/help/qstart"/>
 
 Please let us know if you have any problems logging in or using the
-system, by emailing us at cnx@cnx.org or calling us at
+system, by emailing us at <span tal:replace="python:portal.getProperty('email_from_address')">cnx@cnx.org</span> or calling us at
 713-348-3674. Thanks for joining Connexions!
 </div>
 
