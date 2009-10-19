@@ -29,6 +29,16 @@ def installProducts(self, portal):
     portal_setup.setImportContext(
             'profile-Products.CNXContent:default')
     portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(
+            'profile-Products.XMLTemplateMaker:default')
+    portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(
+            'profile-Products.LensOrganizer:default')
+    portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(
+            'profile-Products.RhaptosForums:default')
+    portal_setup.runAllImportSteps()
+
     portal_setup.setImportContext(import_context)
 
 
