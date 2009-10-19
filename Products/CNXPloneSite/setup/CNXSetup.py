@@ -216,17 +216,6 @@ def customizePortlets(self, portal):
 
     portal.manage_changeProperties(left_slots=left_slots)
 
-email_regx = re.compile(r'rhaptos@example.com')
-
-def customizeHelpSection(self, portal):
-    if help in portal.objectIds():
-        for doc in _findObjects(help, 'ATDocument'):
-            text = doc.getRawText()
-            email_match = email_regx.search(text)
-            if email_match:
-                text = email_regx.sub('cnx@example.com', text)
-                doc.setText(text, mimetype=doc.getContentType())
-
 functions = {
     'Install Products': installProducts,
     'Customize Member Data': customizeMemberdata,
@@ -239,7 +228,6 @@ functions = {
     'Customize Front Page': customizeFrontPage,
     'Create Content': createContent,
     'Customize Portlets': customizePortlets,
-    'Customize Help': customizeHelpSection,
     }
 
 class CNXSetup:
@@ -294,5 +282,4 @@ class CNXSetup:
             'Customize Front Page',
             'Create Content',
             'Customize Portlets',
-            'Customize Help',
             ]
