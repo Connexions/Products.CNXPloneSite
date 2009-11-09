@@ -905,6 +905,13 @@ small{
     visibility: hidden;
 }
 
+.importexport {
+  border: 1px solid #8cacbb;
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+  background-color: #EEEEEE;
+}
+
 .composerPanel .link-parent{
   margin-bottom: 1em;
 }
@@ -1093,12 +1100,12 @@ li.cnx_lens{
   margin-top: .25em;
 }
 
-h1 img, .normal-text-in-header{
+h1 img, h1 .normal-text-in-header{
   margin-top: -3px;
+  font-size: 0.65em;
 }
 
 .normal-text-in-header{
-  font-size: 0.65em;
   color: black;
   font-weight: normal;
 }
@@ -1237,6 +1244,10 @@ body.fullscreen #portal-searchbox{
   -o-text-overflow:ellipsis;   /* webkit (Safari; apparently inactive in Chrome) */
   -ms-text-overflow:ellipsis;  /* IE 8 */
   /* not in FF, currently. see https://developer.mozilla.org/en/CSS/text-overflow */
+}
+
+#cnx_branding_banner{
+  padding: 0.35em 15px 0.45em;
 }
 
 /* </dtml-with> */

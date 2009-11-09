@@ -639,9 +639,9 @@ msgstr "Skab arbejdsgruppe"
 
 #: ./skins/CNXPloneSite/create_workgroup.pt
 #. <p i18n:translate="create_workgroup_a">Workgroups give you a place to collaborate with others.
-#    (<a href="/help/reference/workgroups">more about workgroups</a>)</p>
+#    (<a href="/help/authoring/authorguide#workgroups">more about workgroups</a>)</p>
 msgid "create_workgroup_a"
-msgstr "Arbejdsgrupper giver dig et sted hvor du kan samarbejde med andre. (<a href=\"/help/reference/workgroups\">mere omkring arbejdsgrupper</a>)"
+msgstr "Arbejdsgrupper giver dig et sted hvor du kan samarbejde med andre. (<a href=\"/help/authoring/authorguide#workgroups\">mere omkring arbejdsgrupper</a>)"
 
 
 #: ./skins/CNXPloneSite/create_workgroup.pt
@@ -1718,11 +1718,11 @@ msgstr "Velkommen til Connexions editerings-interface!"
 #	    </p>
 #	    <p align="center" style="width: 100%; text-align: center; font-size: 130%; margin-top: 2ex">
 #	      <a href="/help">Help</a> &middot;
-#	      <a href="/help/xmlresources">Editing Resources</a>
+#	      <a href="/help/authoring/xml">Editing Resources</a>
 #	    </p>
 #   </div>
 msgid "login_success_in_explain"
-msgstr "<p style=\"font-size: 120%; margin-top: 1.5ex\"> <b>Du er nu logget ind.</b><br/><br/> Du måtte muligvis ønske at se <a href=\"/help/usingplone\">Oktober's større ændringer af sitet</a>, eller at starte direkte med at arbejde med indhold i ${workspace}. Hvis du har nogen problemer, så ${portal_email} venligst. </p>  <p align=\"center\" style=\"width: 100%; text-align: center; font-size: 130%; margin-top: 2ex\"> <a href=\"/help\">Hjælp</a> <a href=\"/help/xmlresources\">Editerings-ressourser</a> </p>"
+msgstr "<p style=\"font-size: 120%; margin-top: 1.5ex\"> <b>Du er nu logget ind.</b><br/><br/> Du måtte muligvis ønske at se <a href=\"/help/usingplone\">Oktober's større ændringer af sitet</a>, eller at starte direkte med at arbejde med indhold i ${workspace}. Hvis du har nogen problemer, så ${portal_email} venligst. </p>  <p align=\"center\" style=\"width: 100%; text-align: center; font-size: 130%; margin-top: 2ex\"> <a href=\"/help\">Hjælp</a> <a href=\"/help/authoring/xml\">Editerings-ressourser</a> </p>"
 
 
 #: ./skins/CNXPloneSite/login_success.pt
@@ -2283,12 +2283,12 @@ msgstr "Du vil nu modtage en email, der indeholder instruktioner om hvordan du a
 #: ./skins/CNXPloneSite/registered.pt
 #. <p i18n:translate="registered_b">
 #	In the meantime, you may wish to read over some of our
-#	documentation for new authors at <a href="/help/qstart">the
+#	documentation for new authors at <a href="/help/">the
 #	Quick Start guide</a>. Thank you for your interest in
 #	Connexions!
 #      </p>
 msgid "registered_b"
-msgstr "I mellemtiden måtte du muligvis ønske at læse igennem noget af vores dokumentation for nye forfattere, som forefindes på <a href=\"/help/qstart\">'Hurtig start'-siden</a>. Tak for din interesse i Connexions!"
+msgstr "I mellemtiden måtte du muligvis ønske at læse igennem noget af vores dokumentation for nye forfattere, som forefindes på <a href=\"/help/\">'Hurtig start'-siden</a>. Tak for din interesse i Connexions!"
 
 
 #: ./skins/CNXPloneSite/workspace_contents.pt

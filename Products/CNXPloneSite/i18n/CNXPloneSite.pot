@@ -642,7 +642,7 @@ msgstr ""
 
 #: ./skins/CNXPloneSite/create_workgroup.pt
 #. <p i18n:translate="create_workgroup_a">Workgroups give you a place to collaborate with others.
-#    (<a href="/help/reference/workgroups">more about workgroups</a>)</p>
+#    (<a href="/help/authoring/authorguide#workgroups">more about workgroups</a>)</p>
 msgid "create_workgroup_a"
 msgstr ""
 
@@ -1713,7 +1713,7 @@ msgstr ""
 #	    </p>
 #	    <p align="center" style="width: 100%; text-align: center; font-size: 130%; margin-top: 2ex">
 #	      <a href="/help">Help</a> &middot;
-#	      <a href="/help/xmlresources">Editing Resources</a>
+#	      <a href="/help/authoring/xml">Editing Resources</a>
 #	    </p>
 #   </div>
 msgid "login_success_in_explain"
@@ -2299,7 +2299,7 @@ msgstr ""
 #: ./skins/CNXPloneSite/registered.pt
 #. <p i18n:translate="registered_b">
 #	In the meantime, you may wish to read over some of our
-#	documentation for new authors at <a href="/help/qstart">the
+#	documentation for new authors at <a href="/help/">the
 #	Quick Start guide</a>. Thank you for your interest in
 #	Connexions!
 #      </p>

@@ -1,3 +1,19 @@
+CNXPloneSite-0.64
+  - light-weight-branding (30 Oct 2009)
+    - Fixing issues with padding in Rhaptos look and font-size in both
+      looks. Removing styling for #cnx_branding_logo in ploneCustom.css
+      files because that <div> shouldn't show up on the lens listing
+      page. Remove branding header from ploneCustom.css files because I
+      don't have such headers for anything else in those files (and don't
+      want to imply that everything under them is related to branding).
+    - Removed duplicate cnx_portal css
+    - Fixed padding for the branding banner.
+
+CNXPloneSite-0.63
+  - collection-structure-redesign-1 (Oct. 22, 2009)
+    - provide globally-available styling for import/export box 
+    - change and (mostly) make dynamic help links for new help area structure
+
 CNXPloneSite-0.62
   - content-actions-move (17 Aug 2009)
     - removed cnxml_transform.py; version in CNXMLDocument works generally

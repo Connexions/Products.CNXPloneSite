@@ -59,7 +59,7 @@ def customizeMemberdata(self, portal):
 def customizeActions(self, portal):
     pa_tool=getToolByName(portal,'portal_actions')
 
-    #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/qstart/', '', 'View', 'site_actions')
+    #pa_tool.addAction('qstart', 'Quick Start', 'string:$portal_url/help/', '', 'View', 'site_actions')
     actions = pa_tool._cloneActions()
     for a in actions:
         if a.title == 'MyRhaptos':

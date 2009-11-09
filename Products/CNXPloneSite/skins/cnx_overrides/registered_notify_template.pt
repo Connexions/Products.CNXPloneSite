@@ -5,23 +5,27 @@
           i18n:domain="rhaptos"
 >From: "<span tal:replace="python:here.email_from_name" />" <span tal:replace="structure lt"/><span tal:replace="python:here.email_from_address" /><span tal:replace="structure gt"/>
 To: <span tal:replace="python:member.getProperty('email')" />
-Subject: <span i18n:translate="mailtemplate_registered_portal_membership_info_cnx" tal:omit-tag="">Connexions Account Approved</span>
+Subject: <span i18n:translate="mailtemplate_registered_portal_membership_info_cnx" tal:omit-tag="">Connexions Account Created</span>
 Content-Type: text/plain; charset=<span tal:replace="here/portal_properties/site_properties/default_charset" />
 
 <div i18n:translate="mailtemplate_registered_body" tal:omit-tag="">
-Your account on the Connexions system has been approved. Your username
+Your account on the Connexions system has been created. Your username
 is <span i18n:name="username" tal:replace="member/getUserName"/>.  Please activate your account by visiting 
 
 <span tal:replace="python:here.pwreset_constructURL(reset['randomstring'])+'?userid='+member.getUserName()" i18n:name="pw_reset_url"/>
 
 You must activate your account before <span i18n:name="begin_time" tal:replace="reset/expires/aCommonZ" />.
+If you do not confirm your account before this date, or if you encounter any problems with the account activation, 
+please visit http://cnx.org/mail_password_form to generate a new activation link for your account.
 
-There is a Quick Start guide available once you log in, or any time at
-<span i18n:name="quickstart_link" tal:replace="string:${here/portal_url}/help/qstart"/>
+For help getting started with Connexions, creating content, or to learn about new features that are available, please visit http://cnx.org/help .
+If you have any questions or encounter any difficulties along the way, please feel free to email us at cnx@cnx.org and we will be happy to assist you.
 
 Please let us know if you have any problems logging in or using the
 system, by emailing us at <span tal:replace="python:here.portal_url.getPortalObject().getProperty('email_from_address')">cnx@cnx.org</span> or calling us at
-713-348-3674. Thanks for joining Connexions!
+713-348-3674.
+
+Thank you for joining Connexions!
 </div>
 
 --

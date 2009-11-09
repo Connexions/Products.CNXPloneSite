@@ -49,14 +49,16 @@ i18n by kclarks
         tal:replace="days"/> days</tal:days><tal:and tal:condition="python:days and hours">
         and</tal:and><tal:hours tal:replace="hours" tal:condition="hours"><span i18n:name="exp_timeout_hours" tal:replace="hours"/> hours</tal:hours>.
       </p>
-      <p i18n:translate="text_registered_help">
-        In the meantime, you may wish to read over some of our
-        documentation for new authors at 
-        <span i18n:name="quick_start">
-          <a href="/help/qstart" i18n:translate="label_quick_start">the Quick Start guide</a>. 
-        </span>
-        Thank you for your interest in Connexions!
-      </p>
+      <tal:help tal:define="help nocall:portal/help/ | nothing" tal:condition="nocall:help">
+        <p i18n:translate="text_registered_help">
+          In the meantime, you may wish to read over some of our
+          documentation for new authors at 
+          <span i18n:name="quick_start">
+            <a href="/help/" i18n:translate="label_quick_start" tal:attributes="href help/absolute_url">the Quick Start guide</a>. 
+          </span>
+          Thank you for your interest in Connexions!
+        </p>
+      </tal:help>
 
 <tal:block condition="python:not(ve)">
   <metal:reuse metal:define-macro="loginnow">

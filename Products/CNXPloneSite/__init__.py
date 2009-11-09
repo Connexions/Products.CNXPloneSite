@@ -31,6 +31,9 @@ Collection.schema['subject'].widget.description=subjdesc
 GoogleAnalyticsTrackingCodeDesc = 'Enter the Google Analytics Tracking Code (e.g. UA-xxxxxxx-x) for this module to track its usage.<br/><em>Note that this code will track only the collection home page, not the modules therein.</em> <a href="/help/reference/GoogleAnalyticsTrackingCode">(help)</a>'
 Collection.schema['GoogleAnalyticsTrackingCode'].widget.description=GoogleAnalyticsTrackingCodeDesc
 
+AbstractDesc = "Enter a summary of the collection and/or its objectives. May contain a limited set of CNXML. <a href='/help/authoring/authorguide#summary'>(help)</a>"
+Collection.schema['abstract'].widget.description=AbstractDesc
+
 # Make the skins available as DirectoryViews
 registerDirectory('skins', globals())
 

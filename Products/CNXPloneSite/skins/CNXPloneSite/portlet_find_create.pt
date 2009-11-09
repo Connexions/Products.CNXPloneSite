@@ -129,7 +129,8 @@
 
 	<div id="cnx_create">
 
-            <h2><a href="/help/ModuleInMinutes" tal:attributes="href string:$portal_url/help/ModuleInMinutes;" i18n:translate="box_create_content">Create Content</a></h2>
+            <h2><a tal:define="help nocall:portal/help/authoring/createmodule | nothing" tal:condition="nocall:help"
+                   href="/help/authoring/createmodule" tal:attributes="href help/absolute_url" i18n:translate="box_create_content">Create Content</a></h2>
 
 	    <p id="cnx_create_easy">
                 Creating content in Connexions is as easy as <b>1, 2, 3</b>:
@@ -174,10 +175,12 @@
                                     <a href="/join_form" tal:attributes="href string:$portal_url/join_form;">Get an account</a>
                                 </li>
                                 <li>
-                                    <a href="/help/ModuleInMinutes" tal:attributes="href string:$portal_url/help/ModuleInMinutes;">How to create a module in minutes</a>
+                                    <a tal:define="help nocall:portal/help/authoring/createmodule | nothing" tal:condition="nocall:help"
+                                       href="/help/authoring/createmodule" tal:attributes="href help/absolute_url">How to create a module in minutes</a>
                                 </li>
                                 <li>
-                                    <a href="/help/CreateCollection" tal:attributes="href string:$portal_url/help/CreateCollection;">How to create a collection with existing modules</a>
+                                    <a tal:define="help nocall:portal/help/authoring/createcollection | nothing" tal:condition="nocall:help"
+                                       href="/help/authoring/createcollection" tal:attributes="href help/absolute_url">How to create a collection with existing modules</a>
                                 </li>
                             </ul>
                         </td>
@@ -185,7 +188,8 @@
                             <h4>Guides and tutorials</h4>
                             <ul>
                                 <li>
-                                    <a href="/help/authorguide" tal:attributes="href string:$portal_url/help/authorguide;">New author guide</a>
+                                    <a tal:define="help nocall:portal/help/authoring/authorguide | nothing" tal:condition="nocall:help"
+                                       href="/help/authoring/authorguide" tal:attributes="href help/absolute_url">New author guide</a>
                                 </li>
                                 <li tal:define="tutorial nocall:portal/content/col10151/latest|nothing;">
                                     <a tal:condition="not:tutorial" href="http://cnx.org/content/col10151/latest/" target="_blank">Connexions Tutorial and Reference</a>
