@@ -1,3 +1,6 @@
+CNXPloneSite-0.65
+  - adding donate button (25 Nov 2009)
+
 CNXPloneSite-0.64
   - light-weight-branding (30 Oct 2009)
     - Fixing issues with padding in Rhaptos look and font-size in both

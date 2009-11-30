@@ -21,10 +21,6 @@ please visit http://cnx.org/mail_password_form to generate a new activation link
 For help getting started with Connexions, creating content, or to learn about new features that are available, please visit http://cnx.org/help .
 If you have any questions or encounter any difficulties along the way, please feel free to email us at cnx@cnx.org and we will be happy to assist you.
 
-Please let us know if you have any problems logging in or using the
-system, by emailing us at <span tal:replace="python:here.portal_url.getPortalObject().getProperty('email_from_address')">cnx@cnx.org</span> or calling us at
-713-348-3674.
-
 Thank you for joining Connexions!
 </div>
 

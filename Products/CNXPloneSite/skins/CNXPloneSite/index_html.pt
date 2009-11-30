@@ -343,10 +343,13 @@ function initOverLabels () {
 
     <td id="portal-column-two" class="right" metal:fill-slot="column_two_slot" >
       <div class="visualPadding">
-	<metal:block metal:use-macro="here/portlet_login/macros/portlet" />
-	<metal:block metal:use-macro="here/portlet_loggedin/macros/portlet" />
-	<metal:block metal:use-macro="here/portlet_spotlights/macros/portlet" />
-	<metal:block metal:use-macro="here/portlet_news/macros/portlet" />
+        <metal:block metal:use-macro="here/portlet_login/macros/portlet" />
+        <metal:block metal:use-macro="here/portlet_loggedin/macros/portlet" />
+        <div style="margin-bottom: 2em; border-width: 0; text-align: center; margin-top: -.75em;">
+            <a href="/aboutus/cnx_donate"><img src="support-cnx.png" /></a>
+        </div>
+        <metal:block metal:use-macro="here/portlet_spotlights/macros/portlet" />
+        <metal:block metal:use-macro="here/portlet_news/macros/portlet" />
       </div>
     </td>
   </body>
