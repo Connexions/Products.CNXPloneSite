@@ -48,16 +48,24 @@ i18nday: jccooper; mostly entirely ours, so now in rhaptos domain
       </span>
       by the <span i18n:name="hewlettfoundation">
         <a href="http://www.hewlett.org/" i18n:translate="link_footer_hewlettfoundation">
-         William and Flora Hewlett Foundation</a>.
+         William and Flora Hewlett Foundation</a>, the Maxfield Foundation, and the
+         <a href="http://cnxconsortium.org/">Connexions Consortium</a>.
       </span>
     </p>
     <p i18n:translate="text_footer_tmblurb">
       Connexions<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is a registered 
       trademark of Rice University.
     </p>
+    <p i18n:translate="text_footer_followus_blurb">Follow us on our <a href="http://blog.cnx.org">blog</a>,
+      on
+      <a href="http://www.facebook.com/cnx.org"><img src="facebook16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/facebook16x16.ico"></a>
+      <a href="http://www.facebook.com/cnx.org">Facebook</a> or on
+      <a href="http://twitter.com/cnxorg"><img src="twitter16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/twitter16x16.ico"></a>
+      <a href="http://twitter.com/cnxorg">Twitter</a>.
+    </p>
     <p>
       <a href="sitelicense" i18n:translate="link_footer_sitelicense" tal:attributes="href string:$portal_url/sitelicense">Site User Agreement</a>
-      </p>
+    </p>
 </div>
 </body>
 </html>
