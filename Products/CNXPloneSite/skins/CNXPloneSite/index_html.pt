@@ -1,0 +1,357 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US"
+      lang="en-US"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      xmlns:tal="http://xml.zope.org/namespaces/tal" 
+      metal:use-macro="here/main_template/macros/master"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="rhaptos">
+
+  <head>
+    <style type="text/css" metal:fill-slot="css_slot">
+
+        #cnx_tour_in_intro{
+          float: right;
+          margin-left: .5em;
+          margin-top: 0px;
+        }
+        #cnx_tour_in_intro h4{
+          text-transform: uppercase;
+          font-family: arial, helvetica, sans-serif;
+          font-size: 1em;
+          margin-left: 3px;
+          margin-bottom: 0px;
+          color: #369;
+        }
+        #cnx_tour_in_intro img{
+          display: block;
+          margin: 0 0 0.5em 0;;
+        }
+        #cnx_tour_in_intro a{
+          display: block;
+          margin-top: 0px;
+          margin-left: 3px;
+          font-weight: bold;
+          color: #c90;
+        }
+        .portlet p {
+                margin-top: 0;
+                margin-bottom: 1em;
+                line-height: normal;
+        }
+	#cnx_intro {
+		width: 35%;
+                vertical-align: top;
+                padding-left: 30px;
+                padding-top: 30px;
+	}
+        #cnx_intro_text{
+                font-size: 1.1em;
+                margin-bottom: 2em;
+        }
+	#cnx_intro_text p{
+		text-align: justify;
+	}
+        #portlet-feature-content .portletItem{
+                font-size: 1.1em;
+        }
+        #portlet-feature-content p{
+                margin: 0 0 .5em;
+        }
+        #portlet-feature-content h3{
+                font-size: 1em;
+                margin-top: 1.5em;
+                margin-bottom: .2em;
+        }
+        p.more{
+                font-weight: bold;
+        }
+	table.columns td.main {
+		width: 40%;
+	}
+	h1{
+		border-width: 0;
+                margin-bottom: 0;
+	}
+        #cnx_find_create h2{
+          color: black;
+          text-transform: uppercase;
+          border: 1px solid #e70;
+          background-color: #fd3;
+          padding: .2em .5em;
+          margin: 0 0 .5em -.85em;
+          font-size: 1.15em;
+	  font-family: arial, helvetica, sans-serif;
+	  text-decoration: none;
+        }
+	#cnx_find_create h2 a{
+	  color: black !important;
+	  display: block;
+	  text-decoration: none;
+	}
+	#cnx_create h2{
+	  margin-top: .5em;
+	}
+        #cnx_find_create a:hover h2{
+	  color: #e70;
+        }
+	#cnx_find_stats, #cnx_create_easy{
+	  margin: .5em 0 .8em;
+	}
+	#cnx_find .searchButton{
+	  font-size: 1em;
+	}
+        #cnx_find, #cnx_create{
+          padding: 0 0 2em 1em;
+        }
+        #cnx_find a{
+          color: #369;
+        }
+        #cnx_find h3, #cnx_find_browse_pane1 li{
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+	#cnx_find h3{
+	  margin-bottom: .5em;
+	}
+	#cnx_find_search{
+	  position: relative;
+	}
+	#cnx_find_search .overlabel{
+	  font-size: 1.1em;
+	  font-weight: bold;
+	  padding-right: .5em;
+	}
+	#cnx_find_search .overlabel-apply{
+	  position: absolute;
+	  top: 4px;
+	  left: 3px;
+	  color: #888;
+	  font-family: arial, helvetica, sans-serif;
+	  z-index: 1;
+	}
+	@media all{* html #cnx_find_search .overlabel-apply{
+	  top: 5px;
+	}}
+	#cnx_find_browse_pane1 a{
+	  text-decoration: none;
+          border-bottom: none;
+	}
+	#cnx_find_browse_pane1 ul{
+	  display: block;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none none;
+	}
+	#cnx_find_browse_pane1 li{
+	  display: block;
+	  padding: .3em .5em .3em 0;
+	  margin: 0;
+	  border: 1px solid white;
+	  border-width: 1px 0;
+	}
+	#cnx_find_browse_pane1 li.selected{
+	  border: 1px dotted #369;
+	  border-width: 1px 0;
+	  border-right: 1px solid white;
+	  position: relative;
+	  z-index: 2;
+	}
+	#cnx_find_browse_pane2{
+	  position: relative;
+	  font-size: .9em;
+	}
+	#cnx_find_browse_pane2 div{
+	  margin-left: -1px;
+	  position: absolute;
+	  top: 1.5em;
+	  left: 0;
+	  border: 1px dotted #369;
+	  border-width: 1px 0 1px 1px;
+	  width: 90%;
+	  padding: .7em;
+	  visibility: hidden;
+	}
+	#cnx_find_browse_pane2 ul{
+	  display: block;
+	  margin: 0;
+	  padding: 0;
+	}
+	#cnx_find_browse_pane2 li{
+	  display: block;
+	  padding: .2em 0 .2em 17px;
+	  margin: 0;
+	  background: transparent url(bullet.gif) no-repeat 0 0;
+	  list-style: none none;
+	}
+	#cnx_find_browse table{
+	  width: 100%;
+	  border-collapse: collapse;
+	}
+	#cnx_find_browse td{
+          width: 60%;
+	  padding: 0;
+	}
+	td#cnx_find_browse_pane1{
+	  width: 40%;
+	}
+	#cnx_find_browse li{
+	  white-space: nowrap;
+	}
+	.cnx_blank{
+	  background-image: none !important;
+	}
+        #cnx_create_123{
+          width: 100%;
+          border-collapse: collapse;
+        }
+        #cnx_create_123 td{
+          padding: .5em 1em 0 0;
+          vertical-align: top;
+          width: 33%;
+        }
+        .cnx_create_image{
+          text-align: center;
+        }
+        .cnx_create_number{
+          font-size: 2em;
+          display: block;
+          float: left;
+          margin-right: .3em;
+          line-height: 1em;
+        }
+        #cnx_create_links td{
+          padding: .5em 1em 0 0;
+          vertical-align: top;
+          width: 50%;
+        }
+        #cnx_create_links h4{
+          font-size: 1.05em;
+        }
+        #cnx_create_links li{
+          margin-bottom: .25em;
+        }
+        #portlet-recentview{
+          border-width: 0;
+          border-top: 1px solid #bbb;
+          padding: .25em 0 0 !important;
+        }
+        #portlet-recentview dt.portletHeader{
+          margin: 0 !important;
+          padding: 0;
+          background-color: transparent;
+          float: none;
+        }
+        #portlet-recentview h5{
+          color: black !important;
+        }
+        #portlet-recentview dd.portletItem{
+          margin: 0;
+        }
+        #portlet-recentview .portletMore{
+          margin: 0 !important;
+        }
+        #portlet-recentview td{
+          padding-right: .6em;
+        }
+    </style>
+
+
+    <script type="text/javascript" metal:fill-slot="javascript_head_slot">
+
+function openGroup(group) {
+    var grouplinks = document.getElementById('cnx_find_browse_pane1').getElementsByTagName('li');
+    var groups = document.getElementById('cnx_find_browse_pane2').getElementsByTagName('div');
+    var i;
+    for (i=0; i<grouplinks.length; i++) {
+	if (grouplinks[i].className = 'selected') grouplinks[i].className = '';
+	if (groups[i].style.visbility = 'visible') groups[i].style.visibility = 'hidden';
+    }
+    document.getElementById('cnx_find_browse_' + group + 'link').className = 'selected';
+    document.getElementById('cnx_find_browse_' + group).style.visibility = 'visible';
+}
+
+window.onload = function(e) {
+    openGroup('subject');
+    initOverLabels();
+}
+
+// adapted from: http://alistapart.com/articles/makingcompactformsmoreaccessible
+
+function initOverLabels () {
+  if (!document.getElementById) return;  	
+
+  var label, field;
+
+  // Set focus and blur handlers to hide and show 
+  // LABEL with 'overlabel' class names.
+
+  label = document.getElementById('cnx_find_search').getElementsByTagName('label')[0];
+  field = document.getElementById('cnx_find_search_words');
+
+  // Change the applied class to hover the label over the form field.
+  label.className = 'overlabel-apply';
+
+  // Hide any fields having an initial value.
+  if (field.value !== '') {
+    label.style.textIndent = '-1000px';
+  }
+
+  // Set handlers to show and hide labels.
+  field.onfocus = function () {
+    label.style.textIndent = '-1000px';
+  };
+  field.onblur = function () {
+    if (this.value === '') {
+      label.style.textIndent = '0px';
+    }
+  };
+
+  // Handle clicks to LABEL elements (for Safari).
+  label.onclick = function () {
+    field.focus();
+  }
+
+};
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <td id="cnx_intro" metal:fill-slot="column_one_slot">
+      <div class="visualPadding">
+        <div id="cnx_intro_text">
+	<h1 tal:content="structure here/frontpage/title">[title]</h1>
+	<div tal:content="structure here/frontpage/CookedBody">
+	  [text]
+	</div>
+        </div>
+        <metal:block metal:use-macro="here/portlet_feature_content/macros/portlet" />
+      </div>
+    </td>
+
+    <div metal:fill-slot="main">
+      <div>
+        <metal:block metal:use-macro="here/portlet_find_create/macros/portlet" />
+      </div>
+      <div class="visualPadding" tal:condition="nothing">
+        <metal:block metal:use-macro="here/portlet_recentview_horizontal/macros/portlet" />
+      </div>
+    </div>
+
+    <td id="portal-column-two" class="right" metal:fill-slot="column_two_slot" >
+      <div class="visualPadding">
+        <metal:block metal:use-macro="here/portlet_login/macros/portlet" />
+        <metal:block metal:use-macro="here/portlet_loggedin/macros/portlet" />
+        <div style="margin-bottom: 2em; border-width: 0; text-align: center; margin-top: -.75em;">
+            <a href="/aboutus/cnx_donate"><img src="support-cnx.png" /></a>
+        </div>
+        <metal:block metal:use-macro="here/portlet_spotlights/macros/portlet" />
+        <metal:block metal:use-macro="here/portlet_news/macros/portlet" />
+      </div>
+    </td>
+  </body>
+</html>
+

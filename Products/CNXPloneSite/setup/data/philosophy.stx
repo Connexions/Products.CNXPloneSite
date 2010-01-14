@@ -1,0 +1,41 @@
+<p>
+        Connexions is an environment for collaboratively
+        developing, freely sharing, and rapidly publishing
+        scholarly content on the Web. Our <a
+        href="/content/">Content Commons</a> contains educational
+        materials for everyone &mdash; from children to college
+        students to professionals &mdash; organized in small <a
+        href="/help/glossary#module">modules</a>
+        that are easily connected into larger <a
+        href="/help/glossary#course">collections or courses</a>. All
+        content is free to use and reuse under the <a
+        href="http://creativecommons.org/">Creative Commons</a> <a
+        href="http://creativecommons.org/licenses/by/2.0/">"attribution"
+        license</a>.
+      </p>
+
+Content should be modular and non-linear -- Most textbooks are a mass of information in linear format: one topic follows after another.  However, our brains are not linear - we learn by making connections between new concepts and things we already know.  Connexions mimics this by breaking down content into smaller chunks, called modules, that can be linked together and arranged in different ways.  This lets students see the relationships both within and between topics and helps demonstrate that knowledge is naturally interconnected, not isolated into separate classes or books.
+
+Sharing is good -- Why re-invent the wheel?  When people share their knowledge, they can select from the best ideas to create the most effective learning materials.  The knowledge in Connexions can be shared and built upon by all because it is reusable:
+
+ - **technologically:** we store content in     "XML":/help/glossary#xml, which ensures that it works on multiple computer platforms now and in the future.
+
+ - **legally:** the "Creative Commons":http://www.creativecommons.org
+     open-content licenses make it easy for authors to share their work - allowing
+     others to use and reuse it legally - while still getting 
+     recognition and attribution for their efforts.
+
+ - **educationally:** we encourage authors to write each module to
+     stand on its own so that others can easily use it in different
+     courses and contexts.  Connexions also allows instructors to
+     *customize* content by overlaying their own set of links and
+     annotations. Please take the "Connexions Tour":/aboutus/tour/ and see the many features in Connexions.
+
+
+Collaboration is encouraged -- Just as knowledge is interconnected, people don't live in a vacuum.  Connexions promotes communication 
+between content creators and provides various "means of collaboration":/help/reference/collaboration.  Collaboration helps knowledge grow more quickly, advancing the possibilities for new ideas from which we all benefit.
+
+
+
+
+

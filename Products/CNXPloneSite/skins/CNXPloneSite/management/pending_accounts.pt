@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rhaptos">
+
+  <body>
+    <div metal:fill-slot="main"
+         tal:define="users python:here.portal_membership.listMembers();
+                     newaccts python:[u for u in users if u.getProperty('status') == 'Unapproved'];
+                     pending python:[];
+                     global portal_url here/portal_url;">
+
+      <h1 tal:content="template/title">[title]</h1>
+
+      <span tal:condition="python:request.has_key('actiontype') and request.has_key('loginid')">
+	
+	<span tal:condition="python:request.actiontype=='inquire'">
+        <span tal:define="dummy python:here.changeAccountStatus(loginid=request.loginid,statusid=2)" />
+        <span tal:condition="python:request.sendemail=='Send Email'">
+          <span tal:define="dummy python:here.accounts.sendEmail(messageText=request.pendingemailtext,mto=request.email,mfrom='cnx@rice.edu',subject='Connexions Account Inquiry')" />
+          <span tal:condition="python:len(request.cc)">
+            <span tal:define="dummy python:here.accounts.sendEmail(messageText=request.pendingemailtext,mto=request.cc,mfrom='cnx@rice.edu',subject='Connexions Account Inquiry')" />
+          </span>
+          <span tal:condition="python:len(request.bcc)"
+                tal:content="python:here.accounts.sendEmail(messageText=request.pendingbccemailtext,mto=request.bcc,mfrom='cnx@rice.edu',subject='Connexions Account Inquiry: '+request.loginid)" />
+        </span>
+        <p style="color: red" i18n:translate="text_pending_moreinfo">More information has been requested from user <b i18n:name="user_id"><span tal:replace="request/loginid" /></b>.</p>
+      </span>
+      </span>
+
+      <h1 i18n:translate="heading_pending_new">New accounts:</h1>
+      
+      <i tal:condition="not:newaccts" i18n:translate="text_pending_no_new">No new account requests</i>
+
+      <form action="." method="post">
+	<table id="sortable" class="listing">
+	  <tr>
+	    <th class="nosort"><input class="noborder"
+                                      type="checkbox"
+                                      src="select_all_icon.gif"
+                                      name="selectButton"
+                                      title="Select/Unselect all items"
+                                      alt="Select/Unselect all items"
+				      onClick="toggleSelect(this); return false;"
+                                      tal:attributes="src string:$portal_url/select_all_icon.gif"
+                                      i18n:attributes="title alt"
+                                      /></th>
+	    <th i18n:translate="listingheader_pending_username">Username</th>
+	    <th i18n:translate="listingheader_pending_email">Email</th>
+	    <th i18n:translate="listingheader_pending_name">Name</th>
+	    <th i18n:translate="listingheader_pending_comment">Comment</th>
+	    <th i18n:translate="listingheader_pending_status">Status</th>
+	  </tr>
+	  <tr tal:repeat="u newaccts" tal:attributes="class python:test(path('repeat/u/odd'),'odd','even')">
+	    <td>
+	      <input class="noborder"
+		type="checkbox"
+		name="ids:list"
+		tal:attributes="value u/getUserName" />
+	    </td>
+
+	    <td><span tal:replace="u/getUserName">[name]</span></td>
+	    <td tal:define="email python:u.getProperty('email')">
+	      <a href="#" tal:attributes="href string:mailto:${email}">
+		<img src="" tal:replace="structure portal/mail_icon.gif" />
+		<span tal:replace="email" />
+	      </a>
+	    </td>
+	    <td>
+	      <span tal:replace="python:u.getProperty('honorific')" />
+	      <span tal:replace="python:u.getProperty('firstname')"/>
+	      <span tal:replace="python:u.getProperty('othername')" />
+	      <span tal:replace="python:u.getProperty('surname')" />
+	      <span tal:replace="python:u.getProperty('lineage')" />
+	    </td>
+	      <td><span tal:replace="python:u.getProperty('comment')">[comment]</span></td>
+	      <td><span tal:replace="python:u.getProperty('status')">[status]</span></td>
+	  </tr>
+      </table>
+	  <input class="context" type="submit" name="approve_accounts:method" value="Approve"
+		i18n:attributes="value value_pending_approve"/>
+	  <input class="context" type="submit" name="approveAccount:method" value="Inquire"
+		i18n:attributes="value value_pending_inquire"/>
+	  <input class="context" type="submit" name="confirm_delete:method" value="Remove"
+		i18n:attributes="value value_pending_remove"/>
+
+      <h1 i18n:translate="heading_pending_accounts">Pending accounts:</h1>
+      <div>
+      <i style="padding-left: 35px;" tal:condition="not:pending" 
+         i18n:translate="description_pending_accounts">No accounts pending further information.</i>
+
+      <table border="1" cellpadding="5">
+        <div tal:repeat="singlerow pending">
+        <tr>
+          <td><b><span tal:replace="singlerow/loginid" /></b></td>
+          <td tal:content="singlerow/email">[email]</td>
+          <td>
+            <span tal:replace="string:${singlerow/honorific} ${singlerow/firstname} ${singlerow/othername}" />
+            <b><span tal:replace="singlerow/surname" /></b>
+            <span tal:replace="singlerow/lineage" />
+          </td>
+          <td><a tal:attributes="href string:approveAccount?loginid=${singlerow/loginid}"
+                 i18n:translate="link_pending_approve">approve</a></td>
+          <td><a tal:attributes="href string:emailPendingAccount.html?loginid=${singlerow/loginid}"
+                 i18n:translate="link_pending_inquire">inquire</a></td>
+          <td><a tal:attributes="href string:deleteAccount.html?loginid=${singlerow/loginid}"
+                 i18n:translate="link_pending_delete">delete</a></td>
+        </tr>
+        <tr tal:condition="singlerow/comment"><td colspan="6" style="font-size: 80%">
+          &nbsp;&nbsp;&nbsp;<I i18n:translate="text_pending_comment">Comment:</I>
+          <span tal:replace="singlerow/comment" />
+        </td></tr>
+        </div>
+      </table>
+    </div>
+      
+      <h2 i18n:translate="heading_pending_weird">Weird accounts:</h2>
+      <div>
+      <i style="padding-left: 35px;" tal:condition="not:pending"
+         i18n:translate="description_pending_weird">No accounts with null status.</i>
+
+      <table border="1" cellpadding="5">
+        <div tal:repeat="singlerow pending">
+        <tr>
+          <td><b><span tal:replace="singlerow/loginid" /></b></td>
+          <td tal:content="singlerow/email">[email]</td>
+          <td>
+            <span tal:replace="string:${singlerow/honorific} ${singlerow/firstname} ${singlerow/othername}" />
+            <b><span tal:replace="singlerow/surname" /></b>
+            <span tal:replace="singlerow/lineage" />
+          </td>
+          <td><a tal:attributes="href string:approveAccount?loginid=${singlerow/loginid}"
+                 i18n:translate="link_pending_approve">approve</a></td>
+          <td><a tal:attributes="href string:emailPendingAccount.html?loginid=${singlerow/loginid}"
+                 i18n:translate="link_pending_inquire">inquire</a></td>
+          <td><a tal:attributes="href string:deleteAccount.html?loginid=${singlerow/loginid}"
+                 i18n:translate="link_pending_delete">delete</a></td>
+        </tr>
+        <tr tal:condition="singlerow/comment"><td colspan="6" style="font-size: 80%">
+          &nbsp;&nbsp;&nbsp;<I i18n:translate="text_pending_comment">Comment:</I>
+          <span tal:replace="singlerow/comment" />
+        </td></tr>
+        </div>
+      </table>
+	</div>
+      </form>
+    </div>
+  </body>
+</html>

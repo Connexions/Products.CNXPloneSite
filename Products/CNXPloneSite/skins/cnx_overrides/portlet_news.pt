@@ -1,0 +1,68 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+<tal:comment tal:replace="nothing">
+This template based on version from Plone 2.5.2-1
+
+CNX notes:
+ show 3 news items rather than 5
+ say 'Connexions News' rather than 'News'
+
+Plone 2.5 notes:
+ previous More News... replaces More... customization already done by Plone (though "News" is lower case)
+ more link box is even rather than odd done with styling
+ Remove the link from the title and make it just plain text.
+
+Not yet applied:
+ still uses icons instead of bullets/list
+</tal:comment>
+
+<body>
+<div metal:define-macro="portlet"
+     tal:define="view context/@@news_view;
+                 results python:view.published_news_items()[:3];
+                 news_link view/all_news_link"
+     tal:condition="python:test(template.getId()!='news' and results, 1, 0)">
+
+    <dl class="portlet" id="portlet-news">
+
+        <dt class="portletHeader">
+            <span class="portletTopLeft"></span>
+            <span i18n:translate="box_news">Connexions News</span>
+            <span class="portletTopRight"></span>
+        </dt>
+
+        <dd class="portletItem odd">
+            <ul>
+                <li tal:repeat="obj results">
+                    <a href=""
+                       class="tile"
+                       tal:attributes="href obj/getURL;
+                                       title obj/Description">
+                        <span tal:replace="obj/pretty_title_or_id">
+                        Plone 2.1 announced!
+                        </span>
+                    </a>
+                    <div class="portletDetails"
+                          tal:content="python:toLocalizedTime(obj.Date)">May 5</div>
+                </li>
+            </ul>
+        </dd>
+
+        <dd class="portletFooter">
+            <a href=""
+               tal:attributes="href news_link"
+               i18n:translate="box_more_news_link"
+               >
+              More news&hellip;
+            </a>
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        </dd>
+    </dl>
+
+</div>
+</body>
+</html>

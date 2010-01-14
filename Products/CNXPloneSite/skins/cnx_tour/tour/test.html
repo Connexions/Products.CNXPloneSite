@@ -1,0 +1,86 @@
+<html>
+
+<head>
+
+<script language="JavaScript"><!--
+function show(object) {
+  if (document.getElementById) {
+    document.getElementById(object).style.visibility = 'visible';
+  }
+  else if (document.layers && document.layers[object]) {
+    document.layers[object].visibility = 'visible';
+  }
+  else if (document.all) {
+    document.all[object].style.visibility = 'visible';
+  }
+}
+
+function hide(object) {
+  if (document.getElementById) {
+    document.getElementById(object).style.visibility = 'hidden';
+  }
+  else if (document.layers && document.layers[object]) {
+    document.layers[object].visibility = 'hidden';
+  }
+  else if (document.all) {
+    document.all[object].style.visibility = 'hidden';
+  }
+}
+//--></script>
+
+</head>
+
+<body>
+
+<a href="javascript:' '" onMouseOver="show('blue')" 
+onMouseOut="hide('blue')">blue</a>
+<a href="javascript:' '" onMouseOver="show('red')" 
+onMouseOut="hide('red')">red</a>
+<a href="javascript:' '" onMouseOver="show('red');hide('form')" 
+onMouseOut="hide('red');show('form')">hide form</a>
+
+<div id="blue" style="position: absolute; visibility: hidden;">
+<table><tr><td bgcolor="blue">
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium, totam rem aperiam, eaque ipsa ab
+illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+voluptatem sequi nesciunt.  Neque porro quisquam est qui do lorem
+ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+nonnumquam eiusmodi tempora incidunt ut labore et dolore magnam
+aliquam quaerat voluptatem.
+</td></tr></table>
+</div>
+
+<div id="form" style="position: absolute;">
+<form>
+<input type="text">
+<br>
+<select>
+<option>zero
+<option>one
+<option>two
+<option>three
+</select>
+</form>
+</div>
+
+<div id="red" style="position: absolute; visibility: hidden;">
+<table><tr><td bgcolor="red">
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium, totam rem aperiam, eaque ipsa ab
+illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+voluptatem sequi nesciunt.  Neque porro quisquam est qui do lorem
+ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+nonnumquam eiusmodi tempora incidunt ut labore et dolore magnam
+aliquam quaerat voluptatem.
+</td></tr></table>
+</div>
+
+</body>
+
+</html>
+

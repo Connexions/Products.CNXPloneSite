@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rhaptos">
+
+  <body>
+    <div metal:fill-slot="main"
+         tal:define="search request/searchstring | nothing;
+                     users python:here.portal_membership.searchForMembers(name=search);
+                     Batch python:modules['Products.CMFPlone'].Batch;
+                     b_start request/b_start | python:0;
+	             b_size request/b_size | python:10;
+                     batch python:Batch(users, b_size, int(b_start), orphan=1);">
+
+      <h1 tal:content="template/title">[title]</h1>
+
+      <form action="." method="post">
+
+	<p>
+	  <input tabindex=""
+	         type="text"
+	         name="searchstring"
+	         value=""
+	         tal:attributes="tabindex tabindex/next;
+	                         value request/searchstring | nothing" />
+
+	  <input class="context searchButton"
+	         tabindex=""
+	         type="submit"
+	         name="search"
+	         value="Search"
+                 tal:attributes="name string:${template/id}:action;
+                                 tabindex tabindex/next;"
+	         i18n:attributes="value value_listaccounts_search" />
+	</p>
+
+	<table class="listing">
+	  <tr>
+	    <th>&nbsp;</th>
+	    <th i18n:translate="listingheader_listaccounts_username">Username</th>
+	    <th i18n:translate="listingheader_listaccounts_email">Email</th>
+	    <th i18n:translate="listingheader_listaccounts_name">Name</th>
+	    <th i18n:translate="listingheader_listaccounts_comment">Comment</th>
+	    <th i18n:translate="listingheader_listaccounts_status">Status</th>
+	    <th i18n:translate="listingheader_listaccounts_lastlogin">Last Login</th>
+	    <th i18n:translate="listingheader_listaccounts_approved">Approved on</th>
+	  </tr>
+	  <tr tal:repeat="u batch" tal:attributes="class python:test(path('repeat/u/odd'),'odd','even')">
+	    <td>
+	      <input class="noborder"
+		type="checkbox"
+		name="ids:list"
+		tal:attributes="value u/getUserName" />
+	    </td>
+
+	    <td><span tal:replace="u/getUserName">[name]</span></td>
+	    <td tal:define="email python:u.getProperty('email')">
+	      <a href="#" tal:attributes="href string:mailto:${email}">
+		<img src="" tal:replace="structure portal/mail_icon.gif" />
+		<span tal:replace="email" />
+	      </a>
+	    </td>
+	    <td>
+	      <span tal:replace="python:u.getProperty('honorific')" />
+	      <span tal:replace="python:u.getProperty('firstname')"/>
+	      <span tal:replace="python:u.getProperty('othername')" />
+	      <span tal:replace="python:u.getProperty('surname')" />
+	      <span tal:replace="python:u.getProperty('lineage')" />
+	    </td>
+	    <td><span tal:replace="python:u.getProperty('comment')">[comment]</span></td>
+	    <td><span tal:replace="python:u.getProperty('status')">[status]</span></td>
+	    <td tal:define="ltime python:u.getProperty('last_login_time');
+                            notime python:DateTime('2000/01/01')">
+	      <span tal:replace="python:test(ltime == notime, 'Never', ltime.aCommonZ())">[last login]</span></td>
+	    <td tal:define="atime python:u.getProperty('approved_time');
+                            notime python:DateTime('2000/01/01')">
+	      <span tal:replace="python:test(atime == notime, 'Never', atime.aCommonZ())">[approved on]</span></td>
+	  </tr>
+	</table>
+	<metal:block metal:use-macro="here/batch_macros/macros/navigation" />
+	<input class="context" type="submit" name="confirm_delete:method" value="Remove"
+        i18n:attributes="value text_listaccount_remove" />
+      </form>
+    </div>
+  </body>
+</html>

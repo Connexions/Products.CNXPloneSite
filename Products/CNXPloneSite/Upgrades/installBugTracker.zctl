@@ -1,0 +1,28 @@
+from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.Expression import Expression
+from zExceptions import BadRequest
+
+portal = app.plone
+qi = getToolByName(portal, 'portal_quickinstaller')
+try:
+    qi.uninstallProducts(['RhaptosBugTrackingTool'])
+except AttributeError:
+    pass #We Don't care if it isn't there already
+
+qi.installProduct('RhaptosBugTrackingTool')
+
+bt = getToolByName(portal, 'portal_bugtracking')
+try:
+    bt.manage_delProperties(['trac_dir','trac_url'])
+except BadRequest:
+    pass
+
+bt.manage_addProperty('trac_url', 'https://trac.rhaptos.org/trac/rhaptos/newticket','string')
+bt.manage_addProperty('trac_xmlrpc', 'https://trac.rhaptos.org/trac/rhaptos/xmlrpc','string')
+
+at = getToolByName(portal, 'portal_actions')
+for a in at.listActions():
+    if a.id == 'bugreport':
+        a.action = Expression('string:$portal_url/bug_submit_form')
+
+get_transaction().commit()

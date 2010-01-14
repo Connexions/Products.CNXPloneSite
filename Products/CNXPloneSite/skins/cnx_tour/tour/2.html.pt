@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Connexions Web Tour: What is Connexions?</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="1.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="3.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a class="current">2</a>
+<a href="3.html">3</a>
+<a href="4.html">4</a>
+<a href="5.html">5</a>
+<a href="6.html">6</a>
+<a href="7.html">7</a>
+<a href="8.html">8</a>
+<a href="9.html">9</a>
+<a href="10.html">10</a>
+<a href="11.html">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top">
+<div style="width: 400px; height: 400px;">
+<img src="2/community-of-three.jpg" alt="Student, author, and instructor communities collaborate to construct curricula that best suits the need of each community"/>
+</div>
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body">
+
+<div id="title">What is <span class="cnx">Connexions</span>?</div>
+
+<p>
+
+<span class="cnx">Connexions</span> is a <em>revolutionary approach to 
+education</em> that seeks to provide a place where everyone in the world 
+can <em>share knowledge for free</em>.
+
+</p>
+
+<p>
+
+Based on concepts pioneered in <em>&#147;open-source&#148;</em> 
+computing, <span class="cnx">Connexions</span> provides equal access to 
+all, via tools that let everyone&#151;from university professors to 
+school children&#151;post and update knowledge in one place, the 
+<em>Content Commons</em>.
+
+</p>
+
+<p>
+
+The project provides <em>free, Web-based tools</em> that make it easy 
+for anyone to access materials in the Content Commons, modify them to 
+meet their specific needs, collaborate with others, and to <em>explore 
+the links between concepts, courses, and disciplines</em>.
+
+</p>
+
+<p>
+
+Based at Rice University in Houston, <span class="cnx">Connexions</span> 
+<em>transcends traditional learning</em> by making information <em>more 
+accessible, interactive, relevant, and fun</em>.
+
+</p>
+
+<p>
+
+
+
+</p>
+
+<!-- REPLACED BY RICH'S NEWER TEXT --
+<p>
+
+<span class="cnx">Connexions</span> is a <em>collaborative</em>,
+grassroots, community-driven approach to <em>authoring, teaching, and 
+learning</em> that conveys the dynamic continuum of knowledge.  
+Available <em>free</em> of charge to anyone under open-content and
+<em>open-source</em> licenses.
+
+</p>
+
+<p>
+
+<span class="cnx">Connexions</span> offers high-quality, custom-tailored
+<em>electronic course material</em>, is adaptable to a wide range of
+learning styles, and encourages students to <em>explore the links
+between concepts</em>, courses, and disciplines.
+
+</p>
+
+<p>
+
+<span class="cnx">Connexions</span> is fostering worldwide,
+cross-institution communities of authors, instructors, and students who
+collaborate on the creation of <em>information Modules</em> from which
+courses and curricula are constructed.
+
+</p>
+
+-- END OLD VERSION -->
+
+<div id="next-slide">
+<a href="3.html">A new approach to learning &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

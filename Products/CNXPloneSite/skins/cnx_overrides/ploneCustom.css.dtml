@@ -1,0 +1,1288 @@
+/*
+ *  This is the file where you put your CSS changes. You should preferrably use this and
+ *  override the relevant properties you want to change here instead of customizing plone.css.
+ */
+ 
+<dtml-comment>
+CNX note: hooked up to base_properties rather than stylesheet_properties
+footer style now entity rather than class
+substituted backgroudColor for mainBackground
+substituted linkColor for mainLinkColor
+removed .comment font customization. probably unnecessary now.
+</dtml-comment>
+
+/*
+**  DTML instructions to set caching headers. Inside comments area to play nicer with CSS editors.
+**
+** <dtml-let last_modified="_.DateTime()-14" expires="_.DateTime()+1" >
+**   <dtml-call "REQUEST.RESPONSE.setHeader( 'Content-Type', 'text/css' )">
+**   <dtml-call "REQUEST.RESPONSE.setHeader( 'Last-Modified', last_modified.toZone('GMT').rfc822() )">
+**   <dtml-call "REQUEST.RESPONSE.setHeader( 'Cache-Control', 'max-age=36000, must-revalidate' )">
+**   <dtml-call "REQUEST.RESPONSE.setHeader( 'Expires', expires.toZone('GMT').rfc822() )" >
+** </dtml-let>
+*/
+/* <dtml-with base_properties> */
+
+/* This seems to make things work in Safari again.  I have no idea why. */
+@media all{
+}
+
+body{
+  font-family: tahoma, verdana, arial, helvetica, sans-serif;
+}
+
+#portal-column-two .visualPadding{
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+#portal-column-one, #portal-column-two{
+  padding: 0;
+}
+
+#portal-column-two{
+  width: <dtml-var columnTwoWidth>;
+}
+
+#portal-column-one{
+  width: <dtml-var columnOneWidth>;
+}
+
+#portal-top{
+  background: url("portal-top-background.gif") 0 0 repeat-x #369;
+}
+
+#portal-breadcrumbs{
+  background-color: #9bd;
+  border-top: 1px solid #9cf;
+  border-bottom-color: #369;
+  padding: 5px 30px;
+  clear: both;
+  color: #369;
+/* anti-plone styling */
+  line-height: normal;
+/* */
+}
+
+#portal-breadcrumbs a{
+  color: #369;
+  text-decoration: underline;
+}
+
+* html #portal-breadcrumbs{padding-top: 2px;}
+*+html #portal-breadcrumbs{padding-top: 2px;}
+
+/* anti-plone styling */
+.breadcrumbSeparator{
+  font-size: 1em;
+}
+
+#portal-logo{
+  margin: 0 2em 0 22px;
+  width: <dtml-var "_[logoName].width">px;
+}
+
+* html>body #portal-logo{
+  margin-top: -1.55em;
+}
+
+#portal-globalnav{
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+#portal-globalnav li{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 4px 0 5px 5px;
+  background: url("tab-left.gif") no-repeat 0 0;
+}
+
+#portal-globalnav li a{
+  color: #def;
+  padding: 4px .8em 5px .4em;
+  font-weight: bold;
+  background: url("tab-right.gif") no-repeat top right;
+  border-width: 0;
+  font-size: 1.3em;
+  margin: 0;
+  letter-spacing: normal;
+}
+
+#portal-globalnav li.selected{
+  background-image: url("tab-selected-left.gif");
+  padding-bottom: 6px;
+  margin-bottom: -1px;
+}
+
+#portal-globalnav li.selected a{
+  border-width: 0;
+  color: white;
+  background-color: transparent;
+  background-image: url("tab-selected-right.gif");
+  position: static !important;
+  padding-bottom: 6px;
+}
+
+#portal-globalnav li a:hover{
+  color: white;
+}
+
+#portal-siteactions{
+  margin: 0;
+  padding: 1em 30px 0 1em;
+  font-weight: bold;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+#portal-siteactions li{
+  padding-left: .4em;
+  border-left: 1px solid #bcd;
+  margin-left: .2em;
+}
+
+#portal-siteactions .first{
+  border-left-width: 0;
+}
+
+#portal-siteactions li a{
+  color: white;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#portal-siteactions li a:hover{
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  border-width: 0;
+  margin: 0;
+}
+
+#portal-searchbox{
+  margin: 1em 30px 0 2em;
+  padding: 0;
+  display: inline;
+}
+
+* html>body #portal-searchbox{
+  padding-right: 4.5em;
+}
+
+#portal-searchbox input, #portlet-login input{
+  font-size: 1.1em;
+}
+
+#portlet-login input.context{
+  font-size: 1em;
+}
+
+.photo{
+  display: block;
+  margin: 0.5em 1em 1em 0;
+  float: left;
+}
+
+.content{
+  clear: both;
+}
+
+table.listing td.checkbox{
+  font-weight: bold;
+  text-align: center;
+}
+
+.listing td, .stx table td, .listing th, .stx table th{
+  padding: 0 1em;
+}
+
+td.orderingCell{
+  white-space: nowrap;
+  width: 1%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: tahoma, verdana, arial, helvetica, sans-serif;
+  border-width: 0;
+  font-weight: bold;
+  padding-top: .5em;
+}
+
+h1{
+  color: #e70;
+  font-weight: bold;
+  border-bottom: 1px solid #fc0;
+  padding-top: 0;
+  margin-bottom: .5em;
+}
+
+* html h1{
+  height: auto !important;
+}
+
+.documentEditable .documentContent h1{
+  padding-top: .5em;
+}
+
+.documentContent h1{
+  font-size: 1.5em;
+}
+
+.documentEditable h2{
+  margin-bottom: .75em;
+}
+
+h2{ font-size: 1.5em; }
+h3{ font-size: 1.4em; }
+h4{ font-size: 1.2em; }
+h5{ font-size: 1.0em; }
+h6{ font-size: 0.9em; }
+
+h1 a{
+  color: #e70 !important;
+}
+
+h2 a, h3 a, h4 a, h5 a, h6 a{
+  color: #369 !important;
+}
+
+a h4{
+  color: &dtml-linkColor;;
+  background-color: transparent;
+  border: 0;
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: underline;
+}
+
+/* anti-plone styling */
+label{
+  font-weight: normal;
+}
+
+.field label {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.contentViews li a:visited{
+  color: &dtml-contentViewFontColor;;
+}
+
+/* anti-plone styling */
+.documentContent li a, .documentContent p a, .documentContent dd a{
+  border-width: 0;
+  text-decoration: underline;
+}
+
+.context, .documentEditable * .context,
+.standalone, .documentEditable * .standalone,
+input.searchButton, .destructive, .documentEditable * .destructive{
+  padding: .05em .5em;
+  background-image: none;
+  background-color: #69c;
+  font-weight: bold;
+  font-size: .9em;
+  color: white;
+  border: 1px solid #1d3955;
+  border-left-color: #c1d1e0;
+  border-top-color: #c1d1e0;
+}
+
+.destructive, .documentEditable * .destructive{
+  background-color: #e70;
+  border-color: #fc0;
+  border-right-color: #b00;
+  border-bottom-color: #b00;
+  color: white;
+}
+
+.portlet .context{
+  margin-bottom: 0;
+}
+
+.portlet input{
+  font-size: 100%;
+}
+
+input, textarea, button{
+  font-family: arial, helvetica, sans-serif;
+  border: 1px solid #1d3955;
+  border-right-color: #c1d1e0;
+  border-bottom-color: #c1d1e0;
+  padding: 1px;
+  background-image: none;
+}
+
+textarea{
+  font-family: courier new, courier, monospace;
+}
+
+.leftheadings th{
+  text-align: right;
+}
+
+div.searchBox{
+  width: 29%;
+}
+
+.listing, .stx table{
+  font-size: .9em;
+}
+
+.listing a, .stx table a{
+  text-decoration: none;
+}
+
+table.listing td.top.nofilter{
+  text-align: left ! important;
+}
+
+table.listing tr.default{
+  background: #DCEDD0;	
+}
+
+input.uploadButton{
+  margin-bottom: 1px ! important;
+}
+
+table.listing .external{
+  background: &dtml-backgroundColor;;
+  border-top: hidden;
+  border-right: hidden;
+  border-bottom: hidden;
+}
+
+.visualIcon {  /* .contenttype-XX puts images in the background, and we use this to create the vertical space */
+  min-height: 16px;
+}
+
+/* Restore undelining to links in various places */
+.linkdata a, dd a, .quicklinks a, #portal-footer a{
+  text-decoration: underline;
+}
+
+sup{
+  font-family: sans-serif; font-size: 75%;
+}
+
+p{
+  text-align: left;
+}
+
+p.address{
+  line-height: inherit;
+}
+
+/* Footer styling */
+
+#portal-footer{
+  background-color: &dtml-footerBackground;;
+  border-top: &dtml-footerBorder;;
+  border-bottom: 0;
+  float: none;
+  clear: both;
+  margin: 0 0em 2.5em;
+  padding: 0.5em 0em 1em 0em;
+  text-align: center;
+}
+
+* html #portal-footer{
+  margin-top: -1.5em;
+  margin-bottom: 1em;
+}
+
+#portal-footer p{
+  text-align: center;
+}
+
+#about-links{
+  width: 100%;
+}
+
+#riceLogo{
+  float: left;
+  padding: .5em 1em 1em;
+}
+
+#ploneLogo, #ccLogo{
+  float: right;
+  padding: .5em 1em 1em;
+  clear: right;
+}
+
+/* Part of moving the dot to the right */
+.required{
+  padding-left: 10px;
+}
+
+ul, ol{
+  line-height: 1.25em;
+}
+
+ol{
+  margin-left: 2em;
+}
+
+li{
+  margin-bottom: .75em;
+}
+
+button{
+  cursor: default;
+  font-size: 1em;
+}
+
+#sortable th{
+  cursor: pointer;
+}
+
+.link-parent{
+  display: block;
+  background: transparent url(&dtml-portal_url;/arrowUp.gif) 0px 5px no-repeat;
+  padding: 1px 0px 1px 12px;
+}
+
+.link-external, .link-https, .link-mailto, .link-news, .link-ftp, .link-irc, .link-callto, .link-comment{
+  background: none;
+  padding-left: 0px;
+}
+
+#content{
+  padding: 30px 30px 0 30px !important;
+}
+
+/* plone public.css makes these the "disceet" color, a grey */
+#content h5, #content h6{
+  color: black;
+}
+
+.documentEditable{
+  padding-top: 30px !important;
+}
+
+.contentViews{
+  margin-top: .5em;
+}
+
+* html .contentViews{
+  margin-top: 1em;
+}
+
+#portal-column-one{
+  background-color: #dde6ee;  
+}
+
+#portal-column-one .visualPadding{
+  padding: 0;
+}
+
+/* Compensation when rendering portlets in the content area */
+#region-content .portlet {
+    font-size: 94%;
+}
+
+#portlet-navigation-tree{
+  border-top: 1px solid white !important;
+}
+
+#portlet-navigation-tree, #portlet-navigation-tree ul{
+  margin: 30px 0;
+  padding: 0;
+  display: block;
+}
+
+@media all{* html #portlet-navigation-tree{
+  height: 1%;
+}}
+
+#portlet-navigation-tree ul{
+  margin: 0 0 .5em 1em;
+                   /* see '#portlet-navigation-tree ul li' if changing the left-margin */
+}
+
+#portlet-navigation-tree li{
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0 solid white !important;
+  border-bottom-width: 1px !important;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+#portlet-navigation-tree li, #portlet-recentedit li{
+  /* clip and try to ellipsize absurdly long words. */
+  overflow:hidden;
+  text-overflow: ellipsis;     /* IE 6,7; eventually CSS3? */
+  -o-text-overflow:ellipsis;   /* webkit (Safari; apparently inactive in Chrome) */
+  -ms-text-overflow:ellipsis;  /* IE 8 */
+  /* not in FF, currently. see https://developer.mozilla.org/en/CSS/text-overflow */
+  width: <dtml-var columnOneWidth>;   /* IE and Chrome require explicit width for overflow ellipsis */
+}
+
+#portlet-navigation-tree ul li{
+  /* IE and Chrome require explicit width for overflow ellipsis,
+     and in a ul we're a bit indented, and thus shorter */
+  width: <dtml-var "int(columnOneWidth.split('em')[0])-1">em;
+}
+
+#portlet-recentedit li{
+  width: <dtml-var "int(columnTwoWidth.split('em')[0])-7">em;
+}
+
+* html #portlet-navigation-tree li{ display: inline-block; }
+*+html #portlet-navigation-tree li{ display: inline-block; }
+
+#portlet-navigation-tree ul li{
+  border-width: 0 !important;
+}
+
+#portlet-navigation-tree a, #portlet-navigation-tree .textNavItem{
+  display: block;
+  padding: .5em 1em;
+  color: #369;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#portlet-navigation-tree .textNavItem{
+  color: #333;
+}
+
+#portlet-navigation-tree ul a, #portlet-navigation-tree ul .textNavItem{
+  font-weight: normal;
+}
+
+#portlet-navigation-tree .subheader{
+  padding-left: 1em;
+}
+
+#portlet-navigation-tree .subheader .textNavItem{
+  text-transform: uppercase; 
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  color: #666;
+  font-size: .8em;
+  font-weight: bold;
+  margin: .6em 0;
+}
+
+.currentNavItem, #portlet-navigation-tree a:hover{
+/* grimy plone, grrr */
+  background-color: #dde6ee;
+  color: #d60;
+  border-width: 0 !important;
+}
+
+#portlet-navigation-tree .currentNavItem{
+  border-top: 1px solid #9bd !important;
+  border-bottom: 1px solid #9bd !important;
+  margin-top: -1px;
+  z-index: 2;
+  position: relative;
+  background-color: white;
+}
+
+#portlet-navigation-tree ul .currentNavItem{
+  border-left: 1px solid #9bd !important;
+}
+
+#portlet-navigation-tree .currentNavItem a{
+  color: #d60;
+  background-color: white;
+}
+
+#portlet-navigation-tree .currentNavItem a:hover{
+  background-color: white;
+  color: #d60;
+}
+
+#portlet-navigation-tree .currentNavItem ul a{
+  color: #369;
+}
+
+#portlet-navigation-tree ul .currentNavItem a{
+  font-weight: bold;
+}
+
+#portlet-navigation-tree .extracted {
+  border-width: 2px 0 !important;
+}
+
+* html #portlet-navigation-tree .extracted{
+  margin-top: -3px;
+}
+
+#portlet-navigation-tree .inlineLink {
+  display: inline !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navtoggler{
+  padding: 0 !important;
+  outline: none;
+}
+
+.navtoggler .arrows{
+  margin: .75em 1em .25em .5em;
+  float: right;
+}
+
+
+/* old div-based portlet styling */
+
+div.portlet {
+  border: 1px solid #369;
+  position: relative;
+  margin-bottom: 2.5em;
+  padding-right: .5em;
+}
+
+div.portlet .portletBody{
+/* anti-plone styling */
+   top: 0;
+   position: static;
+/* */
+  border: 0 solid #dde6e9;
+  border-left-width: .45em;
+  border-top-width: .45em;
+  border-bottom: 1px solid white;
+  margin-right: -.5em;
+}
+
+div.portlet h5{
+/* anti-plone styling */
+   display: block;
+   font-weight: bold;
+   white-space: normal;
+   position: relative;
+   top: 0;
+   border-width: 0;
+/* */
+  text-transform: uppercase;
+  padding: .25em .4em;
+  background-color: white;
+  color: #369;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.25em;
+  float: left;
+  margin: -.7em 0 0 .7em;
+}
+
+/* override of override of "#content h5" color in public.css */
+#content .portlet h5{
+  color: #369;
+}
+
+* html>body div.portlet h5{
+  margin-left: .8em;
+}
+
+* html div.portlet h5{
+  margin-left: .35em;
+  z-index: 2;
+}
+
+div.portlet .portletContent{
+  clear: both;
+  padding: 1em;
+  padding-top: .5em;
+}
+
+/* ...end old div-based portlet styling */
+
+/* new style dt-based portlets... */
+
+/* Uses the div wrapping the dl as the outer box,
+and the dl as the inned box for drop-shadow purposes.
+We could alternately use the dl as the outer box and the
+dds as the inned box, except that we would either have to
+not have a top shadow or rely on a :first-child pseudo-element
+(which I couldn't get to work.)
+*/
+
+/* portletContainer class is new, for out-of-sidebar portlets */
+#portal-column-one .visualPadding div, #portal-column-two .visualPadding div, div.portletContainer {
+  border: 1px solid #369;
+  margin-bottom: 2.5em;
+}
+
+/* this prevents putting .portletContainer-like styling on any poor 
+little div that happens to be inside a portlet */
+#portal-column-one .visualPadding dl div, #portal-column-two .visualPadding dl div{
+  border-width: 0;
+  margin-bottom: 0;
+}
+
+dl.portlet {
+  border: 0 solid #dde6e9;
+  border-left-width: .45em;
+  border-top-width: .45em;
+  border-bottom: 1px solid white;
+  margin: 0;
+}
+
+@media all{* html dl.portlet{
+  margin-bottom: -1em;
+  padding-bottom: 1em;
+}}
+
+dt.portletHeader {
+  border: none;
+  text-transform: uppercase;
+  padding: .25em .4em;
+  color: #369;
+  background-color: white;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  float: left;
+  margin: -1.25em .5em 0 .3em;
+}
+
+* html dt.portletHeader {
+  margin: -1.25em 3.08em -.75em .15em;
+}
+
+dt.portletHeader a, dt.portletHeader a:visited {
+  color: #369;
+}
+
+dd.portletItem {
+  clear: left;
+  border: none;
+  padding: 0;
+  margin: 1em;
+  text-align: left;
+}
+
+* html dd.portletItem{
+  clear: none;
+}
+
+dd.portletFooter {
+  border-width: 0;
+  background-color: transparent;
+  margin: 1em;
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+  clear: both;
+}
+
+/* ... end new-style portlets */
+
+.portletMore{
+  text-align: left;
+  font-weight: bold;
+  clear: both;
+  margin: 1em;
+}
+
+.portlet .even{
+  background-color: transparent;
+}
+
+.portlet li{
+  margin-bottom: .25em;
+}
+
+.portletDetails{
+  text-align: left;
+  margin-bottom: .5em;
+}
+
+/* anti-plone styling */
+div.portlet div a, dl.portlet dd a{
+  text-decoration: underline;
+}
+
+/* giving this element a colored background, as in plone.css, appears to 
+   be half the cause of the disappearing elements bug in IE, along with 
+   the last declaration formerly in ploneIEFixes.css (several elements 
+   with heights valued at 100%).  removing this and/or the other 
+   declartion appears to remove the disappearing elements problem. */
+.documentContent{
+  background-color: transparent;
+  padding: 0 !important;
+}
+
+.documentEditable .documentContent{
+  padding: 15px !important;
+}
+
+/* Firefox doesn't do overflow:auto very well for large text */
+pre{
+  overflow: inherit;
+}
+
+/* this prevents IE from giving space to .documentDescription if that 
+   element contains no text */
+/* anti-plone styling */
+.documentDescription{
+  line-height: normal;
+  margin: 1em 0;
+}
+
+/* this declaration repeats what is already in plone.css, but it must 
+   come after the similar declaration for .notify, instead of precede 
+   it, so that IE doesn't put borders around elements with 
+   class="noborder notify" */
+.noborder, .documentEditable * .noborder{
+  border: none;
+}
+
+/* change during mouseover confused a usability tester ... thought text 
+   was a link */
+.formHelp:hover{
+  color: &dtml-discreetColor;;
+  cursor: auto;
+}
+
+/* Make space for more tabs */
+.contentViews{
+  padding: 2px 0;
+}
+.contentViews li a{
+  margin-right: 0;
+  padding: 2px 1em;
+}
+
+.numericCell{
+  text-align: right !important;
+}
+
+.portalMessage, .system-message{
+  background-color: #ffdd33;
+  border: 1px solid #e70;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 1.75em;
+}
+
+.hiddenStructure{
+  margin: 0;
+}
+
+#portlet-loggedin p, #portlet-loggedin form{
+  margin: 1em 0 0;
+}
+
+html>body .visualClear{
+  height: 0;
+}
+
+#portlet-feature h3, #portlet-feedback h3{
+  font-size: 1.1em;
+}
+
+#portlet-pending a{
+  color: #e70;
+  font-weight: bold;
+}
+
+#portlet-workspaces-moved {
+   padding: 1em;
+}
+
+#archetypes-fieldname-title input{
+  font-size: 1em;
+  font-family: arial, helvetica, sans-serif;
+}
+
+small{
+  font-size: &dtml-fontSmallSize;;
+}
+
+.inviz {
+    visibility: hidden;
+}
+
+.importexport {
+  border: 1px solid #8cacbb;
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+  background-color: #EEEEEE;
+}
+
+.composerPanel .link-parent{
+  margin-bottom: 1em;
+}
+
+/* Removed for now because we're going with parens instead
+   This may come back if browser support for it ever improves.
+option.blank_option {
+   font-style: italic;
+}
+*/
+
+.lens_listing p{
+  margin: .15em 0 -.15em;
+}
+
+.lens_listing li{
+  clear: right;
+}
+
+.lens_listing a{
+  font-size: 1.15em;
+  display: inline-block;
+}
+
+.carryinfo{
+  border: 1px dashed #888;
+  padding: .8em .8em .4em;
+  margin: 1em 0 0;
+  font-size: .9em;
+}
+
+.carryinfoitem{
+  margin: 0 0 .4em;
+}
+
+.carryinfo p{
+  margin: .5em 0 0;
+}
+
+.carryinfo, .carryinfo a{
+  color: #888;
+}
+
+.portraitPhoto{
+  border-width: 0;
+}
+
+.contentActions{
+  height: 1.4em;
+}
+
+.contentActions ul, .contentActions li{
+  line-height: 1.4em;
+}
+
+.actionMenu .actionMenuContent{
+  top: 1.4em;
+}
+
+#portlet-recentview ul, #recentview ul {
+  margin-left: 0px;
+}
+
+#portlet-recentview li, #recentview li {
+  display: block;
+  padding: 0 0 .8em 20px;
+  margin: -.2em 0 0;
+  background: no-repeat 0 0;
+  list-style: none none;
+}
+
+#recentview a{
+  color: #369;
+}
+
+#portlet-recentview div.portletMore{
+  margin: 1em 0;
+}
+
+li.cnx_module{
+  background-image: url(/module_icon.gif) !important;
+}
+
+li.cnx_collection{
+  background-image: url(/repository_icon.gif) !important;
+}
+
+li.cnx_lens{
+  background-image: url(/lenses.gif) !important;
+}
+
+.nakedPortlet .portlet {
+  margin-top: 1em;
+  border: none;
+}
+
+.nakedPortlet dt {
+  display:none;
+}
+
+.list_listing, .latest, .lenses{
+  margin-left: 0;
+}
+
+.list_listing li, .latest li, .lenses li{
+  list-style-image: none;
+  list-style-type: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-bottom: .5em;
+  padding-left: 20px;
+}
+
+.workgroup{ background-image: url(&dtml-portal_url;/group.gif); }
+.module{ background-image: url(&dtml-portal_url;/module_icon.gif); }
+.collection{ background-image: url(&dtml-portal_url;/repository_icon.gif); }
+.lens{ background-image: url(&dtml-portal_url;/lenses.gif); }
+.favorites{ background-image: url(&dtml-portal_url;/star.png); }
+.user{ background-image: url(&dtml-portal_url;/user.gif); }
+
+.latest{
+  font-size: .9em;
+}
+.portlet .latest{
+  font-size: 1em;
+}
+
+.list_listing li{
+  margin-bottom: 1.5em;
+}
+
+.removal li{
+  margin-bottom: .5em;
+}
+
+.list_listing h2{
+  font-size: 1.2em;
+  margin: 0 0 .2em;
+  padding: 0;
+}
+
+.list_listing h2 a{
+  text-decoration: none;
+}
+
+.edit_links{
+  font-size: .9em;
+  margin-bottom: .2em;
+}
+
+.list_listing table{
+  border-collapse: collapse;
+}
+
+.list_listing th, .list-listing td{
+  padding: 0;
+  vertical-align: top;
+}
+
+.list_listing th{
+  text-align: left;
+  padding-right: .5em;
+}
+
+.more{
+  font-weight: bold;
+}
+#portlet-recentedit .more{
+  padding-left: 0;
+}
+
+.none_set{
+  font-style: italic;
+}
+
+.return-link{
+  margin: 1em 0 .5em;
+}
+
+* html .return-link{
+  margin-top: .5em;
+}
+
+.documentEditable .return-link{
+  margin-top: .25em;
+}
+
+h1 img, h1 .normal-text-in-header{
+  margin-top: -3px;
+  font-size: 0.65em;
+}
+
+.normal-text-in-header{
+  color: black;
+  font-weight: normal;
+}
+
+.normal-text-in-header a{
+  color: #369 !important;
+  text-decoration: underline !important;
+}
+
+.createlink{        
+  margin: 0;
+  line-height: normal;
+}
+
+.listcontent_createlinks{
+  float: right;
+  margin-left: 1.5em;
+}                              
+
+.listcontent_createlinks .createlink{
+  text-align: right;                
+}
+
+#lastmodified{
+  margin-top: .5em;
+}
+
+.workarea_locator, .workarea_description{
+  margin: -.5em 0 .5em;
+}
+
+.text_preview{
+  border-width: 0;
+}
+
+#container-full_screen{
+  float: right;
+  margin-left: 1.5em;
+  background-color: #eef3f7;
+  padding: .1em .4em;
+  border: 1px solid #dde6ee;
+}
+
+#container-full_screen a{
+  text-decoration: none;
+}
+
+#icon-full_screen{
+  vertical-align: -3px;
+}
+
+/* The following three undo Plone's assumptions about our fullscreen use */
+
+body.fullscreen #portal-logo, body.fullscreen #portal-siteactions{
+  display: block;
+}
+
+body.fullscreen #portal-globalnav{
+  margin-top: 0;
+}
+
+body.fullscreen #portal-searchbox{
+  margin: 1em 30px 0 2em;
+}
+
+.folder_buttons_top{
+  margin-top: 1em;
+}
+
+#add_new_file{
+  margin: 0 0 1em;
+}
+
+#portal-column-one.lens-left-column{
+  background-color: white;
+  padding: 30px 0 30px 30px;
+  width: 19em;
+}
+
+.lens-left-column .portlet{
+  border-left-width: 0;
+  border-right: .5em solid #bbd1e6;
+  border-top-color: #bbd1e6;
+}
+
+.lens-left-column .portletHeader{
+  margin-left: .5em;
+}
+
+.lensorganizer{
+  font-size: 1em;
+}
+
+.lensorganizer td, .lensorganizer th{
+  padding: .2em 1em;
+}
+
+.lensorganizer .number{
+  text-align: center;
+}
+
+.lensorganizer .even{
+  background-color: #f7f9fa;
+}
+
+#archetypes-fieldname-description textarea{
+  font-weight: normal;
+}
+
+#archetypes-fieldname-lenses .ArchetypesMultiSelectionValue label{
+  font-weight: normal;
+}
+
+#portlet-lens-criteria .criterion{
+  text-decoration: none;
+}
+
+#portlet-lens-criteria ul{
+  margin: .25em 0 .5em 2em;
+}
+
+#portlet-lens-criteria li{
+  padding: 0 .4em .1em;
+}
+
+#portlet-lens-criteria .currentNavItem{
+  padding: .1em .4em .25em;
+}
+
+/* clipping for tag/criteria portlets */
+#portlet-lens-criteria .portletItem, #portlet-lens-tags .portletItem {
+  width: 16em;
+  overflow:hidden;
+
+  text-overflow: ellipsis;     /* IE 6,7; eventually CSS3? */
+  -o-text-overflow:ellipsis;   /* webkit (Safari; apparently inactive in Chrome) */
+  -ms-text-overflow:ellipsis;  /* IE 8 */
+  /* not in FF, currently. see https://developer.mozilla.org/en/CSS/text-overflow */
+}
+
+/* IE draws double borders around checkboxes. This removes the border. */
+input[type="checkbox"] {
+    border: none;
+}
+
+#cnx_branding_banner{
+  padding: 0.35em 15px 0.45em;
+}
+
+.lens_tag_table b{
+  color: #444;
+}
+
+.lens_tag_table{
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  margin-top: 0.15em;
+  margin-bottom:0.5em;
+  width:100%;
+}
+
+.lens_tag_table td{
+  vertical-align:top;
+}
+
+.tag-column{
+  padding-right: 1em;
+  width: 50%;
+}
+
+.error .fieldRequired{
+  color: &dtml-notifyBackgroundColor; !important;
+}
+
+.discreet-link{
+  color: &dtml-discreetColor; !important;
+}
+
+/* </dtml-with> */
+

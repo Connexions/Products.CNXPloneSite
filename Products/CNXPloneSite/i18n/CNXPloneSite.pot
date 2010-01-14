@@ -1,0 +1,2733 @@
+# Translation file for Connexions product CNXPloneSite
+# Per Thorsteinsson <s001552@student.dtu.dk>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: $Name$\n"
+"POT-Creation-Date: 2004-07-09 14:54+0000\n"
+"PO-Revision-Date: $Date$\n"
+"Last-Translator: Per Thorsteinsson <s001552@student.dtu.dk>\n"
+"Language-Team: i18n@cnx.rice.edu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+#: http://cnx.rice.edu/manage
+
+msgid "Log in"
+msgstr ""
+
+msgid "log in"
+msgstr ""
+
+msgid "Log out"
+msgstr ""
+
+msgid "log out"
+msgstr ""
+
+msgid "Created"
+msgstr ""
+
+msgid "Published"
+msgstr ""
+
+msgid "Module"
+msgstr ""
+
+msgid "Course"
+msgstr ""
+
+# portal_actions
+msgid "Folder contents"
+msgstr ""
+
+msgid "Folder Contents"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "Members"
+msgstr ""
+
+msgid "Files"
+msgstr ""
+
+msgid "Properties"
+msgstr ""
+
+msgid "News"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "Ownership"
+msgstr ""
+
+msgid "Rename"
+msgstr ""
+
+msgid "Cut"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Paste"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Change Status"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Software"
+msgstr ""
+
+msgid "Help"
+msgstr""
+
+msgid "Quick Start"
+msgstr""
+
+msgid "Courses"
+msgstr""
+
+msgid "Report a Bug"
+msgstr""
+
+#portal_registration
+msgid "Join"
+msgstr ""
+
+#portlet_login
+msgid "box_new_user_option"
+msgstr ""
+
+#: ./skins/CNXPloneSite/changeset_view.pt
+#. <!--<i tal:condition="here/same" i18n:translate="">No changes</i>-->
+msgid "No changes"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/changeset_view.pt
+#. <em i18n:translate="">The items differ</em>
+msgid "The items differ"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/changeset_view.pt
+#. <h2 i18n:translate="">Changed files</h2>
+msgid "Changed files"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/changeset_view.pt
+#. <h2 i18n:translate="">Removed files</h2>
+msgid "Removed files"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/changeset_view.pt
+#. <i tal:condition="not:changed" i18n:translate="">None</i>
+#. <i tal:condition="not:here/getRemovedItems" i18n:translate="">None</i>
+#. <i tal:condition="not:here/getAddedItems" i18n:translate="">None</i>
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <em i18n:translate="">None</em>
+#: ./skins/CNXPloneSite/patches.pt
+#. <i i18n:translate="">None</i>
+#. <i i18n:translate="">None</i>
+msgid "None"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/changeset_view.pt
+#. <h2 i18n:translate="">Added files</h2>
+msgid "Added files"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/cnx_license.pt
+#. <h1 class="topheading" i18n:translate="">New content: Licensing</h1>
+msgid "New content: Licensing"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/cnx_license.pt
+#.  <p i18n:translate="license_connexions">
+#	Connexions requires that all content submitted to our
+#	repository be placed under an Open Content license that allows
+#	others to use, distribute, and create derivative works based upon
+#	that content. The ${license_a}
+#	license from <a	href="http://creativecommons.org">Creative Commons</a>
+#	fulfills this requirement, while still allowing authors to 
+#	receive credit for their efforts. Please take the time to
+#	read the license and check the <strong>I agree</strong> box
+#	below before continuing.
+#    </p>
+msgid "license_connexions"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/cnx_license.pt
+#. <p i18n:translate="more_license_connexions">
+#	I hereby allow Connexions to distribute this content under the
+#	terms of the Creative Commons ${license_b} License
+#	available at ${license_c}.  I understand
+#	that in doing so I
+#      </p>
+msgid "more_license_connexions"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/cnx_license.pt
+#. <ol i18n:translate="even_more_license_connexions">
+#	<li> retain my copyright in the work(s) </li>
+#	<li> warrant that I am the author or the owner or have
+#	  permission to distribute the works in question and
+#	</li>
+#	<li> wish this work to be distributed under the terms of that license
+#	  (including allowing modification of this work and requiring
+#	  attribution). </li>
+#      </ol>
+msgid "even_more_license_connexions"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/cnx_license.pt
+#.	<p i18n:translate="cnx_license_one">
+#	  <input type="checkbox" name="agree"/> I have read the above, and <b>I agree</b> to license this
+#	  new work under its terms.
+#	</p>
+msgid "cnx_license_one"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/cnx_license.pt
+#. <input type="submit" class="context" name="next" i18n:attributes="value" value="Next >>" />
+msgid "Next >>"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <h1 i18n:translate="">Collaboration Requests</h1>
+#: ./skins/CNXPloneSite/collaborations_slot.pt 
+#. <h5 i18n:translate="">Collaboration Requests</h5>
+msgid "Collaboration Requests"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <h2 i18n:translate="">Requests Awaiting Your Approval</h2>
+msgid "Requests Awaiting Your Approval"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th rowspan="2" i18n:translate="">Object</th>
+#. <th rowspan="2" i18n:translate="">Object</th>
+#. <th rowspan="2" i18n:translate="">Object</th>
+msgid "Object"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th colspan="3" i18n:translate="">Roles</th>
+#. <th colspan="3" i18n:translate="">Roles</th>
+#. <th colspan="3" i18n:translate="">Roles</th>
+msgid "Roles"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th rowspan="2" i18n:translate="">Requester</th>
+msgid "Requester"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th rowspan="2" i18n:translate="">Date</th>
+msgid "Date"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th rowspan="2" i18n:translate="">License</th>
+msgid "License"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th i18n:translate="">Author</th>
+#. <th i18n:translate="">Author</th>
+#. <th i18n:translate="">Author</th>
+#: ./skins/CNXPloneSite/login_success.pt
+#. <th i18n:translate="">Author</th>
+msgid "Author"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th i18n:translate="">Maintainer</th>
+#. <th i18n:translate="">Maintainer</th>
+#. <th i18n:translate="">Maintainer</th>
+msgid "Maintainer"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th i18n:translate="">Copyright Holder</th>
+#. <th i18n:translate="">Copyright Holder</th>
+#. <th i18n:translate="">Copyright Holder</th>
+msgid "Copyright Holder"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <a tal:attributes="href
+#    obj/aq_parent/license" i18n:translate="">Attribution License</a>
+msgid "Attribution License"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <tal:block tal:condition="need_license" i18n:translate="collaborations_one">     
+#        <input type="checkbox" name="agree" /> <b>I agree</b> to
+#        place these materials under their associated
+#          license(s) as listed above.
+#  </tal:block>
+msgid "collaborations_one"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <input type="submit" class="context" name="accept" i18n:attributes="value" value=" Accept " />
+msgid " Accept "
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <input type="submit" class="context" name="reject" i18n:attributes="value" value=" Reject " />
+msgid " Reject "
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <i i18n:translate="">No requests pending</i>
+#. <i i18n:translate="">No requests pending</i>
+msgid "No requests pending"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <h2 i18n:translate="">Requests You Have Made</h2>
+msgid "Requests You Have Made"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th rowspan="2" i18n:translate="">User</th>
+#. <th rowspan="2" i18n:translate="">User</th>
+msgid "User"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <th rowspan="2" i18n:translate="">Status</th>
+#. <th rowspan="2" i18n:translate="">Status</th>
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span tal:omit-tag="" i18n:translate="">Status</span>
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <th i18n:translate="">Status</th>
+msgid "Status"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <input type="submit" class="destructive" name="remove" i18n:attributes="value" value="Cancel Requests" />
+msgid "Cancel Requests"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <h2 i18n:translate="">Requests You Have Made -- Completed</h2>
+msgid "Requests You Have Made -- Completed"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <input type="submit" class="destructive" name="remove" i18n:attributes="value" value="Remove Requests" />
+msgid "Remove Requests"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations.pt
+#. <i i18n:translate="">No requests completed</i>
+msgid "No requests completed"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations_slot.pt 
+#. <span i18n:translate="collaborations_slot_a">request(s) waiting for your attention</span>
+msgid "collaborations_slot_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations_slot.pt 
+#. <span i18n:translate="collaborations_slot_b">request(s) waiting on others</span>
+msgid "collaborations_slot_b"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations_slot.pt 
+#. <span i18n:translate="collaborations_slot_c">request(s) completed by others</span>
+msgid "collaborations_slot_c"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/collaborations_slot.pt 
+#. <a href="/collaborations" i18n:translate="">Process Requests...</a>
+msgid "Process Requests..."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <h1 i18n:translate="">Account Request: Confirmation</h1>
+msgid "Account Request: Confirmation"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <span class="legend" i18n:translate="">Please confirm</span>
+msgid "Please confirm"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <p i18n:translate="confirm_Please">
+#	  Please verify that the following information is correct and
+#	  read over our terms of use.
+#	</p>
+msgid "confirm_Please"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <th i18n:translate="">Username:</th>
+msgid "Username:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <th i18n:translate="">Name:</th>
+msgid "Name:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <th i18n:translate="">Email:</th>
+msgid "Email:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <th i18n:translate="">Homepage:</th>
+msgid "Homepage:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <h2 i18n:translate="">Connexions Site Agreement</h2>
+msgid "Connexions Site Agreement"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <p i18n:translate="confirm_Note">
+#	  <strong>Note:</strong> Below are "human readable"
+#	  interpretations of the terms of license, not the terms
+#	  themselves.  They are not part of the license and have no
+#	  legal significance.  To understand the full legal
+#	  implications of the license you should consult the <a
+#	  href="sitelicense">license itself</a>.
+#	</p>
+msgid "confirm_Note"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <tal:block i18n:translate="" content="error_license">Error</tal:block>
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <tal:block i18n:translate="" content="error_groupname">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_title">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_email">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_description">Error</tal:block>
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <tal:block i18n:translate="" content="error">Error</tal:block>
+#. <tal:block i18n:translate="" content="error">Error</tal:block>
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <tal:block i18n:translate="" content="error_file">Error</tal:block
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <tal:block i18n:translate="" content="error_username">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_password">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_confirm">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_interests">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_comment">Error</tal:block>
+#: ./skins/CNXPloneSite/join_form.pt
+#. <tal:block i18n:translate="" content="error_honorific">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_firstname">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_middlename">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_surname">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_lineage">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_email">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_homepage">Error</tal:block>
+#: ./skins/CNXPloneSite/patch_status.pt
+#. <tal:block i18n:translate="" content="error_message">Error</tal:block>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <tal:block i18n:translate="" content="error_fullname">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_honorific">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_firstname">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_middlename">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_surname">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_lineage">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_email">Error</tal:block>
+#. <tal:block i18n:translate="" content="error_homepage">Error</tal:block>
+msgid "Error"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <span i18n:translate="confirm_label_license">I have read the <a
+#     href="sitelicense" target="license">Connexions Site License</a>
+#     and I agree to be bound by its terms</span>
+msgid "confirm_label_license"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <h3 i18n:translate="">Here's something like what you are agreeing to:</h3>
+msgid "Here's something like what you are agreeing to:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="confirm_one">
+#	    You can "use" (access, read, perform, copy, redistribute,
+#	    transform, teach with, <em>etc</em>.) the content in the
+#	    repository and our software for accessing it, provided you
+#	    obey the content licenses (e.g the <a
+#	    href="http://www.creativecommons.org/licenses/">Creative
+#	    Commons licenses</a>) and <a
+#	    href="http://www.loc.gov/copyright/">US and foreign
+#	    Copyright Laws and international treaties</a> when you do
+#	    so.  <em>Every module in the repository has its own
+#	    license, so please be aware that these terms may
+#	    vary.</em> This does not affect your right to <a
+#	    href="http://www.utsystem.edu/ogc/intellectualproperty/copypol2.htm">fair
+#	    use</a>.
+#	  </li>
+msgid "confirm_one"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="confirm_two">
+#	    You agree not to hold us responsible for <em>anything at
+#	    all</em>, whether a bug in the software, untrue or
+#	    inaccurate content, politically or otherwise offensive
+#	    content, the moral decline of society, or the decisions of
+#	    national leaders.  You agree that we have no liability,
+#	    are offering no warranties and don't even guarantee that
+#	    it will work (but, off the record, we're pretty sure it
+#	    will).
+#	  </li>
+msgid "confirm_two"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="confirm_three">
+#	    <em>If you plan to contribute new content to our
+#	    repository</em>, you must get an account with us.  You are
+#	    responsible for that account (including the password).  If
+#	    any monkey-business happens under that account, you agree
+#	    that you will be held responsible.
+#	  </li>
+msgid "confirm_three"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="confirm_four">
+#	    When you use Connexions, y'all agree to be governed by <a
+#	    href="http://www.txdps.state.tx.us/director_staff/texas_rangers/#Silver%20Stars%20and%20Sixguns">Texas
+#	    law</a> and, in the unpalatable event of a legal dispute,
+#	    to have it resolved in our hometown: <a
+#	    href="http://www.cityofhouston.gov/">Space City, USA</a>!
+#	  </li>
+msgid "confirm_four"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <h3 i18n:translate="">Here's what we are agreeing to:</h3>
+msgid "Here's what we are agreeing to:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="">We can change the service or the content of the repository at any time without telling you.</li> 
+msgid "We can change the service or the content of the repository at any time without telling you."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="">We can put stuff in and take stuff out of the repository without telling you.</li> 
+msgid "We can put stuff in and take stuff out of the repository without telling you."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="">We can change the terms of this agreement,
+#   but we have to post the new agreement on our website 30 days before
+#   it goes into effect.</li> 
+msgid "We can change the terms of this agreement, but we have to post the new agreement on our website 30 days before it goes into effect."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="confirm_five">
+#	    We are not obliged to edit or otherwise monitor any
+#	    contributions to the repository, although we reserve the
+#	    right to do so if we determine it's necessary (for
+#	    example, if some large mean corporation threatens us with
+#	    decapitation)
+#	  </li>
+msgid "confirm_five"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/confirm_account_form.pt
+#. <li i18n:translate="confirm_six">
+#	    We agree to obey the laws of Texas and the US, not any
+#	    other state or country, and if anything goes wrong
+#	    legally, we get to go to court in Houston, whose motto is
+#	    "Houston. It's Hot!"
+#	  </li>
+msgid "confirm_six"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <h1 i18n:translate="">Create Workgroup</h1>
+msgid "Create Workgroup"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <p i18n:translate="create_workgroup_a">Workgroups give you a place to collaborate with others.
+#    (<a href="/help/authoring/authorguide#workgroups">more about workgroups</a>)</p>
+msgid "create_workgroup_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <span class="legend" i18n:translate="">Workgroup Properties</span>
+msgid "Workgroup Properties"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <span i18n:translate="">Group ID</span>
+msgid "Group ID"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <div id="groupname_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter a unique ID for the group here</div>
+msgid "Enter a unique ID for the group here"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <span i18n:translate="">Name</span>
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span i18n:translate="">Name</span>
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <span i18n:translate="">Name</span>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span i18n:translate="">Name</span>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span i18n:translate="">Name</span>
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <th i18n:translate="">Name</th>
+msgid "Name"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <div id="title_help" i18n:translate="" class="help" style="visibility:hidden"> 
+#    Enter a name for the workgroup.</div>
+msgid "Enter a name for the workgroup."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <span i18n:translate="">Email</span>
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <th i18n:translate="">Email</th>
+msgid "Email"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <div id="email_help" i18n:translate="create_workgroup_b" class="help" style="visibility:hidden">
+#    If there is a common email address (like a mailing list)
+#    shared by all workgroup members, enter it here.</div>
+msgid "create_workgroup_b"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <span i18n:translate="">Description</span>
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span i18n:translate="">Description</span>
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <span i18n:translate="">Description</span>
+#: ./skins/CNXPloneSite/login_success.pt
+#. <th i18n:translate="">Description</th>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span i18n:translate="">Description</span>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span i18n:translate="">Description</span>
+msgid "Description"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#. <div id="description_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter a description of purpose for this workgroup.</div>
+msgid "create_workgroup_c"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/create_workgroup.pt
+#.  <input class="context add" tabindex="" type="submit"
+#     i18n:attributes="value" value="Create" tal:attributes="tabindex
+#     tabindex/next;"/>
+msgid "Create"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <h1 i18n:translate="">Our apologies...</h1>
+msgid "Our apologies..."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <p i18n:translate="">The item you requested does not exist on this server or cannot be served.</p>
+msgid "The item you requested does not exist on this server or cannot be served."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <p i18n:translate="">Please double check the web address or use the search function on this page to find what you are looking for.</p>
+msgid "Please double check the web address or use the search function on this page to find what you are looking for."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <p i18n:translate="">
+#    If you know you have the correct web address but are encountering an error, please 
+#    send a mail to the administrator of this site.
+#  </p>
+msgid "If you know you have the correct web address but are encountering an error, please send a mail to the administrator of this site."
+msgstr ""
+
+
+msgid "Email Administrator"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <p i18n:translate="">Thank you.</p>
+msgid "Thank you."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <h1 i18n:translate="">Site error</h1>
+msgid "Site error"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <p i18n:translate="">
+#        This site encountered an error trying to fulfill your request.
+#        The errors were:
+#        </p>
+msgid "This site encountered an error trying to fulfill your request. The errors were:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <span class="legend" i18n:translate="">Error Details</span>
+msgid "Error Details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <div class="label" i18n:translate="">Error Type</div>
+msgid "Error Type"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <div class="label" i18n:translate="">Error Message</div>
+msgid "Error Message"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <div class="label" i18n:translate="">Error Value</div>
+msgid "Error Value"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/default_error_message.pt
+#. <span i18n:translate="">Report this bug</span>
+msgid "Report this bug"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#.  <span i18n:translate="">Edit</span>
+msgid "Edit"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <p i18n:translate="">
+#    Add the relevant details of the file to be added in the form below,
+#    select the file with the 'Browse' button, and press 'Save'.
+#    </p>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <p i18n:translate="">
+#    Add the relevant details of the file to be added in the form below,
+#    select the file with the 'Browse' button, and press 'Save'.
+#    </p>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <p i18n:translate="">
+#    Add the relevant details of the file to be added in the form below,
+#    select the file with the 'Browse' button, and press 'Save'.
+#    </p>
+msgid "Add the relevant details of the file to be added in the form below, select the file with the 'Browse' button, and press 'Save'."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span class="legend" i18n:translate="">File details</span>
+msgid "File details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <div id="id_help" 
+#    i18n:translate="file_edit_helpname"
+#    class="help" 
+#    style="visibility:hidden">
+#    Enter the Name of the file. This is the part that will show up as part
+#    of the web address. This should be short, descriptive
+#    and preferrably not contain spaces, underscores or mixed case. Example:
+#    "expense-report-2002"
+#  </div>
+msgid "file_edit_helpname"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span i18n:translate="">Title</span>
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <span i18n:translate="">Title</span>
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">Title</span>
+#: ./skins/CNXPloneSite/login_success.pt
+#. <th i18n:translate="">Title</th>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span i18n:translate="">Title</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Title</span>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span i18n:translate="">Title</span>
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span tal:omit-tag="" i18n:translate="">Title</span>
+msgid "Title"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <div id="title_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter the title of the file.</div>
+msgid "Enter the title of the file."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <div id="description_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter a brief description of the file.</div>
+msgid "Enter a brief description of the file."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span i18n:translate="">File</span>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span i18n:translate="">File</span>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span i18n:translate="">File</span>
+msgid "File"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <div id="file_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Select the file to be added by clicking the 'Browse' button.</div>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <div id="file_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Select the file to be added by clicking the 'Browse' button.</div>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <div id="file_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Select the file to be added by clicking the 'Browse' button.
+#                </div>
+msgid "Select the file to be added by clicking the 'Browse' button."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <em i18n:translate="">Note: uploads must be smaller than 50 MB.</em>
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <em i18n:translate="">Note: uploads must be smaller than 50 MB.</em>
+msgid "Note: uploads must be smaller than 50 MB."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span i18n:translate=""
+#    tal:define="file_size python:here.getObjSize(here)"
+#    tal:condition="python:test(file_size, 0, 1)">
+#    (No file has been uploaded yet)</span>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span i18n:translate=""
+#    tal:define="file_size python:here.getObjSize(here)"
+#    tal:condition="python:test(file_size, 0, 1)">
+#    (No file has been uploaded yet)
+#  </span>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span i18n:translate=""
+#                      tal:define="file_size python:here.getObjSize(here)"
+#                      tal:condition="python:test(file_size, 0, 1)">
+#                  (No file has been uploaded yet)
+#                </span>
+msgid "(No file has been uploaded yet)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <span i18n:translate="">Edit Contents</span>
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span i18n:translate="">Edit Contents</span>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span i18n:translate="">Edit Contents</span>
+msgid "Edit Contents"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <div id="edit_contents_help" i18n:translate="" class="help" style="visibility:hidden">
+#    This file is a text file, and you can edit its contents directly.</div>
+msgid "This file is a text file, and you can edit its contents directly."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/file_edit_form.pt
+#. <input class="context" type="submit" tabindex="" name="Change" value="Save" 
+#    i18n:attributes="value" tal:attributes="tabindex tabindex/next"/> 
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <input class="context" 
+#    type="submit" 
+#    name="change" 
+#    value="Save" 
+#    tabindex=""
+#    i18n:attributes="value"
+#    tal:attributes="tabindex tabindex/next;"
+#   /> 
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <input class="context" type="submit" tabindex="" name="Change" value="Save" i18n:attributes="value"
+#    tal:attributes="tabindex tabindex/next"/> 
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div class="field">
+#                    <input class="context"
+#                           tabindex="" 
+#                           type="submit" 
+#                           value="Save" 
+#                           i18n:attributes="value"
+#                           tal:attributes="tabindex tabindex/next;" 
+#                           />
+#                </div>
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <input class="context" 
+#                       type="submit"
+#                       tabindex="" 
+#                       name="Change" 
+#                       value="Save" 
+#                       i18n:attributes="value"
+#                       tal:attributes="tabindex tabindex/next"
+#                       /> 
+msgid "Save"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_listing.pt
+#. <a href="" class="link-parent" tal:define="parent_url
+#    python:here.navigationParent(here, template.getId())" 
+#    tal:condition="parent_url" tal:attributes="href parent_url"
+#    i18n:translate="">Up one level</a>
+msgid "Up one level"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_listing.pt
+#. <p tal:condition="not: here/contentValues" i18n:translate="">
+#         There are currently no items in this folder.</p>
+msgid "There are currently no items in this folder."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <h1 i18n:translate="">Rename item(s)</h1>
+msgid "Rename item(s)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <p i18n:translate="">Each item has a Name and a Title, which you
+#    can change by entering the new details be low.</p>
+msgid "Each item has a Name and a Title, which you can change by entering the new details below."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <div class="label" i18n:translate="">New Name</div>
+msgid "New Name"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <em i18n:translate=""> (Item not renameable)</em>
+msgid " (Item not renameable)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <div class="label" i18n:translate="">New Title</div>
+msgid "New Title"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#. <input class="context" type="submit" value="Rename All" tabindex=""
+#    i18n:attributes="value" tal:attributes="tabindex tabindex/next;" />
+msgid "Rename All"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/folder_rename_form.pt
+#.  <input class="context" type="submit" value="Cancel"
+#     onClick="javascript:document.folder_rename.action=document.folder_rename.here.value+'/folder_contents';
+#     document.folder_rename.submit();" tabindex="" 
+#     i18n:attributes="value" tal:attributes="tabindex tabindex/next;"/>
+#: ./skins/CNXPloneSite/password_form.pt
+#. <input class="context"
+#                   tabindex=""
+#                   type="submit"
+#                   name="cancel"
+#                   value="Cancel"
+#                   i18n:attributes="value"
+#                   tal:attributes="tabindex tabindex/next;"
+#                   />
+msgid "Cancel"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/footer.pt
+#. <img src="" 
+#	    height="30"
+#	    width="96"
+#	    border="0"
+#            alt="Powered by Plone"
+#	    title="This site was built using the Plone Content
+#           Management System. 
+#           Click for more information."
+#	    tal:attributes="src string:$portal_url/plone_powered.gif" 
+#	    i18n:attributes="alt title" /
+msgid "Powered by Plone"
+msgstr ""
+
+msgid "This site was built using the Plone Content Management System. Click for more information."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/footer.pt
+#. <p id="sponsorBlurb" i18n:translate="">The Connexions Project is <a
+#    href="/aboutus/people/sponsors">supported</a> by the <a
+#    href="http://www.hewlett.org/">William and Flora Hewlett
+#    Foundation</a></p>
+msgid "The Connexions Project is <a href=\"/aboutus/people/sponsors\">supported</a> by the <a href=\"http://www.hewlett.org/\">William and Flora Hewlett Foundation</a>"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/footer.pt
+#. <strong class="netscape4" i18n:translate="footer_end">
+#    If you can read this text, it means you are not experiencing the Plone design at its best.
+#    Plone makes heavy use of CSS, which means it is accessible to any internet browser, 
+#    but the design needs a 
+#    <a href="http://www.webstandards.org/upgrade/">standards-compliant
+#    browser to look like we intended it</a>. Just so you know ;)</strong>
+msgid "footer_end"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/header.pt 
+#. <input class="context searchButton" type="submit" value="Search"
+#    tal:attributes="tabindex tabindex/next" i18n:attributes="value" />
+#: ./skins/CNXPloneSite/management/list_accounts.pt
+#. <input class="context searchButton"
+#	         tabindex=""
+#	         type="submit"
+#	         name="search"
+#	         value="Search"
+#		 i18n:attributes="value"
+#	         tal:attributes="name string:${template/id}:action;
+#                                 tabindex tabindex/next;" />
+msgid "Search"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/header.pt 
+#. <span tal:condition="here/portal_membership/isAnonymousUser"
+#    i18n:translate="">You are not logged in</span>
+msgid "You are not logged in"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/header.pt 
+#. <span tal:omit-tag="" i18n:translate="">You are here:</span>
+msgid "You are here:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/header.pt 
+#. <a i18n:translate="" tal:attributes="href portal_url">Home</a>
+#. <span tal:condition="not: breadcrumbs" i18n:translate="" tal:omit-tag="">Home</span>
+msgid "Home"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <p i18n:translate="">
+#    Using this form, you can enter details about the image, and upload 
+#    an image if required.
+#    </p> 
+msgid "Using this form, you can enter details about the image, and upload an image if required."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <span class="legend" i18n:translate="">Image Details</span>
+msgid "Image Details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <div id="id_help" 
+#    i18n:translate="image_edit_form_helpname"
+#    class="help" 
+#    style="visibility:hidden">
+#      Enter the Short Name of the image. This is the part that will show up as part
+#      of the web address. This should be short, descriptive
+#      and preferrably not contain spaces, underscores or mixed case. Example:
+#      "expense-report-2002"
+#  </div>
+msgid "image_edit_form_helpname"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <div id="title_help" 
+#    i18n:translate="" class="help" style="visibility:hidden">
+#     Enter the title of the image. </div>
+msgid "Enter the title of the image."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#.  <div id="description_help" i18n:translate="" class="help" style="visibility:hidden">
+#     Enter a brief description of the image. </div>
+msgid "Enter a brief description of the image."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <span i18n:translate="">Image</span>
+msgid "Image"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <div id="image_help" 
+#     i18n:translate=""
+#     class="help" 
+#     style="visibility:hidden">
+#     Select the image to be added by clicking the 'Browse' button.</div>
+msgid "Select the image to be added by clicking the 'Browse' button."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_edit_form.pt
+#. <span i18n:translate=""
+#    tal:define="file_size here/size|nothing"
+#    tal:condition="python:test(file_size, 0, 1)">
+#    (No image has been uploaded yet)
+#  </span>
+msgid "(No image has been uploaded yet)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_view.pt
+#. <span class="legend" i18n:translate="">Image details</span>
+msgid "Image details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_view.pt
+#. <div class="label" i18n:translate="">Size</div>
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span tal:omit-tag="" i18n:translate="">Size</span>
+msgid "Size"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_view.pt
+#. <span tal:condition="python:test(size, 0, 1)" i18n:translate="">(No image has been uploaded)</span>
+msgid "(No image has been uploaded)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_view.pt
+#. <div class="label" i18n:translate="">Image type</div>
+msgid "Image type"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/image_view.pt
+#. <a href="" i18n:translate="" tal:attributes="href here/absolute_url">Click here to get the image</a>
+msgid "Click here to get the image"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <h1 i18n:translate="">Account Request: Select Username</h1>
+msgid "Account Request: Select Username"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span class="legend" i18n:translate="">Select a username</span>
+msgid "Select a username"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Select a username:</span>
+msgid "Select a username:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <div id="username_help" i18n:translate="init_account_helpusername" class="help" style="visibility:hidden">
+#    Enter the user name you want, usually something like
+#    'jsmith'. No spaces or special characters. 
+#    This is the name you use to log in.
+#  </div>
+msgid "init_account_helpusername"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <b i18n:translate="">Other available usernames:</b>
+msgid "Other suggested usernames:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <em i18n:translate="">These usernames are only suggestions. You may
+#   choose any available username, whether or not it's listed here.</em>
+msgid "You may choose any available username, whether or not it's listed here"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <b i18n:translate="">Unavailable usernames:</b>
+msgid "Unavailable usernames:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <em i18n:translate="">These user names are already in use by other users.</em>
+msgid "These user names are already in use by other users."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Password</span>
+msgid "Password"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <div id="password_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter the password you want. Minimum 5 characters.</div>
+msgid "Enter the password you want. Minimum 5 characters."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Confirm Password</span>
+msgid "Confirm Password"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <div id="confirm_password_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Re-enter the password. Make sure the passwords are identical.</div>
+msgid "Re-enter the password. Make sure the passwords are identical."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">In what fields of study would you be most
+#   interested in contributing material? </span>
+msgid "In what fields of study would you be most interested in contributing material?"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <div id="interests_help" i18n:translate="" class="help" style="visibility:hidden">
+#    List any disciplines or areas of research in which you might want to contribute to Connexions.</div>
+msgid "List any disciplines or areas of research in which you might want to contribute to Connexions."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">How did you find out about Connexions?</span>
+msgid "How did you find out about Connexions?"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <div id="refer_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Please check all that apply.</div>
+msgid "Please check all that apply."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Search Engine</span>
+msgid "Search Engine"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Individual "word-of-mouth"</span>
+msgid "Individual \"word-of-mouth\""
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Published Article</span>
+msgid "Published Article"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Conference Presentations</span>
+msgid "Conference Presentations"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Other</span>
+msgid "Other"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <span i18n:translate="">Comments?</span>
+msgid "Comments?"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. <div id="comment_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Anything else you'd like to tell us.</div>
+msgid "Anything else you'd like to tell us."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/init_account_form.pt
+#. 	<input class="context" 
+#	       type="submit"
+#               name="submit" 
+#               value="Continue"
+#               i18n:attributes="value"
+#               tal:attributes="tabindex tabindex/next;" />
+#: ./skins/CNXPloneSite/join_form.pt
+#. <input class="context" 
+#                       type="submit"
+#                       tabindex="" 
+#                       name="submit" 
+#                       value="Continue"
+#                       i18n:attributes="value"
+#                       tal:attributes="tabindex tabindex/next;" />
+msgid "Continue"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <h1 i18n:translate="">Request a Connexions Account</h1>
+msgid "Request a Connexions Account"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <p i18n:translate="join_form_reg">
+#    By registering for an account, you can contribute new modules or
+#    courses to Connexions. You can freely read and use the content in the
+#    system without creating an account.  Please make sure your
+#    email address is accurate; your account will not be created
+#    without email confirmation.
+#    </p>
+msgid "join_form_reg"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span class="legend" i18n:translate="">Personal Details</span>
+msgid "Personal Details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="honorific_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter your title e.g. Sir, Dr.</div>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="honorific_help" 
+#                    i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter your title eg. Sir, Dr.
+#                </div>
+msgid "Enter your title e.g. Sir, Dr."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">First Name</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">First Name</span>
+msgid "First Name"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="first_name_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter your first name, e.g. John</div>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="first_name_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter your first name, eg. John
+#                </div>
+msgid "Enter your first name, e.g. John"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">Middle Name</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Middle Name</span>
+msgid "Middle Name"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="middle_name_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter your middle name or initial, e.g. Q.</div>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="middle_name_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter your middle name or initial, eg. Q.
+#                </div>
+msgid "Enter your middle name or initial, e.g. Q."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">Last Name</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Last Name</span>
+msgid "Last Name"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="sur_name_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter your last name, e.g. Doe.</div>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="sur_name_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter your last name, eg. Doe.
+#                </div>
+msgid "Enter your last name, e.g. Doe."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">Suffix</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Suffix</span>
+msgid "Suffix"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="lineage_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter any name suffix, e.g. Jr. or III</div>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="lineage_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter any name suffix, eg. Jr., or III
+#                </div>
+msgid "Enter any name suffix, e.g. Jr. or III"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">E-mail</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">E-mail</span>
+msgid "E-mail"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="email_help" i18n:translate="join_form_email" class="help" style="visibility:hidden">
+#                Enter your email address. This is necessary in case you lose your
+#                password. We respect your privacy, and will not give the address
+#                away to any third parties.
+#                </div>  
+msgid "join_form_email"
+msgstr "Enter your email address. This is necessary in case you lose your password. We respect your privacy, and will not give the address away to any third parties"
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <span i18n:translate="">Homepage</span>
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Homepage</span>
+msgid "Homepage"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/join_form.pt
+#. <div id="homepage_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter the address of your personal webpage e.g. http://www.jdoe.com/~jdoe/</div>
+msgid "Enter the address of your personal webpage e.g. http://www.jdoe.com/~jdoe/"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <h5 i18n:translate="" style="white-space: nowrap">${obj_type} Status</h5>
+msgid "${obj_type} Status"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <strong i18n:translate="">State:</strong>
+msgid "State:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <div class="content odd" i18n:translate="log_action_a"
+#                 tal:define="action o/action | nothing;
+#	                     actor o/actor | nothing;
+#	                     actor_home python:container.portal_membership.getHomeUrl(actor);">
+#	    
+#	    <strong>Last action</strong>: ${a_action}
+#	    by ${a_actor}
+#	    on ${a_time}
+#           ${a_message} 
+msgid "log_action_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <strong i18n:translate="">Actions</strong>
+msgid "Actions"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <strong i18n:translate="">View</strong>
+#: ./skins/CNXPloneSite/patches.pt
+#. <a href="" tal:attributes="href
+#	string:${obj/absolute_url}/patch_view" i18n:translate="">View</a>
+#. <a href="" tal:attributes="href
+#	  string:${obj/absolute_url}/patch_view" i18n:translate="">View</a>
+msgid "View"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/logged_out.pt
+#. <h1 i18n:translate="">You are now logged out</h1>
+msgid "You are now logged out"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/logged_out.pt
+#. <p i18n:translate="logged_out_a">
+#      Thank you for using Connexions. Please come again soon!  If you
+#      have any comments on your experience, please <a href=""
+#      tal:attributes="href string:mailto:${here/email_from_address}">email us</a>.
+#    </p>
+msgid "logged_out_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_failed.pt
+#. <h1 i18n:translate="">Sign-in failure</h1>
+msgid "Sign-in failure"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_failed.pt
+#. <p i18n:translate="login_falied_not">
+#            You are not currently logged in.  Your user name and/or password may 
+#            be incorrect.  <a href="mail_password_form">Click here</a> to have
+#            your password reset if you have forgotten it or contact
+#            ${portal_email}
+#            </p>
+msgid "login_falied_not"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_failed.pt
+#. <h1 i18n:translate="">Cookies must be enabled</h1>
+msgid "Cookies must be enabled"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_failed.pt
+#. <p i18n:translate="login_failed_a">You are not currently signed in because you are not accepting 
+#            cookies.  Please make sure that your browser is configured to 
+#            <a href="enabling_cookies">accept cookies</a>.</p>
+msgid "login_failed_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_failed.pt
+#. <p i18n:translate="">If you are still reaching this page after correctly configuring 
+#            your browser, here are some possible reasons:</p>
+msgid "If you are still reaching this page after correctly configuring your browser, here are some possible reasons:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_failed.pt
+#. <ul i18n:translate="login_failed_list">
+#               <li>You may be running web filtering software that 
+#               disables cookies.  If so, you will need to configure the
+#               software so that it enables you to accept cookies from
+#               ${portal_url}</li>
+#               <li>Your computer may be behind a firewall or proxy server
+#               that prevents cookies from being sent to or from your browser.
+#               If so, you will need to ask your systems administrator if the
+#               problem can be fixed.</li>
+#            </ul>
+msgid "login_failed_list"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <h1 i18n:translate="">Welcome to the Connexions editing interface!</h1>
+msgid "Welcome to the Connexions editing interface!"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <div style="margin: 3.5ex 3em" i18n:translate="login_succes_in_explain" >
+#    <p style="font-size: 120%; margin-top: 1.5ex">
+#              <b>You are now logged in.</b><br /><br />
+#	      You may wish to see  an overview of <a
+#	      href="/help/usingplone">October's major changes to the site</a>,
+#	      or jump right in and start editing content in
+#	      ${workspace}.
+#	      If you have any problems, please ${portal_email}.
+#	    </p>
+#	    <p align="center" style="width: 100%; text-align: center; font-size: 130%; margin-top: 2ex">
+#	      <a href="/help">Help</a> &middot;
+#	      <a href="/help/authoring/xml">Editing Resources</a>
+#	    </p>
+#   </div>
+msgid "login_success_in_explain"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <a tal:define="mystuff python:[a['url'] for a in actions['user'] if a['id']=='mystuff']" tal:attributes="href mystuff/pop" i18n:translate="">your workspace</a>
+msgid "your workspace"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <a tal:attributes="href string:mailto:${here/email_from_address}" i18n:translate="">email us</a>
+msgid "email us"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <h1 i18n:translate="">Items published since your last login</h1>
+msgid "Items published since your last login"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <th i18n:translate="">Type</th>
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span tal:omit-tag="" i18n:translate="">Type</span>
+msgid "Type"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/login_success.pt
+#. <th i18n:translate="">Modified</th>
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span tal:omit-tag="" i18n:translate="">Modified</span>
+msgid "Modified"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/main_template.pt
+#. <a class="skipnav" i18n:translate=""
+#   href="#documentContent">Skip to content</a>
+msgid "Skip to content"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/navigation_tree_slot.pt
+#. <h5 i18n:translate="">Navigation</h5>
+msgid "Navigation"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/navigation_tree_slot.pt
+#. <span i18n:translate="">Switch to Contents view</span>
+#. <span i18n:translate="">Switch to Contents view</span>
+msgid "Switch to Contents view"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/navigation_tree_slot.pt
+#. <span i18n:translate="">Switch to Item view</span>
+msgid "Switch to Item view"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/navigation_tree_slot.pt
+#. <span i18n:translate="">...</span>
+#. <span i18n:translate="">...</span>
+msgid "..."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/news_slot.pt
+#. <h5 i18n:translate="">What's New</h5>
+msgid "What's New"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/news_slot.pt
+#. <a href="/news/news_all" i18n:translate="">More News...</a>
+msgid "More News..."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/newsitem_view.pt
+#. <p tal:condition="not: len_text" i18n:translate="">
+#    This item does not have any body text, click the edit tab to change it.</p>
+msgid "This item does not have any body text, click the edit tab to change it."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <span class="legend" i18n:translate="">Paper details</span>
+msgid "Paper details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <div id="id_help" i18n:translate="paper_edit_helpname" class="help" style="visibility:hidden">
+#    Enter the Name of the paper. This is the part that will show up as part
+#    of the web address. This should be short, descriptive
+#    and preferrably not contain spaces, underscores or mixed case. Example:
+#    "expense-report-2002"
+#  </div>
+msgid "paper_edit_helpname"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <div id="title_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter the title of the paper.</div>
+msgid "Enter the title of the paper."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <div id="description_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter a brief description of the paper.</div>
+msgid "Enter a brief description of the paper."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/paper_edit_form.pt
+#. <div id="edit_contents_help" i18n:translate="" class="help" style="visibility:hidden">
+#    This file is a text file, and you can edit its contents directly.</div>
+msgid "This file is a text file, and you can edit its contents directly."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <span i18n:translate="">Change password for ${loginid}</span>
+msgid "Change password for ${loginid}"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <span class="legend" i18n:translate="">Password Details</span>
+msgid "Password Details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <span i18n:translate="">New password</span>
+msgid "New password"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <div id="new_password_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Enter your new password. Minimum 5 characters.</div>  
+msgid "Enter your new password. Minimum 5 characters."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <span i18n:translate="">Confirm password</span>
+msgid "Confirm password"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <div id="confirm_password_help" i18n:translate="" class="help" style="visibility:hidden">
+#    Re-enter the password. Make sure the passwords are identical.</div>
+msgid "Re-enter the password. Make sure the passwords are identical."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/password_form.pt
+#. <input class="context"
+#                   tabindex="" 
+#                   type="submit" 
+#                   value="Change Password" 
+#                   i18n:attributes="value"
+#                   tal:attributes="tabindex tabindex/next;"
+#                   />
+msgid "Change Password"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_conflict.pt
+#. <h1 i18n:translate="">Conflict while applying suggested edits</h1>
+msgid "Conflict while applying suggested edits"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_conflict.pt
+#. <p i18n:translate="">The above error occurred while attempting to apply the edits. This may be because:</p>
+msgid "The above error occurred while attempting to apply the edits. This may be because:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_conflict.pt
+#. <ul i18n:translate="patch_conflict_a">
+#	<li>You have made local modifications that are conflict with
+#	    these edits, or</li>
+#	<li>The edits were made against an older, incompatible version
+#	    of the content</li>
+#      </ul>
+msgid "patch_conflict_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_conflict.pt
+#. <p i18n:translate="">
+#	You may need to contact the submitter to work out differences.
+#      </p>
+msgid "You may need to contact the submitter to work out differences."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_status.pt
+#. <p tal:condition="python:request.action == 'accept'" i18n:translate="">
+#	<strong>Note:</strong> After applying the edit, you must
+#	publish the edited module for the changes to take affect.
+#      </p>
+msgid "<strong>Note:</strong> After applying the edit, you must	publish the edited module for the changes to take effect."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_status.pt
+#. <span i18n:translate="">Comments</span>
+msgid "Comments"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_status.pt
+#.  <div id="message_help" i18n:translate="" class="help" style="visibility:hidden"> 
+#     Please enter a message to be sent to the submitter.</div>
+msgid "Please enter a message to be sent to the submitter."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <h1 i18n:translate="">Suggested Edits for ${obj_title}</h1>
+msgid "Suggested Edits for ${obj_title}"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">About These Edits</b>
+msgid "About These Edits"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">Status:</b>
+msgid "Status:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">${state} by:</b>
+msgid "${state} by:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">On:</b>
+msgid "On:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">With Message:</b
+msgid "With Message:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">Original Object:</b>
+msgid "Original Object:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">Original Version:</b>
+msgid "Original Version:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <input class="standalone" type="submit" name="apply" value="Apply In:" i18n:attributes="value" />
+msgid "Apply In:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <b i18n:translate="">Workspaces</b>
+#: ./skins/CNXPloneSite/workspaces_slot.pt
+#. <h5 i18n:translate="">Workspaces</h5>
+msgid "Workspaces"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <tal:block i18n:translate="" tal:condition="python:radios > 1">
+#    <input type="radio" name="workspace" value="__other__" />
+#    Other:
+#  </tal:block>
+msgid "Other:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <input class="standalone" type="submit" name="reject" value="Reject" i18n:attributes="value"/>
+msgid "Reject"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patch_view.pt
+#. <h1 style="margin-top: 0.5em" i18n:translate="">Details</h1>
+msgid "Details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches.pt
+#. <h1 i18n:translate="">Suggested Edits</h1>
+msgid "Suggested Edits"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches.pt
+#. <h2 i18n:translate="">Suggested edits to your content</h2>
+msgid "Suggested edits to your content"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches.pt
+#. <tr i18n:translate="patches_a">
+#	  <th>Edit</th>
+#	  <th>Original</th>
+#	  <th>Submitter</th>
+#	  <th>Date</th>
+#	  <th>Message</th>
+#	  <th>Status</th>
+#	</tr>
+msgid "patches_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches.pt
+#. <h2 i18n:translate="">Edits you've suggested to others</h2>
+msgid "Edits you've suggested to others"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches.pt
+#. <tr i18n:translate="patches_b">
+#	    <th>Edit</th>
+#	    <th>Original</th>
+#	    <th>Reviewer</th>
+#	    <th>Date</th>
+#	    <th>Message</th>
+#	    <th>Status</th>
+#	  </tr>
+msgid "patches_b"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches_slot.pt
+#. <h5 i18n:translate="">Patches</h5>
+msgid "Patches"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/patches_slot.pt
+#. <a href="/patches" i18n:translate="">View All</a>
+msgid "View All"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/pending_slot.pt
+#. <h5 i18n:translate="">Pending</h5>
+msgid "Pending"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/pending_slot.pt
+#. <a href="/collaborations" i18n:translate="">Role Request<tal:plural
+#   tal:condition="python:len(collabs) != 1">s</tal:plural></a>
+msgid "Role Request(s)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/pending_slot.pt
+#. <a href="/patches" i18n:translate="">Suggested Edit<tal:plural
+#   tal:condition="python:len(patches) != 1">s</tal:plural></a> 
+msgid "Suggested Edit(s)"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <h1 i18n:translate="">My Preferences</h1>
+msgid "My Preferences"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <a href="password_form" i18n:translate="">Click here to change your password.</a> 
+msgid "Click here to change your password."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span class="legend" i18n:translate="">Member Details</span>
+msgid "Member Details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Full name</span>
+msgid "Full name"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="full_name_help" i18n:translate="" class="help" style="visibility:hidden">
+#     You can change your full name here.</div>
+msgid "You can change your full name here."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="new_email_help"
+#                         i18n:translate="" 
+#                         class="help" 
+#                         style="visibility:hidden">
+#                    Enter your new e-mail address here, if you want to change it.
+#                    </div>
+msgid "Enter your new e-mail address here, if you want to change it."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="homepage_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter the address of your webpage eg. http://www.example.com/~jdoe
+#                </div>
+msgid "Enter the address of your webpage eg. http://www.example.com/~jdoe"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Form Help</span>
+msgid "Form Help"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="formtooltips_help"
+#                         i18n:translate="" 
+#                         class="help" 
+#                         style="visibility:hidden">
+#                    Select whether you want form help pop-ups to be displayed.
+#                    </div>
+msgid "Select whether you want form help pop-ups to be displayed."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <label for="cb_formtooltips" i18n:translate="">Yes</label>
+#. <label for="cb_visible_ids" i18n:translate="">Yes</label>
+msgid "Yes"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <label for="cb_noformtooltips" i18n:translate="">No</label>
+#. <label for="cb_invisible_ids" i18n:translate="">No</label>
+msgid "No"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Display Names</span>
+msgid "Display Names"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <div id="visible_ids_help"
+#                         i18n:translate="personalize_form_a" 
+#                         class="help" 
+#                         style="visibility:hidden">
+#                    Select whether you want Names (also known as IDs) to be 
+#                    visible and editable when editing contents. If you choose not
+#                    to display Names, they will be generated automatically.
+#                    </div>
+msgid "personalize_form_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#. <span i18n:translate="">Look</span>
+msgid "Look"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/personalize_form.pt
+#.  <div id="skin_help"
+#                         i18n:translate="" 
+#                         class="help" 
+#                         style="visibility:hidden">
+#                    Here you choose the appearance of the site. Several styles are available.
+#                    </div>
+msgid "Here you choose the appearance of the site. Several styles are available."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <span class="legend" i18n:translate="">Presentation details</span>
+msgid "Presentation details"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <div id="id_help" 
+#                     i18n:translate="presentation_edit_a"
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter the Name of the presentation. This is the part that will show up as part
+#                of the web address. This should be short, descriptive
+#                and preferrably not contain spaces, underscores or mixed case. Example:
+#                "expense-report-2002"
+#                </div>
+msgid "presentation_edit_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <div id="title_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter the title of the presentation.
+#                </div>
+msgid "Enter the title of the presentation."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#. <div id="description_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                Enter a brief description of the presentation. 
+#                </div>
+msgid "Enter a brief description of the presentation"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/presentation_edit_form.pt
+#.  <div id="edit_contents_help" 
+#                     i18n:translate=""
+#                     class="help" 
+#                     style="visibility:hidden">
+#                This file is a text file, and you can edit its
+#                contents directly.
+#                </div>
+msgid "This file is a text file, and you can edit its contents directly."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/registered.pt
+#. <h1 i18n:translate="">Account Request Complete</h1>
+msgid "Account Request Complete"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/registered.pt
+#. <p i18n:translate="registered_a">
+#	You will now receive an email containing instructions on how
+#	to activate your account and set your password.  You must
+#	activate your account within ${exp_timeout} hours.  
+#      </p>
+msgid "registered_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/registered.pt
+#. <p i18n:translate="registered_b">
+#	In the meantime, you may wish to read over some of our
+#	documentation for new authors at <a href="/help/">the
+#	Quick Start guide</a>. Thank you for your interest in
+#	Connexions!
+#      </p>
+msgid "registered_b"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span i18n:translate="" tal:omit-tag="">My Workspace</span>
+#: ./skins/CNXPloneSite/workspaces_slot.pt
+#. <span i18n:translate="" tal:omit-tag="">My Workspace</span>
+msgid "My Workspace"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <p i18n:translate="workspace_contents_a">
+#          Create new content by pressing  the 'Create New Item' button,
+#          or <a tal:attributes="href string:/content/search?target=${here/getId}">Search</a>
+#          for existing content to add.
+#        </p>
+msgid "workspace_contents_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <option value="Select" i18n:translate="">Select...</option>
+msgid "Select..."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <input class="standalone"
+#                         type="submit"
+#                         name="folder_factories:method"
+#                         value="Create New Item"
+#                         tabindex=""
+#                         style="font-size: 100%;"
+#                         i18n:attributes="value"
+#                         tal:condition="types"
+#                         tal:attributes="tabindex tabindex/next|nothing;
+#                                         value python:test( no_types == 1
+#                                                          , 'Add New ' + types[0].Title()
+#                                                          , 'Create New Item');" />
+msgid "Create New Item"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#.  <input class="standalone"
+#                         type="submit"
+#                         value="Search for Published Content"
+#                         tabindex=""
+#                         style="font-size: 100%"
+#                         i18n:attributes="value"
+#                         tal:attributes="tabindex tabindex/next|nothing" />
+msgid "Search for Published Content"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <input class="noborder"
+#                                           type="checkbox"
+#                                           src="select_all_icon.gif"
+#                                           name="selectButton"
+#                                           title="Select/Unselect all items"
+#                                           alt="Select/Unselect all items"
+#                                           onClick="toggleSelect(this); return false;"
+#                                           tal:attributes="src string:$portal_url/select_all_icon.gif"
+#                                           i18n:attributes="title alt"
+#					   />
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <input class="noborder"
+#                                      type="checkbox"
+#                                      src="select_all_icon.gif"
+#                                      name="selectButton"
+#                                      title="Select/Unselect all items"
+#                                      alt="Select/Unselect all items"
+#				      i18n:attributes="title alt"
+#				      onClick="toggleSelect(this); return false;"
+#                                      tal:attributes="src string:$portal_url/select_all_icon.gif"
+#                                      />
+msgid "Select/Unselect all items"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_contents.pt
+#. <span class="expired" i18n:translate=""
+#              tal:condition="python:isExpired(item)">expired</span>
+msgid "expired"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspaces_slot.pt
+#. <span i18n:translate="">Workgroups</span>
+msgid "Workgroups"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspaces_slot.pt
+#. <a href="create_workgroup" i18n:translate="">Create a workgroup...</a
+msgid "Create a workgroup..."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/approve_accounts.pt
+#. <tr i18n:translate="approve_accounts_a">
+#	    <th>Username</th>
+#	    <th>Email</th>
+#	    <th>Name</th>
+#	    <th>Comment</th>
+#	    <th>Status</th>
+#	  </tr>
+msgid "approve_accounts_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/approve_accounts.pt
+#. <strong i18n:translate="">Enter/edit email to send to new author/user:</strong>
+msgid "Enter/edit email to send to new author/user:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/approve_accounts.pt
+#. <span i18n:translate="">Send email to new accounts</span>
+msgid "Send email to new accounts"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/approve_accounts.pt
+#. <input type="submit" class="standalone" name="approve:action" value="Approve accounts" 
+#               tal:attributes="tabindex tabindex/next;" i18n:attributes="value" />
+msgid "Approve accounts"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/approve_accounts.pt
+#. <input type="submit" class="standalone" name="pending_accounts:action" value="Cancel without approving" 
+#               tal:attributes="tabindex tabindex/next;" i18n:attributes="value" />
+msgid "Cancel without approving"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/confirm_delete.pt
+#. <b i18n:translate="">Enter a loginid to delete:</b>
+msgid "Enter a loginid to delete:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/confirm_delete.pt
+#. <i i18n:translate="">You will not be allowed to delete an account
+#   that is already listed as an author or maintainer on a module.</i> 
+msgid "You will not be allowed to delete an account that is already listed as an author or maintainer on a module."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/confirm_delete.pt
+#. <tr i18n:translate="confirm_delete_a">
+#	    <th>Username</th>
+#	    <th>Email</th>
+#	    <th>Name</th>
+#	    <th>Comment</th>
+#	  </tr>
+msgid "confirm_delete_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/confirm_delete.pt
+#. <p i18n:translate="">
+#	  Are you sure you want to delete these accounts? The entire person record will be deleted.
+#	</p>
+msgid "Are you sure you want to delete these accounts? The entire person record will be deleted."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/confirm_delete.pt
+#. <input type="submit" class="destructive"
+#	name="account_delete:action" value="Yes, Delete."
+#	i18n:attributes="value" />
+msgid "Yes, Delete."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/confirm_delete.pt
+#. <input type="submit" class="standalone"
+#	name="account_approvals:action" value="No, Cancel."
+#	i18n:attributes="value" />
+msgid "No, Cancel."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <h1 i18n:translate="">RISA Administration</h1>
+msgid "RISA Administration"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <h2 i18n:translate="">People</h2>
+msgid "People"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <a href="list_accounts" i18n:translate="">Search and Manage People</a>
+msgid "Search and Manage People"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <a href="pending_accounts" i18n:translate="">Approve Requests</a>
+msgid "Approve Requests"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <a tal:define="emails python:','.join([m.getProperty('email') for m
+#	in here.portal_membership.listMembers()])" tal:attributes="href
+#	string:mailto:${user/getUserName}?bcc=${emails}" i18n:translate="">Send Announcement Email</a>
+msgid "Send Announcement Email"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <h2 i18n:translate="">Modules</h2>
+msgid "Modules"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/index_html.pt
+#. <a href="modules/remove.html" i18n:translate="">Remove Module</a>
+msgid "Remove Module"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/list_accounts.pt
+#. <tr i18n:translate="list_accounts_a">
+#	    <th>&nbsp;</th>
+#	    <th>Username</th>
+#	    <th>Email</th>
+#	    <th>Name</th>
+#	    <th>Comment</th>
+#	    <th>Status</th>
+#	    <th>Last Login</th>
+#	    <th>Approved on</th>
+#	  </tr>
+msgid "list_accounts_a"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/list_accounts.pt
+#. <input class="context" type="submit"
+#	    name="confirm_delete:method" value="Remove" i18n:attributes="value"/>
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <input class="context" type="submit"
+#	    name="confirm_delete:method" value="Remove"
+#	    i18n:attributes="value" />
+msgid "Remove"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <p style="color: red" i18n:translate="">More information has been
+#    requested from user ${loginid}.
+#  </p>
+msgid "More information has been requested from user ${loginid}."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <h1 i18n:translate="">New accounts:</h1>
+msgid "New accounts:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <i tal:condition="not:newaccts" i18n:translate="">No new account requests</i>
+msgid "No new account requests"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <th i18n:translate="">Username</th>
+msgid "Username"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <th i18n:translate="">Comment</th>
+#: ./skins/CNXPloneSite/log_action_slot.pt
+#. <strong i18n:translate="">Comment</strong>
+msgid "Comment"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <input class="context" type="submit"
+#	    name="approve_accounts:method" value="Approve"
+#	    i18n:attributes="value" />
+msgid "Approve"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <input class="context" type="submit"
+#	    name="approveAccount:method" value="Inquire"
+#	    i18n:attributes="value" />
+msgid "Inquire"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <h1 i18n:translate="">Pending accounts:</h1>
+msgid "Pending accounts:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <i style="padding-left: 35px;" tal:condition="not:pending"
+#   i18n:translate="">No accounts pending further information.</i> 
+msgid "No accounts pending further information."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <a tal:attributes="href
+#        string:approveAccount?loginid=${singlerow/loginid}" i18n:translate="">approve</a>
+#. <a tal:attributes="href
+#        string:approveAccount?loginid=${singlerow/loginid}" i18n:translate="">approve</a>
+msgid "approve"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <a tal:attributes="href
+#        string:emailPendingAccount.html?loginid=${singlerow/loginid}" i18n:translate="">inquire</a>
+#. <a tal:attributes="href
+#        string:emailPendingAccount.html?loginid=${singlerow/loginid}" i18n:translate="">inquire</a>
+msgid "inquire"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <a tal:attributes="href
+#        string:deleteAccount.html?loginid=${singlerow/loginid}" i18n:translate="">delete</a>
+#. <a tal:attributes="href
+#        string:deleteAccount.html?loginid=${singlerow/loginid}" i18n:translate="">delete</a>
+msgid "delete"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <I i18n:translate="">Comment:</I>
+msgid "Comment:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <h2 i18n:translate="">Weird accounts:</h2>
+msgid "Weird accounts:"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/management/pending_accounts.pt
+#. <i style="padding-left: 35px;" tal:condition="not:pending"
+#   i18n:translate="">No accounts with null status.</i> 
+msgid "No accounts with null status."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_import.pt
+#. <h2 i18n:translate="">Import Module</h2>
+msgid "Import Module"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_import.pt
+#. <p i18n:translate="">
+#	  Import Word Document to convert to module.
+#	</p>
+msgid "Import Word Document to convert to module."
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_import.pt
+#. <p i18n:translate="">
+#	  <strong><em>Warning!!</em></strong>  This is highly
+#	  experimental
+#	</p>
+msgid "<strong><em>Warning!!</em></strong>  This is highly experimental"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/workspace_import.pt
+#. <input class="context uploadButton" type="submit"
+#      name="import" value="Import" i18n:attributes="value" />
+msgid "Import"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/blogfolder_view.pt
+#. <a href="RSS" i18n:translate="">Syndicate this page</a>
+msgid "Syndicate this page"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/blogfolder_view.pt
+#. <a href="http://www.feedburner.com/fb/a/aboutrss" i18n:translate="">About syndication and RSS</a>
+msgid "About syndication and RSS"
+msgstr ""
+
+
+#: ./skins/CNXPloneSite/index_html.pt
+#. <img i18n:attributes="title" alt="Print"
+#                                     tal:attributes="src string:$portal_url/print_icon.gif"
+#                                     src="print_icon.gif" title="Print this page" />
+msgid "Print this page"
+msgstr ""
+
+
+#: ./zpt/explainPatchTool.zpt
+#. <h3 i18n:translate=""> <code>portal_patch</code> Tool </h3>
+msgid " <code>portal_patch</code> Tool "
+msgstr ""
+
+
+#: ./zpt/explainPatchTool.zpt
+#. <p i18n:translate="">This tool allows users to submit patches to published content
+#    items without modifying them</p>
+msgid "This tool allows users to submit patches to published content items without modifying them"
+msgstr ""

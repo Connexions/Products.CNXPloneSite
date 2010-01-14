@@ -1,0 +1,8 @@
+
+- Add a user detail page that gives information like workgroups,
+   modules, etc.
+
+- Fix user deletion to get rid of user folder in Members
+
+
+

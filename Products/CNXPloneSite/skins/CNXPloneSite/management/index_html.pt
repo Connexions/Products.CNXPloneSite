@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rhaptos">
+
+  <body>
+  <div metal:fill-slot="main">
+
+    <h1 i18n:translate="heading_index_rhaptos">Rhaptos Administration</h1>
+      <h2 i18n:translate="heading_index_people">People</h2>
+      <ul>
+	<li><a href="list_accounts" i18n:translate="label_index_search">Search and Manage People</a></li>
+	<li><a href="pending_accounts" i18n:translate="label_index_approve">Approve Requests</a></li>
+	<li><a tal:define="emails python:','.join([m.getProperty('email') for m
+	in here.portal_membership.listMembers()])" tal:attributes="href
+	string:mailto:${user/getUserName}?bcc=${emails}"
+	    i18n:translate="label_index_annoucement_email">Send Announcement Email</a></li>
+      </ul>
+
+      <h2 i18n:translate="heading_index_modules">Modules</h2>
+      <ul>
+	<li><a href="modules/remove.html" i18n:translate="label_index_remove">Remove Module</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+

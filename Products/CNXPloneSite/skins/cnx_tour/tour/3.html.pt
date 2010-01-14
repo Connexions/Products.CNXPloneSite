@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Connexions Web Tour: A new approach to learning</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="2.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="4.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a href="2.html">2</a>
+<a class="current">3</a>
+<a href="4.html">4</a>
+<a href="5.html">5</a>
+<a href="6.html">6</a>
+<a href="7.html">7</a>
+<a href="8.html">8</a>
+<a href="9.html">9</a>
+<a href="10.html">10</a>
+<a href="11.html">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top" rowspan="2">
+<div style="width: 400px; height: 400px;">
+<img src="3/learning-approaches.gif" />
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body">
+
+<div id="title">A new approach to learning</div>
+
+<p>
+
+You can think of the entire base of <em>knowledge as a vast
+continuum</em>, a flow of intricately interrelated concepts.  However, 
+instructors have traditionally delivered knowledge to students in a 
+series of formalized steps that interrupts the flow and breaks the 
+natural links among concepts. 
+<!--
+ However, knowledge is traditionally delivered to students in a series
+of formalized steps that interrupts the flow and breaks the natural
+links among concepts. 
+-->
+Moreover, knowledge is often packaged and
+delivered in ways that fail to take into account students&#146; learning
+styles and natural curiosity.
+
+</p>
+
+<p>
+
+<span class="cnx">Connexions</span> offers <em>an alternative to current
+modes of teaching and learning</em> as well as to how knowledge is
+developed and shared. With powerful software tools, <span
+class="cnx">Connexions</span> gives <em>students of any age</em> access
+to educational materials that can be readily manipulated to suit
+individual learning styles as the student explores the links among
+concepts.
+
+</p>
+
+<div id="next-slide">
+<a href="4.html">How it all works &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Connexions Web Tour: Intellectual property</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="8.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="10.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a href="2.html">2</a>
+<a href="3.html">3</a>
+<a href="4.html">4</a>
+<a href="5.html">5</a>
+<a href="6.html">6</a>
+<a href="7.html">7</a>
+<a href="8.html">8</a>
+<a class="current">9</a>
+<a href="10.html">10</a>
+<a href="11.html">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top" rowspan="2">
+<div style="width: 400px; height: 400px;">
+
+<div class="mini-navigator-div">
+<table id="mini-navigator" border="0" cellspacing="1" width="390px">
+<tr>
+<td><a href="6.html">Content Commons</a></td>
+<td><a href="7.html">Software</a></td>
+<td><a href="8.html">Vision</a></td>
+<td class="current"><a href="9.html">Intellectual Property</a></td>
+<td><a href="10.html">Quality</a></td>
+</tr>
+</table>
+</div>
+
+<img src="9/intellectual-property.gif" />
+<div id="caption">
+All <span class="cnx">Connexions</span> content is covered by the Creative
+Commons <a
+href="http://creativecommons.org/licenses/by/1.0">Attribution license</a>.  <!--Any modification or redistribution of the content
+must also carry the same license.-->
+</div>
+
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body">
+
+<div id="title">Intellectual property</div>
+
+<p>
+
+To promote the freest exchange and collaboration on Modules and courses, 
+all <span class="cnx">Connexions</span> materials are available under a 
+<a target="_blank" href="http://www.creativecommons.org">Creative 
+Commons</a> license.  These licenses ensure that the knowledge we help 
+create will always be available and also ensure that its authors are 
+properly credited.
+
+</p>
+
+<!-- REPLACED BY NEW VERSION BY RICH AND CHRIS K. --
+
+<p>
+
+All materials in <span class="cnx">Connexions</span> are <em>freely
+available</em> under a <a target="_blank"
+href="http://www.creativecommons.org">Creative Commons</a> license
+analogous to the General Public License (GPL) used for Linux Software.
+
+</p>
+
+<p>
+The provisions of the license include that:
+</p>
+
+<ul>
+<li>the author retains copyright on each Module or course</li>
+<li>the author licenses material to the world at large</li>
+<li>attribution is required for reuse of the material</li>
+<li>commercial use of the material is allowed</li>
+<li>derivative works (modification) is allowed</li>
+<li>those who reuse the material must include the same license
+(&#147;share alike,&#148; analogous to &#147;copyleft&#148;)</li>
+</ul>
+
+-- END OLD VERSION -->
+
+<div id="next-slide">
+<a href="10.html">Quality &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

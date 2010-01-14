@@ -1,0 +1,11 @@
+from Products.ExternalMethod.ExternalMethod import ExternalMethod
+from AccessControl.SecurityManagement import newSecurityManager
+
+from Testing.makerequest import makerequest
+app=makerequest(app)
+
+brentmh = app.plone.acl_users.getUserById('brentmh').__of__(app.plone.acl_users)
+newSecurityManager(None, brentmh)
+
+print ExternalMethod('temp','temp','CNXPloneSite.Upgrade','upgrade')(app.plone)
+get_transaction().commit()

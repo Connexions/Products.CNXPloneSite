@@ -1,0 +1,36 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="rhaptos">
+
+<body>
+
+<!-- Workspaces moved box -->
+
+    <div metal:define-macro="portlet" tal:condition="not:here/portal_membership/isAnonymousUser">
+
+      <dl class="portlet" id="portlet-workspaces-moved" tal:condition="python:template.getId() != 'author_home'">
+
+        <dt class="portletHeader">
+          <span class="portletTopLeft"></span>
+          <span>Looking for your workgroups?</span>
+          <span class="portletTopRight"></span>
+        </dt>
+        <dd class="portletItem odd">
+          Try the new Authoring Area tab, or the link in the <strong>Author
+            Account</strong> box
+        
+          <span class="portletBottomLeft"></span>
+          <span class="portletBottomRight"></span>
+
+      <h4>Looking for your workgroups?</h4>
+      <p>Try the new Authoring Area tab, or the link in the <strong>Author Account</strong> box</p>
+        </dd>
+
+      </dl>
+
+    </div>
+
+</body>
+
+</html>

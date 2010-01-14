@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>Connexions Web Tour: How it all works</title>
+<link rel="stylesheet" type="text/css" href="tour.css" />
+<script language="javascript" src="tour.js"></script>
+</head>
+<body>
+
+<div id="top">
+<a href="1.html">
+<img src="connexions-logo.gif">
+</a>
+<span id="previous-next">
+<a class="previous" href="3.html"><span class="arrow">&#171;</span>
+<span class="text">Previous</span></a>
+<span class="dot">&#183;</span>
+<a class="next" href="5.html"><span class="text">Next</span> 
+<span class="arrow">&#187;</span></a>
+</span>
+</div>
+
+<div id="navigator">
+<a href="1.html">1</a>
+<a href="2.html">2</a>
+<a href="3.html">3</a>
+<a class="current">4</a>
+<a href="5.html">5</a>
+<a href="6.html">6</a>
+<a href="7.html">7</a>
+<a href="8.html">8</a>
+<a href="9.html">9</a>
+<a href="10.html">10</a>
+<a href="11.html">11</a>
+<a href="12.html">12</a>
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td valign="top" rowspan="2">
+<div style="width: 400px; height: 400px;">
+
+<map name="factory">
+<area shape="rect" coords="67,84,117,122" href="#" onmouseover="show('authoring_tools','factory')" onmouseout="hide('authoring_tools','factory')" />
+<area shape="rect" coords="152,202,244,261" href="#" onmouseover="show('content_commons','factory')" onmouseout="hide('content_commons','factory')" />
+<area shape="poly" coords="20,26, 41,14, 217,16, 234,27, 234,48, 49,48, 45,63, 57,103, 65,103, 65,119, 30,119, 30,64, 26,48, 20,48" href="#" onmouseover="show('raw_knowledge','factory')" onmouseout="hide('raw_knowledge','factory')" />
+<area shape="poly" coords="125,105, 184,105, 206,127, 206,168, 191,168, 191,135, 174,118, 125,118" href="#" onmouseover="show('modules','factory')" onmouseout="hide('modules','factory')" />
+<area shape="poly" coords="11,175, 57,175, 111,146, 156,162, 172,161, 184,174, 166,192, 153,178, 153,166, 114,152, 66,175, 111,211, 118,258, 129,267, 127,286, 111,288, 105,279, 104,270, 112,260, 106,214, 65,183, 65,218, 10,218" href="#" onmouseover="show('course_composer','factory')" onmouseout="hide('course_composer','factory')" />
+<area shape="poly" coords="157,277, 157,324, 91,324, 91,344, 60,344, 60,386, 107,386, 107,339, 171,339, 171,317, 202,317, 202,277" href="#" onmouseover="show('roadmap','factory')" onmouseout="hide('roadmap','factory')"/>
+</map>
+
+<img src="4/factory.jpg" width="400" height="400" usemap="#factory" 
+border="0">
+
+<div id="factory-instructions">
+<img class="mouse-arrow" src="mouse-arrow.gif" />Pass your mouse over
+a part of the image to learn more about it.
+</div>
+
+<div id="raw_knowledge" class="factory">
+<div class="title">Raw Knowledge Continuum</div>
+<p>
+&#147;Raw knowledge&#148; from the continuum, a flow of intricately
+interrelated concepts, is broken down into small, self-contained 
+Modules.
+</p>
+<p>
+For authors, Modules require much less of a time commitment to write 
+than textbooks and they are also more versatile.  For students, they are 
+more digestible.
+</p>
+</div>
+
+<div id="authoring_tools" class="factory">
+<div class="title">Authoring Tools</div>
+
+<p>
+An easy-to-use authoring suite enables authors to communicate with each
+other, collaborate on shared Modules in Workgroups, and submit work to 
+the Content Commons.
+</p>
+<p>
+XML editors for writing Modules ensure that Modules are written based on 
+the semantic meaning of their content (instead of being based on 
+presentation) so that they can be output to various formats (web, 
+print, etc.).
+</p>
+
+</div>
+
+<div id="modules" class="factory">
+<div class="title">Modules</div>
+<p>
+Modules are small, self-contained nuggets of information, the equivalent
+of a page or two in a textbook.  They can be imagined as individual web
+pages with hyperlinks pointing to related material.
+</p>
+<p>
+Their short length reduces the author's time commitment while their XML
+encoding allows multiple outputs and combinations.
+</p>
+</div>
+
+<div id="course_composer" class="factory">
+<div class="title">Course Composer</div>
+<!--
+<p>
+Instructor use this software tool to weave Modules into customized
+courses that best suit their needs and desires as well as those of the
+students.
+</p>
+-->
+<p>
+Instructors use this tool to search the Content Commons for Modules,
+group them into &#147;chapters,&#148; sequence them into a course, and
+add customized segues and Annotations (&#147;margin notes&#148;).
+</p>
+<p>
+Courses can be placed on the web, presented in class, or posted as a
+paper text or e-book.
+</p>
+</div>
+
+<div id="content_commons" class="factory">
+<div class="title">Content Commons</div>
+<p>
+The Content Commons stores Modules and manages their access.  Its 
+centralized storage system simplifies maintainability, availability, and 
+reliability.
+</p>
+<p>
+Version-control software tracks changes to each Module while metadata
+enables easy search and retrieval.
+</p>
+</div>
+
+<div id="roadmap" class="factory">
+<div class="title">Roadmap</div>
+<p>
+Students access the Content Commons directly using special visualization 
+and navigational tools designed to highlight the non-linear 
+&#147;connexions&#148; both within the same course and across courses 
+and disciplines.
+</p>
+</div>
+
+
+
+</td>
+
+<td valign="top">
+
+<!-- MAIN CONTENT BEGINS HERE -->
+
+<div id="body">
+
+<div id="title">How it all works</div>
+
+<p>
+
+The metaphor of a dynamic knowledge factory to the left shows how <span
+class="cnx">Connexions</span> converts &#147;raw knowledge&#148; into
+small, self-contained <em>Modules</em> of information, which can be used 
+in myriad ways.
+
+</p>
+
+<ul>
+<li>Our <em>Authoring Tools</em> help authors to write content Modules
+in XML</li>
+<li>The <em>Content Commons</em> stores the Modules to be used, reused, 
+updated, and adapted</li>
+<li>The <em>Course Composer</em> allows instructors to weave Modules
+into customized courses that best suit their needs</li>
+<li>The <em>Roadmap</em> navigates students through non-linear
+&#147;connexions&#148; among concepts in the Commons</li>
+</ul>
+
+<p>
+
+To promote the broadest impact, freest exchange of ideas, and most 
+collaborative and dynamic development, all materials are available free 
+of charge under an <em>open-content</em> license. Likewise, all software 
+tools are provided free under an <em>open-source</em> license.
+
+</p>
+
+<div id="next-slide">
+<a href="5.html">Our five principal components &gt;&gt;&gt;</a>
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT ENDS HERE -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

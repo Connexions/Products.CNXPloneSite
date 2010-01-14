@@ -1,0 +1,1 @@
+from Products.RhaptosSite.MembershipTool import MembershipTool

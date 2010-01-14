@@ -1,0 +1,445 @@
+body{
+margin: 0;
+padding: 0;
+background: white;
+font-family: helvetica, arial, sans-serif;
+background-repeat: no-repeat;
+}
+
+#previous-next, #title, #next-slide a{
+font-family: verdana, tahoma, helvetica, arial, sans-serif;
+}
+
+#top{
+background: #369;
+color: white;
+/*/*/text-align: right;/* */
+height: 38px;
+padding: 5px 10px;
+border: none;
+/*/*//*/
+margin: 0;
+padding: 0;
+/* */
+}
+
+* html>body #top{
+height: 48px;
+}
+
+#top img{
+float: left;
+/*/*//*/
+margin: 10px;
+color: #369;
+/* */
+}
+
+img{
+border: 0;
+color: white;
+}
+
+#previous-next{
+display: block;
+font-size: .7em;
+padding-top: 15px;
+/*/*//*/
+float: right;
+padding: 5px;
+/* */
+}
+
+#previous-next, #previous-next a{
+color: #def;
+text-decoration: none;
+/*/*//*/font-size: .9em;/* */
+}
+
+#previous-next .text{
+text-decoration: underline;
+}
+
+.arrow{
+font-size: 1.2em;
+}
+
+#navigator{
+padding: .3em .5em .5em;
+border: 0 solid #c90;
+border-bottom-width: 2px;
+background: #69c;
+font-size: .7em;
+text-align: right;
+/*/*//*/margin: -17px 3px 0px;/* */
+}
+
+* html>body #navigator{
+padding-top: .5em;
+}
+
+#navigator a{
+color: #cde;
+/*/*/margin: 0 .5em;/* */
+}
+
+#navigator .current{
+font-weight: bold;
+text-decoration: none;
+color: white;
+}
+
+.mini-navigator-div{
+/*/*//*/
+margin: 1px 0 0 2px;
+margin-top: 1px;
+/* */
+}
+
+#mini-navigator td{
+background: #369;
+font-size: .7em;
+padding: .3em .5em .4em;
+text-align: center;
+}
+
+* html>body #mini-navigator td{
+padding-top: .5em;
+}
+
+#mini-navigator .current{
+background: #c90;
+}
+
+.mini-navigator-div a{
+color: #fff;
+text-decoration: none;
+}
+
+#title{
+font-size: 1.3em;
+margin: 20px 0 0 0;
+/*/*//*/
+margin-top: 0;
+font-weight: bold;
+/* */
+}
+
+#body{
+margin: 20px 10px 0 10px;
+/*/*//*/width: 360px;/* */
+}
+
+p, ul, ol{
+font-size: .75em;
+}
+
+ul ol, ul ul, ol ol, ol ul{
+font-size: 1em;
+}
+
+ul, ol, li{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+html>body ul, html>body ol, html>body li{
+margin-top: .2em;
+margin-bottom: .2em;
+}
+
+ul, * ul{
+list-style-type: disc
+}
+
+a{
+color: #960;
+}
+
+#next-slide{
+text-align: right;
+margin: 20px 10px 10px 10px;
+/*/*//*/
+border: none;
+margin-top: -10px;
+/* */
+}
+
+#next-slide a{
+color: #58b;
+font-weight: bold;
+font-style: italic;
+text-decoration: none;
+font-size: 1.1em;
+}
+
+em{
+font-style: normal;
+font-weight: bold;
+color: #333;
+}
+
+.factory, .components, #components-instructions, #factory-instructions{
+position: absolute;
+top: 85px;
+left: 255px;
+width: 115px;
+z-index: 2;
+background: #69c;
+border: 0 solid #444;
+border-bottom-width: 2px;
+border-right-width: 2px;
+padding: 10px;
+color: white;
+font-size: .75em;
+font-family: tahoma, verdana, helvetica, arial, sans-serif;
+visibility: hidden;
+/*/*//*/
+top: 105px;
+left: 270px;
+width: 140px;
+/* */
+}
+
+* html .factory, * html .components, * html #components-instructions, * html #factory-instructions{
+width: 135px;
+border-width: 0;
+filter: progid:DXImageTransform.Microsoft.Shadow(color="#444444", direction="135", strength="4");
+}
+
+* html>body .factory, * html>body #factory-instructions{
+top: 10px;
+}
+
+.components, #components-instructions{
+top: 380px;
+left: 10px;
+width: 360px;
+/*/*//*/
+left: 15px;
+width: 400px;
+top: 400px;
+/* */
+}
+
+* html>body .components, * html>body #components-instructions{
+top: 305px;
+}
+
+.components p, #components-instructions p{
+margin-bottom: 0;
+}
+
+* html .components, * html #components-instructions{
+width: 380px;
+}
+
+#components-instructions, #factory-instructions{
+color: #333;
+background: white;
+font-style: italic;
+visibility: visible;
+border-width: 0;
+position: absolute;
+}
+
+* html #components-instructions, * html #factory-instructions{
+filter: none;
+}
+
+.mouse-arrow{
+display: block;
+float: left;
+margin: 1px 3px 0 0;
+}
+
+.factory .title, .components .title{
+font-weight: bold;
+/*/*//*/
+font-size: 1.15em;
+/* */
+}
+
+.factory p, .components p{
+font-size: 1em;
+/*/*//*/
+margin-top: .5em;
+/* */
+}
+
+/* #################### Current and Future Uses Table ################ */
+
+#uses{
+font-family: tahoma, verdana, helvetica, arial, sans-serif;
+font-size: .95em;
+margin: 10px 0 10px 10px;
+color: white;
+}
+
+#uses[id] ul{
+padding-left: 1.2em;
+}
+
+* html #uses ul{
+margin-left: 1.2em;
+}
+
+#uses[id] li{
+margin: .2em 0;
+}
+
+* html #uses li{
+margin: 0;
+}
+
+.prototype li, .collaborators li, .potential li{
+/*/*//*/
+margin: 1px 0;
+/* */
+}
+
+.prototype ul, .collaborators ul, .potential ul{
+/*/*//*/
+margin-left: -16px; 
+padding-left: 0px;
+/* */
+}
+
+#uses td{
+padding: 10px;
+color: white;
+}
+
+#uses .header{
+font-weight: bold;
+}
+
+.prototype, .collaborators, .potential{
+color: white;
+/*/*//*/padding: .3em;/* */
+}
+
+#uses{
+/*/*//*/margin-top: -40em;/* */
+}
+
+.prototype{
+background: #c70;
+}
+.collaborators{
+background: #c90;
+}
+.potential{
+background: #a90;
+}
+
+/* ################# END CURRENT AND FUTURE USES ################# */
+
+.cnx{
+font-style: italic;
+}
+
+/* ############## SOFTWARE DESCRIPTIONS on SLIDE #7 ############## */
+
+.software{
+position: absolute;
+top: 100px;
+visibility: hidden;
+/*/*//*/
+top: 118px;
+left: 7px;
+/* */
+}
+
+* html .software{
+top: 100px;
+}
+
+* html>body .software{
+top: 23px;
+}
+
+.software .description{
+position: relative;
+width: 368px;
+margin: 0 1px 0;
+z-index: 3;
+background: #69c;
+border: 0 solid #c90;
+border-top-width: 2px;
+padding: 10px;
+color: white;
+font-size: .7em;
+font-family: tahoma, verdana, helvetica, arial, sans-serif;
+/*/*//*/
+width: 400px;
+font-size: .8em;
+padding: 5px;
+/* */
+}
+
+/*/*//*/
+.software img{
+margin-top: -22px;
+}
+/* */
+
+* html .software .description{
+width: 388px;
+margin-top: -1px;
+}
+
+.software .title{
+font-weight: bold;
+margin-bottom: 1em;
+font-size: 1.3em;
+text-align: center;
+clear: none;
+/*/*//*/
+margin: 0 .3em 0 1em;
+font-size: 1.2em;
+/* */
+}
+
+.description a{
+color: white;
+}
+
+/*/*/
+.description .next{
+float: right;
+}
+.description .previous{
+float: left;
+}
+/* */
+
+/*/*//*/
+.description .previous{
+padding-left: 5em;
+display: inline;
+}
+
+.description .next{
+margin: 0 0 0 15.8em;
+}
+
+.description .previous, .description .next{
+font-size: 1.05em;
+}
+/* */
+
+/* ########### END SOFTWARE DESCRIPTIONS on SLIDE #7 ########### */
+
+
+#caption{
+font-style: italic;
+margin: 0 20px 0;
+font-size: .75em;
+font-family: tahoma, verdana, helvetica, arial, sans-serif;
+}
+
+#caption .cnx{
+font-style: normal;
+}
+

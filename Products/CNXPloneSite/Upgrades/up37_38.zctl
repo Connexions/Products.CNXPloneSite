@@ -1,0 +1,48 @@
+app.plone.portal_quickinstaller.installProduct('RisaPatchTool')
+app.plone.portal_quickinstaller.installProduct('RisaContent')
+
+SKIN_PATHS = [
+'custom',
+'CNXBeta',
+'CNXPloneSite',
+'cnx_overrides',
+'CNXContent',
+'RisaSite',
+'RisaOverrides',
+'RisaContent',
+'RisaPatch',
+'CNXMLFile',
+'RisaModuleEditor',
+'RisaWorkgroup',
+'FeatureArticle',
+'risacollection',
+'ChangeSet',
+'RisaRepository',
+'RisaHitCountTool',
+'PasswordReset',
+'archetypes',
+'gruf',
+'mimetypes_icons',
+'plone_ecmascript',
+'plone_wysiwyg',
+'plone_3rdParty/CMFTopic',
+'plone_templates',
+'plone_styles',
+'plone_scripts',
+'plone_portlets',
+'plone_form_scripts',
+'plone_prefs',
+'plone_forms',
+'plone_images',
+'plone_content',
+'ordered_plone_folder',
+'cmf_legacy',
+]
+
+skins_tool = app.plone.portal_skins
+skins_tool.manage_addProduct['CMFCore'].manage_addDirectoryView('RisaSite/skins/RisaOverrides')
+skins_tool.manage_addProduct['CMFCore'].manage_addDirectoryView('RisaSite/skins/RisaSite')
+skins_tool.selections['Connexions'] = ','.join(SKIN_PATHS)
+skins_tool._p_changed = 1
+
+get_transaction().commit()

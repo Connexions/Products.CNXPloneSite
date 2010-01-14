@@ -1,0 +1,36 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="rhaptos">
+
+<body>
+
+<!-- Tour box -->
+
+<div metal:define-macro="portlet">
+
+    <dl class="portlet" id="portlet-tour">
+
+        <dt class="portletHeader">
+          <span class="portletTopLeft"></span>
+          <span i18n:translate="box_tour">Tour</span>
+          <span class="portletTopRight"></span>
+        </dt>
+
+        <dd class="portletItem odd" style="text-align: center">
+            <img src="#" tal:replace="structure here/tour.png" />
+        </dd>
+          
+        <dd class="portletItem even" style="margin-top: 1em">
+          <a href="#" i18n:translate="label_taketour">Take a tour of Connexions</a>
+
+          <span class="portletBottomLeft"></span>
+          <span class="portletBottomRight"></span>
+          
+        </dd>
+
+      </dl>
+    </div>
+  </body>
+
+</html>

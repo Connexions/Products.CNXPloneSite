@@ -1,0 +1,528 @@
+CNXPloneSite-0.66
+  - remove adhoc branding (05 Jan 2009)
+  - added facebook and twitter to noncontent footers
+
+CNXPloneSite-0.65
+  - adding donate button (25 Nov 2009)
+
+CNXPloneSite-0.64
+  - light-weight-branding (30 Oct 2009)
+    - Fixing issues with padding in Rhaptos look and font-size in both
+      looks. Removing styling for #cnx_branding_logo in ploneCustom.css
+      files because that <div> shouldn't show up on the lens listing
+      page. Remove branding header from ploneCustom.css files because I
+      don't have such headers for anything else in those files (and don't
+      want to imply that everything under them is related to branding).
+    - Removed duplicate cnx_portal css
+    - Fixed padding for the branding banner.
+
+CNXPloneSite-0.63
+  - collection-structure-redesign-1 (Oct. 22, 2009)
+    - provide globally-available styling for import/export box 
+    - change and (mostly) make dynamic help links for new help area structure
+
+CNXPloneSite-0.62
+  - content-actions-move (17 Aug 2009)
+    - removed cnxml_transform.py; version in CNXMLDocument works generally
+    - patch GoogleAnalyticsTrackingCode (collection metadata) descriptions to point to cnx.org resources
+
+CNXPloneSite-0.61
+  - Module Edit Workflow (30 Jun 2009)
+    - #9183: Collection-composer column width issues
+    - #8899: "Truncated" long words in the navbar
+    - Styled expander widget
+    - Various style tweaks to new pages or features (including new parts of navbar) and various tweaks with regard to new placement of 
+      existing features (mostly spacing kinds of things)
+    - Made <h1> size more consistent among different pages and browsers
+  
+CNXPloneSite-0.60
+ - Siyavula Release (May 14, 2009)
+   - Style criteria twisties like ToC twisties
+   - Put CSS in stylesheet instead of inline.
+   - Unbold the list of lenses in the lens organizer editor.
+   - Make description fields non-bold (overriding Plone's default styling for them) 
+   - Making lens organizer tables look as specified in the mock-up
+   - Reuse left-column CSS hook from lens orangizer page on lens view page, and remove inline styling of left-column on lens view page.
+   - Change styling of lens left column to have white background and be wider than normal.
+   - Change styling of left-column portlets to have darker border on right side.
+   - Unbold "Select criteria/ a tag to narrow ..." text and put it in a paragraph.
+   - Removed unused tag cloud CSS, and made the smallest tags not too small, since they're in portlets now (which default to a smaller font size).
+   
+CNXPloneSite-0.59.1
+  - Keep unpublished previews renderable 
+
+CNXPloneSite-0.59
+  - Make rendered module index page non-cacheable, explicitly
+
+CNXPloneSite-0.58
+  - Add Hewlett Google Analytics to all pages (ticket:8565)
+
+CNXPloneSite-0.57
+  - cnxml-0.6 (30 Jan 2009)
+    - Change unibrowser file name to cnxml_render. Modified all references to unibrowser to 
+      cnxml_render. Added constant for cnxml_render path so it is only in one python script. 
+      All other python scripts now use the constant instead of the hard coded path.
+
+CNXPloneSite-0.56.2
+  - vocw-fixes (26 Nov 2008)
+    - moved AccessControl on subject widget to RhaptosCollection, so Rhaptos installs get it
+
+CNXPloneSite-0.56.1
+  - quickperf (30 Sept 2008)
+    - #6905: make index_html cacheable with caching_policy_manager (requires reinstall)
+
+CNXPloneSite-0.56
+  - MyCNX phase 2
+    - added code for putting Recently Viewed portlet to the cnx home page (but not yet used)
+    - #6390: Change authoring buttons and large numbers to be non-links
+    - #6356: Remove left border from top-level selected navigation items
+    - #6303: links on the expanded "Recently Viewed" page look non-visited
+    - #6658: Add registered trademark symbols and statement to footer of Ploneish pages.
+
+CNXPloneSite-0.55.1
+  - #6557: trademarked CNX logos
+
+CNXPloneSite-0.55
+  - MyCNX lands
+    - registration simplification (see also RhaptosSite)
+    - login now uses came_from to return to same page (see also RhaptosSite)
+    - some styling for login-during-lens-add
+    - pending portlet removed, integrated into logged_in
+
+CNXPloneSite-0.54
+  - #5605 (part): visited link color changes
+  - #6707 (part): made old branded collections look locally for their stylesheets
+
+CNXPloneSite-0.53.2
+  - fix #3977: Instructional text in front-page search box reappears on "back" in IE
+
+CNXPloneSite-0.53.1
+  - fix #4182: change hardcoded bug reporting URLs to portal_url relative bug_submit_form
+
+CNXPloneSite-0.53
+    - upgrade to Plone 2.5
+
+CNXPloneSite-0.52
+  - remove :method for one search form
+
+CNXPloneSite-0.51
+  - Now handles multiple collection types instead of hard coding
+    'Course' for most cases
+  - Also switch from using 'Course' as the default label of
+    collections to using 'Collection'
+  - Allow subjects to be edited on modules and collections
+  - Add links to the CNX help pages for subject editing and
+    collection-type editing
+
+CNXPloneSite-0.50
+  landing lenses0 branch
+  - fix some wording in account emails (QuickStart normalization)
+  - add lens creation to options on login landing page
+  - remove unnecessary line in confirm_account_form.cpt
+  - style fixes for navtree and org account pages
+  - calculate registration expiry in days, instead of just hours
+
+CNXPloneSite-0.49.6
+  - Fixing nlt0077: Link "Find Content" and "Create Content" on home page
+  - Fixing nlt0144: e-mail instead of email
+
+CNXPloneSite-0.49.5
+  - Add css for hiding batch navigation links in ploneCustom.css
+
+CNXPloneSite-0.49.4
+  - nlt0170: "Go" instead of "Search"
+  - nlt0205: more accessible disappearing "Search Content" text
+  - styling for logout as button, with r17201 in RhaptosSite.
+  - update hint portlet to show only for authenticated users
+  - rewrite standard-type browse deep links to AJAX-type browse deeplinks"
+  - 70% was just a wee bit teeny for IE in a .listing table
+
+CNXPloneSite-0.49.3
+  - newlook bugfixes:
+    - home page intro paragraph justification
+    - site error page wording tweak to handle anonymous users
+
+CNXPloneSite-0.49.2
+  - newlook bugfixes:
+    - add padding to search box and other inputs
+    - make text of login inputs a little larger to increase legibility
+    - clear up IE JS errors on front page due to "gray" vs. "grey".
+
+CNXPloneSite-0.49.1
+  - newlook bugfix:
+    - fix number links on front page that got missed the first time
+
+CNXPloneSite-0.49
+  - March 2007 site redesign (newlook)
+
+CNXPloneSite-0.48
+  - i18n Translation Support 
+  - Added styling to make tabs look right in IE7
+
+CNXPloneSite-0.47.1
+  - Parameterized the country count on the frontpage. Now defaults to the word 
+    "many", or the value of NumberOfCountries property (just set it on the 
+    plone root)
+
+CNXPloneSite-0.47
+  - adhoc-branding branch merged;
+    - adds specialBranding External Method to set for specific clients
+  - Replace "The Connexions Project" with just "Connexions" in footer
+  - Remove McAfee thank-you after agreed-to 6-month period
+  - Make numbered lists look OK in all browsers (not just Win Firefox) 
+    (bug 2296)
+
+CNXPloneSite-0.46
+  - Allow links in headings to look like links (task 2076, bugday, jccooper)
+  - Made links within site license open in new windows (bugday, jenn)
+  - Updated URL for City of Houston (bugday, jenn)
+  - Fixed to not suggest Unicode in usernames (task 1916, bugday, kclarks)
+  - Right-justify size column in workgroups. (task 1862, bugday, maxwell)
+    - requires changes r13825 and r13827 in RhaptosSite and RhaptosModuleEditor
+  - Removed global white-space: nowrap declaration in table headers (task 1516, bugday, jenn)
+
+CNXPloneSite-0.45
+  - Make the module and course count on the front page dynamic
+
+CNXPloneSite-0.44
+  - IE display fixes "peekaboo" bug?
+
+CNXPloneSite-0.43
+  - Conversion to new Connexions logo
+
+CNXPloneSite-0.42
+  - Added 'http://' to all member homepages that don't have a protocal
+
+CNXPloneSite-0.41
+  - Member interests is now a tuple
+
+CNXPloneSite-0.40
+  - Now uses CatalogMemberDataTool
+  - Small i18n fixes
+
+CNXPloneSite-0.39
+  - Updated for EIP/Word importer
+
+CNXPloneSite-0.38
+  - Moved some skin files to RisaWorkgroup
+  - Moved non-Connexions-specific skins to RisaSite
+  - Refactored customization policy to use plone's Setup Widgets and
+    to subclass RisaSite's customizations
+
+CNXPloneSite-0.37
+  - Restored pwreset_action override so new users get set to the
+    Approved state when they set their passwords
+
+CNXPloneSite-0.36
+  - Fix contexts.rdf to use content catalog
+  - Updated verbiage for email field
+
+CNXPloneSite-0.35
+  - made table in About page 100% wide via CSS (instead of HTML) and in 
+    all browsers (including IE, since it uses the doctype)
+  - removed renderBase since it's in Plone2 
+  - Added Creative Commons logo to the footer
+  - Fix select all checkboxes on collaborations page
+  - Added annotation icons for IE Annotea
+
+CNXPloneSite-0.34
+  - Work with (and require) Plone2
+
+CNXPloneSite-0.33
+  - Support Creative Commons Attribution License 2.0
+  - Split CNXContent out into its own Product
+
+CNXPloneSite-0.32
+ - Made the "warning" messages in Playland legible (bug 1894)
+ - Initially hide solutions in Charcoal (bug 1895)
+ - Added script to EIP that prevents links from activating if clicked on
+   - ...but removed it because it interacted oddly with the warning box
+
+CNXPloneSite-0.31
+ - Print-friendly stylesheet for the "File --> Print ..." users
+ - Added styling to improve look of examples in glossary definitions
+ - Improved layout of previous/next links at the bottom of the page
+ - Fixed problem of style-switcher preview images not showing up in WinIE
+ - Re-added playland style in new look and feel
+ - Improved appearance in Mac IE
+ - Updated Netscape4 stylesheets
+ - New logged-in page
+ - Say 'New author' instead of 'New user' on login portlet
+ - Disabled non-Sky stylesheets in EIP and made some other EIP-related
+   stylesheets improvements
+ - Added warning box when leaving EIP
+
+CNXPloneSite-0.30
+ - Newly redone content look and feel
+ - Changed "Other available usernames" to "Other suggested usernames"
+ - Changed "affect" to "effect" in patch_status.pt.
+ - Added hand-editing suggestion to patch conflict help.
+ - Make use of new similarity tool for similar content objects
+
+CNXPloneSite-0.29.2
+ - Changed MemberDataTool to only write to the database when one of
+   the DB-backed fields changes
+ - Changed the pending portlet to not calculate pending items if the
+    user is anonymous 
+
+CNXPloneSite-0.29.1
+ - New implementation of MemberDataTool: 
+   * access DB directly instead of going through XUF
+   * store all fields in ZODB, using DB as speedy backup
+
+CNXPloneSite-0.29
+ - Fix roadmap course listing bug
+
+CNXPloneSite-0.28
+ - Fixed empty person search error (introduced by Bug 1334 fix)
+ - Fixed bug preventing <base> tag from appearing on published modules
+
+CNXPloneSite-0.27
+ - updated README.txt with new CSS hack information (no bug number)
+ - Bug 1334: search terms are now or'ed for people searches (wkgrps & roles)
+ - Bug 1334: search terms are one or'ed for people searches (wkgrps & roles)
+ - Bug 1591: open license link in new window
+ - Bug 1789: Reworded tooltip for User Name file on login_form
+ - Bug 1479: Added hidden input so both search forms work the same from inside a workgroup
+ - Bug 1464 (2/3): added better on-screen documentation for EIP features/errors
+ - Bug 1540: fixed math not being clickable in Mozilla EIP
+ - Bug 1757: make license error verbage less demanding
+ - Bug 1447: number agreement problem on rename forms
+ - Bug 1748: connexions logo on modules should not be hardcoded to cnx.rice.edu
+ - Bugs 1217, 1373, 1483: refactored available/unavailable suggested user names
+ - Bug 1246: README.txt at /stylesheets now readable (needed .dtml extension)
+ - Bug 1838: fix maintainerlist wrapping problem in Sky/Safari
+ - Bug 1831: fix footer display problems in IE
+ - Bug 1837: prevent Playland title from shrinking in height in Safari 1.2
+ - Bug 1450: "rename-able" --> "renameable" in renaming template
+ - Bug 1747: logo has no alt text
+ - Bug 1414: folder_rename under workspace context should go back to workspace_contents, not folder_contents
+ - Make .content clear floats so our portraits don't overlap text
+
+CNXPloneSite-0.26
+ - Use the PasswordResetTool for initial password setting of new
+ accounts
+ - New question on author survey asking if user will help with feature testing
+
+CNXPloneSite-0.25
+ - Stylesheet bugfixes (with task numbers)
+   - 1763: switching out of Playland style
+   - 1829: links and terms within glossary definitions
+   - 1832: codeblocks within figures
+ - Updated style and text for "this is not the latest module" message
+
+CNXPloneSite-0.24
+ - Use <meta> tags to exclude bots from old module versions
+
+CNXPloneSite-0.23
+ - Updated styles
+
+CNXPloneSite-0.22
+ - Fix to work with RisaModuleStorage-0.4
+ - Added select-all box to role requests form
+ - Changed default site paragraph style to text-align: left
+ - Added #about-links styles to fix link list on /aboutus
+
+CNXPloneSite-0.21
+ - Moved frontpage content into a content object
+ - Shortened number of displayed news items to 3
+
+CNXPloneSite-0.20
+ - changed blog link to point at blog, not the portal
+
+CNXPloneSite-0.19
+ - Better title calculation
+ - New front-page text
+
+CNXPloneSite-0.18
+ - Added feature articles and user feedback portlets to the front page
+
+CNXPloneSite-0.17
+ - Set utf-8 as encoding in content_template
+ - Omit base tag during module preview
+
+CNXPloneSite-0.16
+ - Upgrades to work with latest RisaModuleEditor and RisaCollection
+
+CNXPloneSite-0.15
+ - Enable RSS Syndication of blog
+
+CNXPloneSite-0.14
+ - New 'Blog Item' based on 'News Item' used for site content
+
+CNXPloneSite-0.13.1
+ - Moved javascript files into Product 
+
+CNXPloneSite-0.13
+ - Require GRUF 2.0 (not CNX patched version)
+ - Require new tools: CVSTool, FSImportTool, ModuleDBTool, LinkMapTool
+ - Removed some old images
+
+CNXPloneSite-0.12.1
+ - Temporary hack to skip over course with unicode title
+
+CNXPloneSite-0.12
+ - Removed use of anti-ns4.css
+ - Made new CNXContent skin directory with refactored templates
+ - Do some style cookie processing server-side
+ - Include link to creative-commons license RDF for content objects
+ - fixed "reserach" typo in account-request tooltip
+
+
+CNXPloneSite-0.11.12
+ - Used better styling for footnotes so that they didn't break apart the 
+   line-spacing so awkwardly in various browsers
+ - Add warning about 10M image uploads too
+ - Moved image into box on image view page
+
+CNXPloneSite-0.11.11
+ - Fixed portal tab highligting
+ - Reworked image view page
+ - Added Help to portal tabs
+ - Reflow approval email
+ - Add warning about 10M file upload restriction
+
+CNXPlonsSite-0.11.10
+ - Cache fixes for javascript files
+
+CNXPloneSite-0.11.9
+ - Added padding to the tables in some of the stylesheets' "About" and 
+   "History" pages
+ - Removed a selector that doesn't exist (#about th)
+ - Added mini-survey questions to account request process
+ - Display 'None' if user not in any workgroups
+ - Display username field on account confirmation
+ - Enable course forking
+
+CNXPloneSite-0.11.8
+ - updated README.txt to include information about hack use in Safari
+ - altered each of the "document" stylesheets so that font-size in 
+   tables was accurate in all browsers and was the same in the document 
+   as it was in the "about" and "history" pages.
+ - in "charcoal", made pre/code the right size in Safari and added the 
+   appropriate (and previously missing) styling for combinations of 
+   pre/code with emphasis and cite
+ - removed some redundant styling
+
+CNXPloneSite-0.11.7
+ - changed some of the values in the anti-ns4 stylesheets to their 
+   correct defaults
+ - added styling for .cite in a few stylesheets
+ - removed some extraneous stylings (e.g. min-width for footer, 
+   overridden stylings)
+ - gave .cnxn a styling in desert to distinguish it from .link
+
+CNXPloneSite-0.11.6
+ - Added the div with id of "previous-next" to the list of divs which
+   editInPlace should not display
+
+CNXPloneSite-0.11.5
+ - Adjusted "sky" course stylesheet so that elements flow better, 
+   including changing the position of the content list's float from left 
+   to right
+ - Specified a width for content lists in all stylesheets so that their 
+   float didn't cause them to take too much space without wrapping lines
+ - Fixed bug in anti-ns4-course.css that was causing nested lists to 
+   display unnested in IE.
+
+CNXPloneSite-0.11.4
+ - Changed license agreement to use 'work' instead of 'module'
+ - Speed improvement for people search: don't hit DB for fullname property
+
+CNXPloneSite-0.11.3
+ - Adjusted styling to prevent creation of gap when clicking between 
+   "links" and "style" tabs (in the sidebar) in Mozilla
+
+CNXPloneSite-0.11.2
+ - Styled "Previous" and "Next" links at bottom of the module
+
+CNXPloneSite-0.11.1
+ - Cache fixes for CSS files
+
+CNXPloneSite-0.11
+ - Fixes for sidebar
+ - Javascript fixes for Safari
+ - New logged_in page
+
+CNXPloneSite-0.10
+ - Renamed Patch to Suggested Edits
+ - Added 'Search for Published Content' button to workspace contents
+   form
+
+CNXPloneSite-0.9
+ - Enable module patching
+ - Include workflow for patch objects
+ - Test to see if patch will apply cleanly before attempting, and give
+   a nice(r) error page if not
+ - Moved action/workspace selection for patches to patch view page
+
+CNXPloneSite-0.8.5
+ - Display tweaks for diff
+ - PloneSite initialization fixes 
+
+CNXPloneSite-0.8.4
+ - Re-enable diff
+
+CNXPloneSite-0.8.3
+ - Wording changes in news pages and patches page
+ - Fixed bug where patches weren't getting current information recataloged
+
+CNXPloneSite-0.8.2
+ - Slight display tweak of log action slot
+ - Formatting of 'Based on' display in footer
+ - Alphabetize courses in RDF
+
+CNXPloneSite-0.8.1
+ - Wording changes                          
+ - Small fixes for use with new course composer 
+
+CNXPloneSite-0.8
+ - Moved module footer actions into sidebar
+ - Some period additions
+ - Removed old PatchRequest object in favor of using a portal type
+ - Some gallery stylesheet fixes from Max
+
+CNXPloneSite-0.7.2
+ - Fix Kid-friendly stylesheets
+ - Music gallery fixes
+
+CNXPloneSite-0.7.1
+ - Fix timing problem when we try to mail before the DB has committed
+
+CNXPloneSite-0.7
+ - Make account approvals automatic 
+
+CNXPloneSite-0.6
+ - Add in PatchTool 
+ - Updated stylesheets for new module footer
+ - Fix rename form so Module object cannot be renamed, but objects in
+   a Module can
+
+CNXPloneSite-0.5
+ - Another new version of EIP stylesheets
+
+CNXPloneSite-0.4
+  - New version of EIP stylesheets
+
+CNXPloneSite-0.3.2
+  - Hack around interaction problems between CMF properties and XUF
+    property source
+  - Include style switcher in kid stylesheet
+
+CNXPloneSite-0.3.1
+  - Initialize Edit RISA Object permission in portal to 'Maintainer' role
+  - Log account requests in event log 
+
+CNXPloneSite-0.3
+  - Removed some verbiage on module license page
+  - New site human readable site license text
+  - Commonly requested feature: make the cursor a pointer on sortable
+    table headers
+
+CNXPloneSite-0.2
+  - Default visible_ids to false
+  - Added approved_time field to memberdata
+  - Fix 'select all' box on membership approvals
+
+CNXPloneSite-0.1
+  - Initial release

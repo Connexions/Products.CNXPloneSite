@@ -1,0 +1,1 @@
+# allow import to check syntax

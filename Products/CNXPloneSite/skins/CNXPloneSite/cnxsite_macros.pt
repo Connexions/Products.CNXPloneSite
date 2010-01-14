@@ -1,0 +1,21 @@
+  <html xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="rhaptos"> 
+    <body>
+      <div metal:define-macro="module_counts">
+	<h2 i18n:translate="heading_macros_connexions">Connexions is growing</h2>
+	<p i18n:translate="text_macros_connexions">Connexions is internationally focused, interdisciplinary,
+	  and grassroots organized. More than one million people from
+	  <span i18n:name="countries" tal:replace="here/NumberOfCountries | string:many">157</span> countries are tapping into the
+	  <span i18n:name="modules" tal:replace="python:here.content.countRhaptosObjects(['Module'])">[count]</span> modules and
+	  <span i18n:name="courses" tal:replace="python:here.content.countRhaptosObjects(['Collection'])">[count]</span>
+	  courses developed by a worldwide community of authors in
+	  fields ranging from computer science to music and from
+	  mathematics to biodiversity. In addition to modules written
+	  in English, you can find modules written in Chinese, Italian,
+	  Japanese, Portuguese, Spanish, and Thai.
+	</p>
+      </div>
+    </body>
+  </html>
