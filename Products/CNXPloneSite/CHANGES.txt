@@ -1,5 +1,8 @@
+CNXPloneSite-0.67
+  - siyavula phase-3 (11 Jan, 2010)
+
 CNXPloneSite-0.66
-  - remove adhoc branding (05 Jan 2009)
+  - remove adhoc branding (05 Jan 2010)
   - added facebook and twitter to noncontent footers
 
 CNXPloneSite-0.65
