@@ -1246,8 +1246,42 @@ body.fullscreen #portal-searchbox{
   /* not in FF, currently. see https://developer.mozilla.org/en/CSS/text-overflow */
 }
 
+/* IE draws double borders around checkboxes. This removes the border. */
+input[type="checkbox"] {
+    border: none;
+}
+
 #cnx_branding_banner{
   padding: 0.35em 15px 0.45em;
+}
+
+.lens_tag_table b{
+  color: #444;
+}
+
+.lens_tag_table{
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  margin-top: 0.15em;
+  margin-bottom:0.5em;
+  width:100%;
+}
+
+.lens_tag_table td{
+  vertical-align:top;
+}
+
+.tag-column{
+  padding-right: 1em;
+  width: 50%;
+}
+
+.error .fieldRequired{
+  color: &dtml-notifyBackgroundColor; !important;
+}
+
+.discreet-link{
+  color: &dtml-discreetColor; !important;
 }
 
 /* </dtml-with> */
