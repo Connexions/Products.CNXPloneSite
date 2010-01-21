@@ -58,9 +58,9 @@ i18nday: jccooper; mostly entirely ours, so now in rhaptos domain
     </p>
     <p i18n:translate="text_footer_followus_blurb">Follow us on our <a href="http://blog.cnx.org">blog</a>,
       on
-      <a href="http://www.facebook.com/cnx.org"><img src="facebook16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/facebook16x16.ico"></a>
+      <a href="http://www.facebook.com/cnx.org"><img src="facebook16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/facebook16x16.ico" /></a>
       <a href="http://www.facebook.com/cnx.org">Facebook</a> or on
-      <a href="http://twitter.com/cnxorg"><img src="twitter16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/twitter16x16.ico"></a>
+      <a href="http://twitter.com/cnxorg"><img src="twitter16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/twitter16x16.ico" /></a>
       <a href="http://twitter.com/cnxorg">Twitter</a>.
     </p>
     <p>
