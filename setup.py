@@ -25,6 +25,7 @@ setup(name='Products.CNXPloneSite',
       install_requires=[
           'setuptools',
           'Products.RhaptosSite',
+          'Products.RhaptosBugTrackingTool',
           'Products.CNXContent',
           'Products.CNXPloneSite',
           'Products.FeatureArticle',

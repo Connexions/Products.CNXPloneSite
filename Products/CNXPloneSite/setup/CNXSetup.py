@@ -24,6 +24,9 @@ def installProducts(self, portal):
     portal_setup = getToolByName(portal, 'portal_setup')
     import_context = portal_setup.getImportContextID()
     portal_setup.setImportContext(
+            'profile-Products.RhaptosBugTrackingTool:default')
+    portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(
             'profile-Products.FeatureArticle:default')
     portal_setup.runAllImportSteps()
     portal_setup.setImportContext(
