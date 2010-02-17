@@ -190,16 +190,6 @@ def createAboutusFolder(self, portal):
         ifile.close()
         contact.edit('html', text)
         
-        #add ibc map to about us
-        folder.invokeFactory('Image', 'ibc-map.png')
-        imageFolder = folder['ibc-map.png']
-        ifile = open(
-            os.path.join(os.path.dirname(__file__), 'data', 'ibc-map.png'),
-            'rb')
-        image = ifile.read()
-        ifile.close()
-        imageFolder.edit('image/png', image)
-        
         folder.invokeFactory('Document', 'index_html')
         index = folder.index_html
         index.setTitle('Philosophy')
