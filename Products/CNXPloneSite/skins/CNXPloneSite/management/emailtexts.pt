@@ -8,7 +8,7 @@
 <span metal:define-macro="approved"
 tal:define="global approvedemailtext string:Your account on the Connexions system has been approved. Your username is %s, and your password is the one you chose upon requesting the account. To log in, go to ${request/SERVER_URL}/ and enter your name and password in the login box. There is a Quick Start guide available once you log in, or any time at ${request/SERVER_URL}/help/
 
-Please let us know if you have any problems logging in or using the system, by emailing us at cnx@rice.edu or calling us at 713-348-3674. Thanks for joining the Connexions Project!" />
+Please let us know if you have any problems logging in or using the system, by emailing us at cnx@rice.edu. Thanks for joining the Connexions Project!" />
 
 <!-- "pending": for asking an applicant for more information. Uses only request/username. -->
 
