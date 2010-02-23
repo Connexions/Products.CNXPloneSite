@@ -51,7 +51,7 @@
 					<a href="/content/browse_content/language" tal:attributes="href string:$portal_url/content/browse_content/language;"
 					   onmouseover="openGroup('language')">Language</a>
 				    </li>
-				    <li id="cnx_find_browse_popularitylink">
+				    <li tal:condition="context/has_stats" id="cnx_find_browse_popularitylink">
 					<a href="/content/browse_content/popularity" tal:attributes="href string:$portal_url/content/browse_content/popularity;"
 					   onmouseover="openGroup('popularity')">Popularity</a>
 				    </li>
