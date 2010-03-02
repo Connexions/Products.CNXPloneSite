@@ -48,7 +48,6 @@
 	<textarea name="emailBody" 
                   rows="12" 
                   cols="60" 
-                  wrap="soft"
 	          tal:attributes="tabindex tabindex/next;"><span tal:replace="approvedemailtext" /></textarea>
 
 	<br />
