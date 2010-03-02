@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.67'
+version = '0.67.1'
 
 setup(name='Products.CNXPloneSite',
       version=version,

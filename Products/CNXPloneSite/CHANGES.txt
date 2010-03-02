@@ -1,3 +1,6 @@
+CNXPloneSite-0.67.1
+  - change textarea 'wrap' attribute to 'soft'
+
 CNXPloneSite-0.67
   - siyavula phase-3 (11 Jan, 2010)
 
