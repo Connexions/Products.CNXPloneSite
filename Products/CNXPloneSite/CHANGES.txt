@@ -1,3 +1,6 @@
+CNXPloneSite-0.68
+  - add Google Analytics support for various file downloads
+
 CNXPloneSite-0.67.1
   - change textarea 'wrap' attribute to 'soft'
 
