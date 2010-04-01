@@ -98,7 +98,7 @@
 					<li><a href="/content/browse_content/language/" tal:attributes="href string:$portal_url/content/browse_content/language/;">All ...</a></li>
 				    </ul>
 				</div>
-				<div id="cnx_find_browse_popularity">
+				<div tal:condition="context/has_stats" id="cnx_find_browse_popularity">
 				    <ul>
 					<li><a href="/content/browse_content/popularity/weekly" tal:attributes="href string:$portal_url/content/browse_content/popularity/weekly;">Most popular last week</a></li>
 					<li><a href="/content/browse_content/popularity/alltime" tal:attributes="href string:$portal_url/content/browse_content/popularity/alltime;">Most popular of all time</a></li>
