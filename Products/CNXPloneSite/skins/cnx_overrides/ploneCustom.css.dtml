@@ -1284,5 +1284,9 @@ input[type="checkbox"] {
   color: &dtml-discreetColor; !important;
 }
 
+.disabled{
+  color: #888;
+}
+
 /* </dtml-with> */
 
