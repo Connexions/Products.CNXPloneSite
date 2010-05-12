@@ -1,7 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.70'
+def read(*rnames):
+    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
+version = read("Products", "CNXPloneSite", "version.txt").strip()
+
 
 setup(name='Products.CNXPloneSite',
       version=version,
