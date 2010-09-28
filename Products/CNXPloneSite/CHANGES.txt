@@ -1,3 +1,6 @@
+CNXPloneSite-0.72
+  - sword release (css for import messsage)
+
 CNXPloneSite-0.69
   - hide content stats link when no stats (one got away)
 
