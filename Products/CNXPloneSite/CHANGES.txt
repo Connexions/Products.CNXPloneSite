@@ -1,3 +1,6 @@
+CNXPloneSite-0.73
+  - new Rice logo
+
 CNXPloneSite-0.72.1
   - conditionalize lensorganizer calls on user
 
