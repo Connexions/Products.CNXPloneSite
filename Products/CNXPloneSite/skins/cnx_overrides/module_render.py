@@ -18,7 +18,7 @@ kw.update(context.getCourseParameters())
 
 if kw.has_key('redirect'):
     if kw['redirect']:
-        context.REQUEST.RESPONSE.redirect(context.absolute_url() + '?collection=%s' % kw['redirect'],301)
+        context.REQUEST.RESPONSE.redirect(context.absolute_url() + '/?collection=%s' % kw['redirect'],301)
         return
 
 source = context.module_export_template(**kw)
