@@ -1251,7 +1251,7 @@ input[type="checkbox"] {
     border: none;
 }
 
-#cnx_branding_banner{
+.cnx_branding_banner{
   padding: 0.35em 15px 0.45em;
 }
 
