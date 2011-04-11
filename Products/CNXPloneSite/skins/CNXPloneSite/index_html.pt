@@ -7,6 +7,15 @@
       i18n:domain="rhaptos">
 
   <head>
+
+
+    <tal:comment replace="nothing">
+      Adding this meta tag to prove that we are indeed Connexions, in order to use "Facebook Insights". 
+      The content value points to "Rhaptos McCrouton", a special user made up for Connexions's/Rhaptos's interactivity with Facebook. 
+    </tal:comment>
+    <meta property="fb:admins" content="100002202416123" metal:fill-slot="head_slot" />
+
+
     <style type="text/css" metal:fill-slot="css_slot">
 
         #cnx_tour_in_intro{
