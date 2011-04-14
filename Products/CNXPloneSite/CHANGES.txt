@@ -1,3 +1,7 @@
+CNXPloneSite-0.74
+  - style changes to support caching
+  - facebook like metadata fix
+
 CNXPloneSite-0.73
   - new Rice logo
 
