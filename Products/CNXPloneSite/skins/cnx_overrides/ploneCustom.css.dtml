@@ -407,12 +407,18 @@ p.address{
 
 #riceLogo{
   float: left;
-  padding: .5em 1em 1em;
+  padding: .5em 1em 8em;
 }
 
-#ploneLogo, #ccLogo{
+#ccLogo{
   float: right;
   padding: .5em 1em 1em;
+  clear: right;
+}
+
+#ploneLogo{
+  float: right;
+  padding: .5em 1em 5em;
   clear: right;
 }
 
