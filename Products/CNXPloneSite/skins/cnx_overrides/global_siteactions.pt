@@ -35,7 +35,7 @@
     We could have created a site action like in the above tal:repeat, but would have been
     restricted to hyperlinked text.  requirements demanded a button, so ...
     </tal:comment>
-    <li><a tal:attributes="href string:${portal_url}/aboutus/cnx_donate" href="/aboutus/cnx_donate"><img tal:attributes="src string:${portal_url}/cnx-donate-button.png" src="/cnx-donate-button.png" style="vertical-align: middle;"/></a></li>
+    <li><a tal:attributes="href string:${portal_url}/aboutus/cnx_donate" href="/aboutus/cnx_donate"><img tal:attributes="src string:${portal_url}/cnx-donate-button.png" src="/cnx-donate-button.png" alt="donate button" style="vertical-align: middle;"/></a></li>
 </ul>
 </body>
 </html>
