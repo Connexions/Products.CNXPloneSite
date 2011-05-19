@@ -140,13 +140,13 @@
                 <tbody>
                     <tr>
                         <td class="cnx_create_image">
-                                <img src="authoring-step-1.gif" tal:attributes="src string:$portal_url/authoring-step-1.gif;"/>
+                                <img src="authoring-step-1.gif" alt="Authoring step 1: create an account" tal:attributes="src string:$portal_url/authoring-step-1.gif;"/>
                         </td>
                         <td class="cnx_create_image">
-                                <img src="authoring-step-2.gif" tal:attributes="src string:$portal_url/authoring-step-2.gif;"/>
+                                <img src="authoring-step-2.gif" alt="Authoring step 2: create a module" tal:attributes="src string:$portal_url/authoring-step-2.gif;"/>
                         </td>
                         <td class="cnx_create_image">
-                                <img src="authoring-step-3.gif" tal:attributes="src string:$portal_url/authoring-step-3.gif;"/>
+                                <img src="authoring-step-3.gif" alt="Authoring step 3: publish" tal:attributes="src string:$portal_url/authoring-step-3.gif;"/>
                         </td>
                     </tr>
                     <tr>
