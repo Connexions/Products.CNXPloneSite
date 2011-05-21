@@ -1,0 +1,18 @@
+
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool">
+ <action-provider name="portal_actions">
+  <!-- FIXME: Currently mostly handles actions dealing with MyRhaptos; eventually, we should have here any changes
+       between Rhaptos and default Plone sets of actions, replacing whatever is in setup/customize_plone.py
+       and the install script. (We may still need to delete programmatically, since remove="True" doesn't
+       work on actions in this version.) Then we can use this instead.
+  -->
+  
+  <action title="MyCNX" action_id="mycnx" category="portal_tabs"
+     url_expr="string:$portal_url/@@dashboard" visible="True">
+   <permission>View</permission>
+  </action>
+  
+  </action>
+ </action-provider>
+</object>

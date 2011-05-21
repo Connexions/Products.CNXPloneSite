@@ -1,0 +1,14 @@
+
+<?xml version="1.0"?>
+<metadata>
+  <version>1.35</version>
+  <description>Rhaptos Site</description>
+  <dependencies>
+    <dependency>profile-Products.RhaptosSite:default</dependency>
+    <dependency>profile-Products.RhaptosBugTrackingTool:default</dependency>
+    <dependency>profile-Products.FeatureArticle:default</dependency>
+    <dependency>profile-Products.CNXContent:default</dependency>
+    <dependency>profile-Products.LensOrganizer:default</dependency>
+    <dependency>profile-Products.RhaptosForums:default</dependency>
+  </dependencies>
+</metadata>

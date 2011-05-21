@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object name="portal_skins" default_skin="Rhaptos Theme">
+
+ <object name="CNXPloneSite"
+    meta_type="Filesystem Directory View"
+    directory="CNXPloneSite/skins/CNXPloneSite"/>
+ <object name="cnx_overrides"
+    meta_type="Filesystem Directory View"
+    directory="CNXPloneSite/skins/cnx_overrides"/>
+
+ <skin-path name="Rhaptos Theme" based-on="Sunburst Theme">
+  <layer name="CNXPloneSite"
+     insert-after="custom"/>
+  <layer name="cnx_overrides"
+     insert-after="cnx_site"/>
+ </skin-path>
+
+</object>
