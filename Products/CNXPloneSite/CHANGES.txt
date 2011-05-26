@@ -1,3 +1,6 @@
+CNXPloneSite-0.75
+  - donate now image absolute path
+
 CNXPloneSite-0.74
   - style changes to support caching
   - facebook like metadata fix
