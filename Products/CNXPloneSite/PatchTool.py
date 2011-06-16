@@ -1,1 +1,1 @@
-from Products.RisaPatchTool.PatchTool import PatchTool
+from Products.RhaptosPatchTool.PatchTool import PatchTool
