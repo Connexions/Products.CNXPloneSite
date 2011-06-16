@@ -1,6 +1,6 @@
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.Expression import Expression
-from Products.CMFCore.CMFCorePermissions import SetOwnProperties
+from Products.CMFCore.permissions import SetOwnProperties
 from Acquisition import aq_base
 import transaction
 from StringIO import StringIO
