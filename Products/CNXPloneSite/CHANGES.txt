@@ -1,3 +1,6 @@
+CNXPloneSite-0.75.1
+  - logo image metainfo for accessibility
+
 CNXPloneSite-0.75
   - donate now image absolute path
 
