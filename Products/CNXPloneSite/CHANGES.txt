@@ -1,3 +1,6 @@
+CNXPloneSite-0.75.2
+  - update google analytics domain code
+
 CNXPloneSite-0.75.1
   - logo image metainfo for accessibility
 
