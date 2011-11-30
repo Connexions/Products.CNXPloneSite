@@ -59,10 +59,11 @@ i18nday: jccooper; mostly entirely ours, so now in rhaptos domain
     <p i18n:translate="text_footer_followus_blurb">Follow us on our <a href="http://blog.cnx.org">blog</a>,
       on
       <a href="http://www.facebook.com/cnx.org"><img src="facebook16x16.ico" alt="facebook icon" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/facebook16x16.ico" /></a>
-      <a href="http://www.facebook.com/cnx.org">Facebook</a> or on
+      <a href="http://www.facebook.com/cnx.org">Facebook</a> on
       <a href="http://twitter.com/cnxorg"><img alt="twitter icon" src="twitter16x16.ico" style="vertical-align: bottom;" tal:attributes="src string:$portal_url/twitter16x16.ico" /></a>
-      <a href="http://twitter.com/cnxorg">Twitter</a>.
-    </p>
+      <a href="http://twitter.com/cnxorg">Twitter</a>, or on 
+      <a href="https://plus.google.com/u/0/113721978538758695150?prsrc=3"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="border: 0;vertical-align: bottom;"/></a>
+      <a href="https://plus.google.com/u/0/113721978538758695150?prsrc=3">Google+</a>    </p>
     <p>
     Use Connexions <a href="http://cnx.org/android/splash.html">Android App</a>, see our <a href="http://mobile.cnx.org/">mobile site</a>, and find us on <a href="http://itunes.apple.com/us/institution/connexions/id375198208">iTunes U.</a>
     </p>
