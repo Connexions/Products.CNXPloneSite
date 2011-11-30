@@ -15,6 +15,11 @@
     </tal:comment>
     <meta property="fb:admins" content="100002202416123" metal:fill-slot="head_slot" />
 
+    <tal:comment replace="nothing">
+      Adding this link tag to prove that we are indeed Connexions, in order to use "Google+ Page". the rel_slot should work, but it doesn't
+    </tal:comment>
+    <link href="https://plus.google.com/u/0/113721978538758695150" rel="publisher" metal:fill-slot="rel_slot" />
+    <link href="https://plus.google.com/u/0/113721978538758695150" rel="publisher" metal:fill-slot="style_slot" />
 
     <style type="text/css" metal:fill-slot="css_slot">
 
@@ -323,7 +328,6 @@ function initOverLabels () {
 };
 
     </script>
-
 
   </head>
 
