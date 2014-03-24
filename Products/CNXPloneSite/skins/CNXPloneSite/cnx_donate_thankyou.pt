@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <tal:page tal:define="is_editable python:request.set('disable_border', 1);
-                      overTitle string:Support Connexions;">
+                      overTitle string:Support OpenStax CNX;">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"
       xmlns:metal="http://xml.zope.org/namespaces/metal" 
       xmlns:tal="http://xml.zope.org/namespaces/tal" 
@@ -12,7 +12,7 @@
 
     <div metal:fill-slot="main">
       <h1>Thank you for your generosity</h1>
-      <p>Your donation helps keep Connexions' rapidly growing repository of educational materials vibrant, free, and available to educators and learners all over the world.</p>
+      <p>Your donation helps keep OpenStax CNX's rapidly growing repository of educational materials vibrant, free, and available to educators and learners all over the world.</p>
     </div>
 
   </body>
