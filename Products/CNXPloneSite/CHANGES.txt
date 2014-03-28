@@ -1,3 +1,6 @@
+CNXPloneSite-0.76.1
+  - Rename Connexions to OSCNX
+
 CNXPloneSite-0.76
   - Google 1+ button
 
