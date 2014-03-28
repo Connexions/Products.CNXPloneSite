@@ -42,18 +42,18 @@ i18nday: jccooper; mostly entirely ours, so now in rhaptos domain
     </span>
 
     <p id="sponsorBlurb" i18n:translate="text_footer_sponsorblurb">
-      Connexions<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is 
+      OpenStax CNX<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is 
       <span i18n:name="supportedlink">
         <a href="/aboutus/people/sponsors" i18n:translate="link_footer_sponsors">supported</a>
       </span>
       by the <span i18n:name="hewlettfoundation">
         <a href="http://www.hewlett.org/" i18n:translate="link_footer_hewlettfoundation">
          William and Flora Hewlett Foundation</a>, the Maxfield Foundation, and the
-         <a href="http://cnxconsortium.org/">Connexions Consortium</a>.
+         <a href="http://cnxconsortium.org/">OpenStax CNX Consortium</a>.
       </span>
     </p>
     <p i18n:translate="text_footer_tmblurb">
-      Connexions<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is a registered 
+      OpenStax CNX<span i18n:name="registered-tm-symbol"><sup i18n:translate="text_footer_rtmsymbol">&#174;</sup></span> is a registered 
       trademark of Rice University.
     </p>
     <p i18n:translate="text_footer_followus_blurb">Follow us on our <a href="http://blog.cnx.org">blog</a>,
@@ -65,7 +65,7 @@ i18nday: jccooper; mostly entirely ours, so now in rhaptos domain
       <a href="https://plus.google.com/u/0/113721978538758695150?prsrc=3"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="border: 0;vertical-align: bottom;"/></a>
       <a href="https://plus.google.com/u/0/113721978538758695150?prsrc=3">Google+</a>    </p>
     <p>
-    Use Connexions <a href="http://cnx.org/android/splash.html">Android App</a>, see our <a href="http://mobile.cnx.org/">mobile site</a>, and find us on <a href="http://itunes.apple.com/us/institution/connexions/id375198208">iTunes U.</a>
+    Use OpenStax CNX <a href="http://cnx.org/android/splash.html">Android App</a>, see our <a href="http://mobile.cnx.org/">mobile site</a>, and find us on <a href="http://itunes.apple.com/us/institution/connexions/id375198208">iTunes U.</a>
     </p>
     <p>For developers: see our <a href="http://devblog.cnx.org/">developer blog</a> and <a href="http://rhaptos.org/">developer site</a>.
     </p>

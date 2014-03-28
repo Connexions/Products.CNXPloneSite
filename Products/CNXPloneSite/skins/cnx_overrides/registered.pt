@@ -56,7 +56,7 @@ i18n by kclarks
           <span i18n:name="quick_start">
             <a href="/help/" i18n:translate="label_quick_start" tal:attributes="href help/absolute_url">the Quick Start guide</a>. 
           </span>
-          Thank you for your interest in Connexions!
+          Thank you for your interest in OpenStax CNX!
         </p>
       </tal:help>
 

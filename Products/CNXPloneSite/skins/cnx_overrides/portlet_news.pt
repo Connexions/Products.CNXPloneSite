@@ -30,7 +30,7 @@ Not yet applied:
 
         <dt class="portletHeader">
             <span class="portletTopLeft"></span>
-            <span i18n:translate="box_news">Connexions News</span>
+            <span i18n:translate="box_news">OpenStax CNX News</span>
             <span class="portletTopRight"></span>
         </dt>
 

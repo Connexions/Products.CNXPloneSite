@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <site>
-  <property name="title">Connexions</property>
-  <property name="email_from_name">Connexions</property>
+  <property name="title">OpenStax CNX</property>
+  <property name="email_from_name">OpenStax CNX</property>
 </site>

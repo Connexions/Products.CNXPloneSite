@@ -4,8 +4,8 @@
     i18n:domain="rhaptos"> 
     <body>
       <div metal:define-macro="module_counts">
-	<h2 i18n:translate="heading_macros_connexions">Connexions is growing</h2>
-	<p i18n:translate="text_macros_connexions">Connexions is internationally focused, interdisciplinary,
+	<h2 i18n:translate="heading_macros_connexions">OpenStax CNX is growing</h2>
+	<p i18n:translate="text_macros_connexions">OpenStax CNX is internationally focused, interdisciplinary,
 	  and grassroots organized. More than one million people from
 	  <span i18n:name="countries" tal:replace="here/NumberOfCountries | string:many">157</span> countries are tapping into the
 	  <span i18n:name="modules" tal:replace="python:here.content.countRhaptosObjects(['Module'])">[count]</span> modules and

@@ -133,7 +133,7 @@
                    href="/help/authoring/createmodule" tal:attributes="href help/absolute_url" i18n:translate="box_create_content">Create Content</a></h2>
 
 	    <p id="cnx_create_easy">
-                Creating content in Connexions is as easy as <b>1, 2, 3</b>:
+                Creating content in OpenStax CNX is as easy as <b>1, 2, 3</b>:
             </p>
 
             <table id="cnx_create_123">
@@ -192,9 +192,9 @@
                                        href="/help/authoring/authorguide" tal:attributes="href help/absolute_url">New author guide</a>
                                 </li>
                                 <li tal:define="tutorial nocall:portal/content/col10151/latest|nothing;">
-                                    <a tal:condition="not:tutorial" href="http://cnx.org/content/col10151/latest/" target="_blank">Connexions Tutorial and Reference</a>
+                                    <a tal:condition="not:tutorial" href="http://cnx.org/content/col10151/latest/" target="_blank">OpenStax CNX Tutorial and Reference</a>
                                     <a tal:condition="tutorial" href="http://cnx.org/content/col10151/latest/"
-                                       tal:attributes="href string:$portal_url/content/col10151/latest/;">Connexions Tutorial and Reference</a>
+                                       tal:attributes="href string:$portal_url/content/col10151/latest/;">OpenStax CNX Tutorial and Reference</a>
                                 </li>
                             </ul>
                         </td>
