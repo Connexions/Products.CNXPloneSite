@@ -172,7 +172,7 @@
                             <h4>Jump right in</h4>
                             <ul>
                                 <li tal:condition="isAnon">
-                                    <a href="/join_form" tal:attributes="href string:$portal_url/join_form;">Get an account</a>
+                                    <a href="/new_account" tal:attributes="href string:$portal_url/new_account;">Get an account</a>
                                 </li>
                                 <li>
                                     <a tal:define="help nocall:portal/help/authoring/createmodule | nothing" tal:condition="nocall:help"
