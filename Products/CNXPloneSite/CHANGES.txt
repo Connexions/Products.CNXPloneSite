@@ -1,3 +1,6 @@
+CNXPloneSite-0.76.2
+  - Rename join form
+
 CNXPloneSite-0.76.1
   - Rename Connexions to OSCNX
 
