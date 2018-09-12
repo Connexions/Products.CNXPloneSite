@@ -10,16 +10,16 @@ Content-Type: text/plain; charset=<span tal:replace="here/portal_properties/site
 
 <div i18n:translate="mailtemplate_registered_body" tal:omit-tag="">
 Your account on the OpenStax CNX system has been created. Your username
-is <span i18n:name="username" tal:replace="member/getUserName"/>.  Please activate your account by visiting 
+is <span i18n:name="username" tal:replace="member/getUserName"/>.  Please activate your account by visiting
 
 <span tal:replace="python:here.pwreset_constructURL(reset['randomstring'])+'?userid='+member.getUserName()" i18n:name="pw_reset_url"/>
 
 You must activate your account before <span i18n:name="begin_time" tal:replace="reset/expires/aCommonZ" />.
-If you do not confirm your account before this date, or if you encounter any problems with the account activation, 
+If you do not confirm your account before this date, or if you encounter any problems with the account activation,
 please visit http://cnx.org/mail_password_form to generate a new activation link for your account.
 
 For help getting started with OpenStax CNX, creating content, or to learn about new features that are available, please visit http://cnx.org/help .
-If you have any questions or encounter any difficulties along the way, please feel free to email us at cnx@cnx.org and we will be happy to assist you.
+If you have any questions or encounter any difficulties along the way, please feel free to email us at support@openstax.org and we will be happy to assist you.
 
 Thank you for joining OpenStax CNX!
 </div>
