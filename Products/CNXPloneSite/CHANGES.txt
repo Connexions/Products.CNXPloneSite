@@ -1,3 +1,6 @@
+CNXPloneSite-0.76.3
+  - update support address in welcom email
+
 CNXPloneSite-0.76.2
   - Rename join form
 
