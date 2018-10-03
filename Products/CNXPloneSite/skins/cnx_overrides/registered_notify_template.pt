@@ -16,9 +16,9 @@ is <span i18n:name="username" tal:replace="member/getUserName"/>.  Please activa
 
 You must activate your account before <span i18n:name="begin_time" tal:replace="reset/expires/aCommonZ" />.
 If you do not confirm your account before this date, or if you encounter any problems with the account activation,
-please visit http://cnx.org/mail_password_form to generate a new activation link for your account.
+please visit https://legacy.cnx.org/mail_password_form to generate a new activation link for your account.
 
-For help getting started with OpenStax CNX, creating content, or to learn about new features that are available, please visit http://cnx.org/help .
+For help getting started with OpenStax CNX, creating content, or to learn about new features that are available, please visit https://legacy.cnx.org/help .
 If you have any questions or encounter any difficulties along the way, please feel free to email us at support@openstax.org and we will be happy to assist you.
 
 Thank you for joining OpenStax CNX!
